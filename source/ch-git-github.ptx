@@ -6,4 +6,8 @@
         <title>What Is Git?</title>
         <p>Hello</p>
     </section>
+    <section xml:id="sec-what-is-git">
+        <title>What Is Git<em>Hub</em>?</title>
+        <p>Hello</p>
+    </section>
 </chapter>

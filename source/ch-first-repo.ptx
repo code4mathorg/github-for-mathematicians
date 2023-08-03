@@ -2,4 +2,16 @@
 <chapter xml:id="ch-first-repo">
     <title>Your First Repository</title>
     <p>Hello</p>
+    <section xml:id="sec-creating-the-repo">
+        <title>Creating the repo</title>
+        <p>Hello</p>
+    </section>
+    <section xml:id="sec-using-github-dev">
+        <title>Using GitHub.dev</title>
+        <p>Hello</p>
+    </section>
+    <section xml:id="sec-commiting-and-syncing">
+        <title>Commiting and syncing</title>
+        <p>Hello</p>
+    </section>
 </chapter>
