@@ -1,64 +1,82 @@
 var ptx_lunr_search_style = "textbook";
 var ptx_lunr_docs = [
 {
-  "id": "frontmatter",
+  "id": "colophon-1",
   "level": "1",
-  "url": "frontmatter.html",
-  "type": "Front Matter",
+  "url": "colophon-1.html",
+  "type": "Colophon",
   "number": "",
-  "title": "Front Matter",
-  "body": "   Steven Clontz  Department of Mathematics and Statistics  Univeristy of South Alabama    American Institute of Mathematics          jmm2024.clontz.org   https:\/\/jmm2024.clontz.org   copyright   "
+  "title": "Colophon",
+  "body": "   jmm2024.clontz.org   https:\/\/jmm2024.clontz.org   copyright  "
 },
 {
-  "id": "sec-git-github",
+  "id": "pre-abstract",
   "level": "1",
-  "url": "sec-git-github.html",
-  "type": "Section",
+  "url": "pre-abstract.html",
+  "type": "Preface",
+  "number": "",
+  "title": "Abstract",
+  "body": " Abstract  Increasingly, the cyberinfrastructure of mathematics and mathematics education is built using GitHub to organize projects, courses, and their communities. In this PEP, participants will learn the basic features of GitHub available using only a web browser, and how to use these features to participate in GitHub-hosted mathematical projects with colleagues and\/or students.  "
+},
+{
+  "id": "pre-workshop-info",
+  "level": "1",
+  "url": "pre-workshop-info.html",
+  "type": "Preface",
+  "number": "",
+  "title": "Workshop Details",
+  "body": " Workshop Details  This workshop will take place on Wednesday January 3, 2024, 1:00 p.m.-3:00 p.m, and Thursday January 4, 2024, 1:00 p.m.-3:00 p.m.  We will be located at Foothill E, Marriott Marquis San Francisco.  More information about JMM 2024 in San Francisco can be found at JointMathematicsMeetings.org .  "
+},
+{
+  "id": "ch-git-github",
+  "level": "1",
+  "url": "ch-git-github.html",
+  "type": "Chapter",
   "number": "1",
   "title": "Git vs. GitHub",
-  "body": " Git vs. GitHub  Hello  "
+  "body": " Git vs. GitHub  Hello   What Is Git?  Hello   "
 },
 {
-  "id": "sec-first-repo",
+  "id": "ch-first-repo",
   "level": "1",
-  "url": "sec-first-repo.html",
-  "type": "Section",
+  "url": "ch-first-repo.html",
+  "type": "Chapter",
   "number": "2",
   "title": "Your First Repository",
   "body": " Your First Repository  Hello  "
 },
 {
-  "id": "sec-github-pages",
+  "id": "ch-github-pages",
   "level": "1",
-  "url": "sec-github-pages.html",
-  "type": "Section",
+  "url": "ch-github-pages.html",
+  "type": "Chapter",
   "number": "3",
   "title": "Websites with GitHub Pages",
   "body": " Websites with GitHub Pages  Hello  "
 },
 {
-  "id": "sec-coding",
+  "id": "ch-coding",
   "level": "1",
-  "url": "sec-coding.html",
-  "type": "Section",
+  "url": "ch-coding.html",
+  "type": "Chapter",
   "number": "4",
   "title": "Writing and Running Code",
   "body": " Writing and Running Code  Hello  "
 },
 {
-  "id": "sec-collaboration",
+  "id": "ch-collaboration",
   "level": "1",
-  "url": "sec-collaboration.html",
-  "type": "Section",
+  "url": "ch-collaboration.html",
+  "type": "Chapter",
   "number": "5",
   "title": "Open Educational Resources",
   "body": " Open Educational Resources  Hello  "
 },
 {
-  "id": "sec-collaboration",
+  "id": "ch-collaboration",
   "level": "1",
-  "url": "sec-collaboration.html",
-  "type": "Section",
+  "url": "ch-collaboration.html",
+  "type": "Chapter",
   "number": "6",
   "title": "Collaborating with Students and Colleagues",
   "body": " Collaborating with Students and Colleagues  Hello  "
@@ -70,7 +88,7 @@ var ptx_lunr_docs = [
   "type": "Colophon",
   "number": "",
   "title": "Colophon",
-  "body": " This article was authored in PreTeXt .  "
+  "body": " This book was authored in PreTeXt .  "
 }
 ]
 
