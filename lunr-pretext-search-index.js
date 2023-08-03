@@ -16,7 +16,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1",
   "title": "Git vs. GitHub",
-  "body": " Git vs. GitHub  Hello world    "
+  "body": " Git vs. GitHub  Hello  "
 },
 {
   "id": "sec-first-repo",
@@ -46,9 +46,9 @@ var ptx_lunr_docs = [
   "body": " Writing and Running Code  Hello  "
 },
 {
-  "id": "sec-oer",
+  "id": "sec-collaboration",
   "level": "1",
-  "url": "sec-oer.html",
+  "url": "sec-collaboration.html",
   "type": "Section",
   "number": "5",
   "title": "Open Educational Resources",
