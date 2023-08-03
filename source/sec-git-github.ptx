@@ -1,6 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
 <section xml:id="sec-git-github">
     <title>Git vs. GitHub</title>
-    <p>Hello world <me>x^2+y^2=\frac{z^2}{2}</me></p>
-    <interactive geogebra="KGn2d4Qd" />
-    <image source="3.png"/>
-  </section>
+    <p>Hello</p>
+</section>

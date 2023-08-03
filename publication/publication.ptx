@@ -112,7 +112,7 @@
     javascript, etc).  -->
     <calculator model="none" activecode="none" />
     <!-- Set the base URL of where the online version is hosted to have links in other formats -->
-    <!-- <baseurl href="https://"/> -->
+    <baseurl href="https://stevenclontz.github.io/github-workshop/"/>
     <!-- Control behavior of online WeBWorK, per type: -->
     <webwork
       inline="dynamic"

@@ -17,31 +17,11 @@
     <xi:include href="frontmatter.ptx" />
 
     <xi:include href="sec-git-github.ptx"/>
-
-    <section xml:id="sec-first-repo">
-      <title>Your First Repository</title>
-      <p>Hello</p>
-    </section>
-
-    <section xml:id="sec-github-pages">
-      <title>Websites with GitHub Pages</title>
-      <p>Hello</p>
-    </section>
-
-    <section xml:id="sec-coding">
-      <title>Writing and Running Code</title>
-      <p>Hello</p>
-    </section>
-
-    <section xml:id="sec-oer">
-      <title>Open Educational Resources</title>
-      <p>Hello</p>
-    </section>
-
-    <section xml:id="sec-collaboration">
-      <title>Collaborating with Students and Colleagues</title>
-      <p>Hello</p>
-    </section>
+    <xi:include href="sec-first-repo.ptx"/>
+    <xi:include href="sec-github-pages.ptx"/>
+    <xi:include href="sec-coding.ptx"/>
+    <xi:include href="sec-oer.ptx"/>
+    <xi:include href="sec-collaboration.ptx"/>
 
     <backmatter xml:id="backmatter">
       <title>Backmatter</title>
