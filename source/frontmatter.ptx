@@ -6,9 +6,6 @@
         <department>Department of Mathematics and Statistics</department>
         <institution>Univeristy of South Alabama</institution>
       </author>
-      <author>
-        <institution>American Institute of Mathematics</institution>
-      </author>
       <date>
         <today />
       </date>
@@ -31,4 +28,5 @@
         </shortlicense>
       </copyright>
     </colophon>
+
   </frontmatter>

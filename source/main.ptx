@@ -11,24 +11,38 @@
     </latex-image-preamble>
   </docinfo>
 
-  <article xml:id="my-great-book">
+  <book xml:id="my-great-book">
     <title>GitHub for Mathematicians</title>
     <subtitle>JMM 2024 Professional Enhancement Program</subtitle>
     <xi:include href="frontmatter.ptx" />
 
-    <xi:include href="sec-git-github.ptx"/>
-    <xi:include href="sec-first-repo.ptx"/>
-    <xi:include href="sec-github-pages.ptx"/>
-    <xi:include href="sec-coding.ptx"/>
-    <xi:include href="sec-oer.ptx"/>
-    <xi:include href="sec-collaboration.ptx"/>
+    <preface xml:id="pre-abstract">
+      <title>Abstract</title>
+      <p>
+        Increasingly, the cyberinfrastructure of mathematics
+        and mathematics education is built using GitHub to
+        organize projects, courses, and their communities.
+        In this PEP, participants will learn the basic features
+        of GitHub available using only a web browser, and how
+        to use these features to participate in GitHub-hosted
+        mathematical projects with colleagues and/or students. 
+      </p>
+    </preface>
+
+    <xi:include href="pre-workshop-info.ptx" />
+    <xi:include href="ch-git-github.ptx"/>
+    <xi:include href="ch-first-repo.ptx"/>
+    <xi:include href="ch-github-pages.ptx"/>
+    <xi:include href="ch-coding.ptx"/>
+    <xi:include href="ch-oer.ptx"/>
+    <xi:include href="ch-collaboration.ptx"/>
 
     <backmatter xml:id="backmatter">
       <title>Backmatter</title>
       <colophon>
-        <p> This article was authored in <pretext />. </p>
+        <p> This book was authored in <pretext />. </p>
       </colophon>
     </backmatter>
 
-  </article>
+  </book>
 </pretext>

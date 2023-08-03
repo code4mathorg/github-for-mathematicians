@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<chapter xml:id="ch-git-github">
+    <title>Git vs. GitHub</title>
+    <p>Hello</p>
+    <section xml:id="sec-what-is-git">
+        <title>What Is Git?</title>
+        <p>Hello</p>
+    </section>
+</chapter>

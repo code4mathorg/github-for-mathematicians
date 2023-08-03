@@ -9,7 +9,7 @@
 <publication>
   <common>
     <!-- Level at which are html files generated (chapter/section/etc): -->
-    <chunking level="2" />
+    <chunking level="1" />
     <!-- Depth for table of contents.  0 means no TOC -->
     <tableofcontents level="2" />
     <!-- Visibility of exercise components where they first appear.          -->
