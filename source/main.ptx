@@ -11,59 +11,44 @@
     </latex-image-preamble>
   </docinfo>
 
-  <book xml:id="my-great-book">
-    <title>My Great Book</title>
-    <subtitle>An example to get you started</subtitle>
+  <article xml:id="my-great-book">
+    <title>GitHub for Mathematicians</title>
+    <subtitle>JMM 2024 Professional Enhancement Program</subtitle>
+    <xi:include href="frontmatter.ptx" />
 
-    <frontmatter xml:id="frontmatter">
-      <titlepage>
-        <author>
-          <personname>You</personname>
-          <department>Your department</department>
-          <institution>Your institution</institution>
-        </author>
-        <date>
-          <today />
-        </date>
-      </titlepage>
+    <xi:include href="sec-git-github.ptx"/>
 
-      <colophon>
+    <section xml:id="sec-first-repo">
+      <title>Your First Repository</title>
+      <p>Hello</p>
+    </section>
 
-        <website>
-          <name>
-            <c>example.org</c>
-          </name>
-          <address>https://example.org</address>
-        </website>
+    <section xml:id="sec-github-pages">
+      <title>Websites with GitHub Pages</title>
+      <p>Hello</p>
+    </section>
 
-        <copyright>
-          <year>2020<ndash />2023</year>
-          <holder>You</holder>
-          <shortlicense> 
-            This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit <url href="http://creativecommons.org/licenses/by-sa/4.0/" visual="creativecommons.org/licenses/by-sa/4.0"> CreativeCommons.org</url>
-          </shortlicense>
-        </copyright>
-      </colophon>
-    </frontmatter>
+    <section xml:id="sec-coding">
+      <title>Writing and Running Code</title>
+      <p>Hello</p>
+    </section>
 
-    <chapter xml:id="chapter-title">
-      <title>Chapter title</title>
+    <section xml:id="sec-oer">
+      <title>Open Educational Resources</title>
+      <p>Hello</p>
+    </section>
 
-      <section xml:id="section-title">
-        <title>Section title</title>
-        <p>Hello</p>
-      </section>
-
-    </chapter>
+    <section xml:id="sec-collaboration">
+      <title>Collaborating with Students and Colleagues</title>
+      <p>Hello</p>
+    </section>
 
     <backmatter xml:id="backmatter">
       <title>Backmatter</title>
-
       <colophon>
-        <p> This book was authored in <pretext />. </p>
+        <p> This article was authored in <pretext />. </p>
       </colophon>
-
     </backmatter>
 
-  </book>
+  </article>
 </pretext>
