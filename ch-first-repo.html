@@ -87,6 +87,37 @@ window.MathJax = {
 <link href="https://pretextbook.org/css/0.7/style_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.7/colors_blue_red.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.7/setcolors.css" rel="stylesheet" type="text/css">
+<!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.0.7';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.7/prefix-runtime.fd9ce61c3c71cb22.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.7/prefix-347.193e36c07abd0197.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.7/prefix-runestone.89acb6c6122954e4.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.7/prefix-347.f9add1ca35d5ad93.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.7/prefix-runestone.8d2f742bc74f4a41.css">
 </head>
 <body class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
@@ -217,18 +248,21 @@ window.MathJax = {
 <li><div class="toc-item"><a href="pre-abstract.html" class="internal"><span class="title">Abstract</span></a></div></li>
 <li><div class="toc-item"><a href="pre-workshop-info.html" class="internal"><span class="title">Workshop Details</span></a></div></li>
 <li>
-<div class="toc-item"><a href="ch-git-github.html" class="internal"><span class="codenumber">1</span> <span class="title">Git vs. GitHub asdfsadfas</span></a></div>
+<div class="toc-item"><a href="ch-git-github.html" class="internal"><span class="codenumber">1</span> <span class="title">Git vs. GitHub</span></a></div>
 <ul class="structural">
 <li><div class="toc-item"><a href="ch-git-github.html#sec-what-is-git" class="internal"><span class="codenumber">1.1</span> <span class="title">What Is Git?</span></a></div></li>
 <li><div class="toc-item"><a href="ch-git-github.html#sec-what-is-github" class="internal"><span class="codenumber">1.2</span> <span class="title">What Is Git<em class="emphasis">Hub</em>?</span></a></div></li>
+<li><div class="toc-item"><a href="ch-git-github.html#sec-an-example" class="internal"><span class="codenumber">1.3</span> <span class="title">An example</span></a></div></li>
 </ul>
 </li>
 <li class="active">
 <div class="toc-item"><a href="ch-first-repo.html" class="internal"><span class="codenumber">2</span> <span class="title">Your First Repository</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="ch-first-repo.html#sec-creating-the-repo" class="internal"><span class="codenumber">2.1</span> <span class="title">Creating the repo</span></a></div></li>
-<li><div class="toc-item"><a href="ch-first-repo.html#sec-using-github-dev" class="internal"><span class="codenumber">2.2</span> <span class="title">Using GitHub.dev</span></a></div></li>
-<li><div class="toc-item"><a href="ch-first-repo.html#sec-commiting-and-syncing" class="internal"><span class="codenumber">2.3</span> <span class="title">Commiting and syncing</span></a></div></li>
+<li><div class="toc-item"><a href="ch-first-repo.html#sec-making-an-account" class="internal"><span class="codenumber">2.1</span> <span class="title">Making an account</span></a></div></li>
+<li><div class="toc-item"><a href="ch-first-repo.html#sec-creating-the-repo" class="internal"><span class="codenumber">2.2</span> <span class="title">Creating the repo</span></a></div></li>
+<li><div class="toc-item"><a href="ch-first-repo.html#sec-editing-readme-md" class="internal"><span class="codenumber">2.3</span> <span class="title">Editing README.md</span></a></div></li>
+<li><div class="toc-item"><a href="ch-first-repo.html#sec-using-github-dev" class="internal"><span class="codenumber">2.4</span> <span class="title">Using GitHub.dev</span></a></div></li>
+<li><div class="toc-item"><a href="ch-first-repo.html#sec-commiting-and-syncing" class="internal"><span class="codenumber">2.5</span> <span class="title">Commiting and syncing</span></a></div></li>
 </ul>
 </li>
 <li>
@@ -266,17 +300,28 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="chapter" id="ch-first-repo"><h2 class="heading">
 <span class="type">Chapter</span> <span class="codenumber">2</span> <span class="title">Your First Repository</span>
 </h2>
-<div class="para" id="p-12">Hello</div>
-<section class="section" id="sec-creating-the-repo"><h3 class="heading hide-type">
-<span class="type">Section</span> <span class="codenumber">2.1</span> <span class="title">Creating the repo</span>
+<section class="section" id="sec-making-an-account"><h3 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">2.1</span> <span class="title">Making an account</span>
 </h3>
-<div class="para" id="p-13">Hello</div></section><section class="section" id="sec-using-github-dev"><h3 class="heading hide-type">
-<span class="type">Section</span> <span class="codenumber">2.2</span> <span class="title">Using GitHub.dev</span>
+<div class="para" id="p-15">All the features of GitHub we’ll be using are available using a free GitHub account. Make your account by visiting <a class="external" href="https://github.com/signup" target="_blank"><code class="code-inline tex2jax_ignore">https://github.com/signup</code></a>.</div>
+<div class="para" id="p-16">Many mathematicians are also eligible for GitHub’s educator discount, which provides additional functionality and computational resources normally only available to “Pro” users. Visit <a class="external" href="https://education.github.com/" target="_blank"><code class="code-inline tex2jax_ignore">https://education.github.com/</code></a> while logged into your account to request it. (You do not need to wait for approval before continuing to the next section.)</div></section><section class="section" id="sec-creating-the-repo"><h3 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">2.2</span> <span class="title">Creating the repo</span>
 </h3>
-<div class="para" id="p-14">Hello</div></section><section class="section" id="sec-commiting-and-syncing"><h3 class="heading hide-type">
-<span class="type">Section</span> <span class="codenumber">2.3</span> <span class="title">Commiting and syncing</span>
+<div class="para" id="p-17">Once logged in, a new repository can be created by pressing the <kbd class="kbdkey">+</kbd> button in the toolbar, or visiting <a class="external" href="https://github.com/new" target="_blank"><code class="code-inline tex2jax_ignore">https://github.com/new</code></a>.</div>
+<div class="para" id="p-18">The repository will need a name, which can be something like <code class="code-inline tex2jax_ignore">my-first-repo</code> for this tutorial. (GitHub will also suggest a cute random name like <code class="code-inline tex2jax_ignore">ubiquitous-space-tribble</code> if you have writer’s block.)</div>
+<div class="para" id="p-19">Repositories can be <dfn class="terminology">public</dfn> to everyone on the internet or <dfn class="terminology">private</dfn> to only people you approved. I encourage you to work publicly, to make it easier to collaborate with the open-source community – I can personally attest to publishing many garbage repositories on GitHub (along with my hopefully-useful ones), and no one has called me out for it yet!</div>
+<div class="para" id="p-20">The last option we’ll make sure to select is to “Initialize this repository with: Add a README file”. Then click “Create repository”.</div></section><section class="section" id="sec-editing-readme-md"><h3 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">2.3</span> <span class="title">Editing README.md</span>
 </h3>
-<div class="para" id="p-15">Hello</div></section></section></div>
+<div class="para" id="p-21">While logged into GitHub.com, you have the ability to edit individual files on your repositories. (If your repository is public, others can see those files, but cannot edit them unless you make them a collaborator, see <a href="ch-collaboration.html" class="internal" title="Chapter 6: Collaborating with Students and Colleagues">Chapter 6</a>.)</div>
+<div class="para" id="p-22">An easy way to edit an individual file is just to click the pencil icon such as the one that appears on your README. This file is written in <dfn class="terminology">Markdown</dfn>, a markup language that takes plain text <code class="code-inline tex2jax_ignore">like *this*</code> and renders it “like <em class="emphasis">this</em>”.</div>
+<div class="para" id="p-23">Try to edit your file to say something like “I’m learning how to use GitHub!”</div></section><section class="section" id="sec-using-github-dev"><h3 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">2.4</span> <span class="title">Using GitHub.dev</span>
+</h3>
+<div class="para" id="p-24">Hello</div></section><section class="section" id="sec-commiting-and-syncing"><h3 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">2.5</span> <span class="title">Commiting and syncing</span>
+</h3>
+<div class="para" id="p-25">Hello</div></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="ch-git-github.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="ch-github-pages.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>

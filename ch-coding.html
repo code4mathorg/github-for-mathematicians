@@ -87,6 +87,37 @@ window.MathJax = {
 <link href="https://pretextbook.org/css/0.7/style_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.7/colors_blue_red.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.7/setcolors.css" rel="stylesheet" type="text/css">
+<!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.0.7';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.7/prefix-runtime.fd9ce61c3c71cb22.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.7/prefix-347.193e36c07abd0197.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.7/prefix-runestone.89acb6c6122954e4.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.7/prefix-347.f9add1ca35d5ad93.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.7/prefix-runestone.8d2f742bc74f4a41.css">
 </head>
 <body class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
@@ -217,18 +248,21 @@ window.MathJax = {
 <li><div class="toc-item"><a href="pre-abstract.html" class="internal"><span class="title">Abstract</span></a></div></li>
 <li><div class="toc-item"><a href="pre-workshop-info.html" class="internal"><span class="title">Workshop Details</span></a></div></li>
 <li>
-<div class="toc-item"><a href="ch-git-github.html" class="internal"><span class="codenumber">1</span> <span class="title">Git vs. GitHub asdfsadfas</span></a></div>
+<div class="toc-item"><a href="ch-git-github.html" class="internal"><span class="codenumber">1</span> <span class="title">Git vs. GitHub</span></a></div>
 <ul class="structural">
 <li><div class="toc-item"><a href="ch-git-github.html#sec-what-is-git" class="internal"><span class="codenumber">1.1</span> <span class="title">What Is Git?</span></a></div></li>
 <li><div class="toc-item"><a href="ch-git-github.html#sec-what-is-github" class="internal"><span class="codenumber">1.2</span> <span class="title">What Is Git<em class="emphasis">Hub</em>?</span></a></div></li>
+<li><div class="toc-item"><a href="ch-git-github.html#sec-an-example" class="internal"><span class="codenumber">1.3</span> <span class="title">An example</span></a></div></li>
 </ul>
 </li>
 <li>
 <div class="toc-item"><a href="ch-first-repo.html" class="internal"><span class="codenumber">2</span> <span class="title">Your First Repository</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="ch-first-repo.html#sec-creating-the-repo" class="internal"><span class="codenumber">2.1</span> <span class="title">Creating the repo</span></a></div></li>
-<li><div class="toc-item"><a href="ch-first-repo.html#sec-using-github-dev" class="internal"><span class="codenumber">2.2</span> <span class="title">Using GitHub.dev</span></a></div></li>
-<li><div class="toc-item"><a href="ch-first-repo.html#sec-commiting-and-syncing" class="internal"><span class="codenumber">2.3</span> <span class="title">Commiting and syncing</span></a></div></li>
+<li><div class="toc-item"><a href="ch-first-repo.html#sec-making-an-account" class="internal"><span class="codenumber">2.1</span> <span class="title">Making an account</span></a></div></li>
+<li><div class="toc-item"><a href="ch-first-repo.html#sec-creating-the-repo" class="internal"><span class="codenumber">2.2</span> <span class="title">Creating the repo</span></a></div></li>
+<li><div class="toc-item"><a href="ch-first-repo.html#sec-editing-readme-md" class="internal"><span class="codenumber">2.3</span> <span class="title">Editing README.md</span></a></div></li>
+<li><div class="toc-item"><a href="ch-first-repo.html#sec-using-github-dev" class="internal"><span class="codenumber">2.4</span> <span class="title">Using GitHub.dev</span></a></div></li>
+<li><div class="toc-item"><a href="ch-first-repo.html#sec-commiting-and-syncing" class="internal"><span class="codenumber">2.5</span> <span class="title">Commiting and syncing</span></a></div></li>
 </ul>
 </li>
 <li>
@@ -266,14 +300,14 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="chapter" id="ch-coding"><h2 class="heading">
 <span class="type">Chapter</span> <span class="codenumber">4</span> <span class="title">Writing and Running Code</span>
 </h2>
-<div class="para" id="p-21">Hello</div>
+<div class="para" id="p-31">Hello</div>
 <section class="section" id="sec-codespaces"><h3 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">4.1</span> <span class="title">Codespaces</span>
 </h3>
-<div class="para" id="p-22">Hello</div></section><section class="section" id="sec-jupyter-notebooks"><h3 class="heading hide-type">
+<div class="para" id="p-32">Hello</div></section><section class="section" id="sec-jupyter-notebooks"><h3 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">4.2</span> <span class="title">Jupyter notebooks</span>
 </h3>
-<div class="para" id="p-23">Hello</div></section></section></div>
+<div class="para" id="p-33">Hello</div></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="ch-github-pages.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="ch-oer.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>
