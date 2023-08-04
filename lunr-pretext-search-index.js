@@ -1,13 +1,13 @@
 var ptx_lunr_search_style = "textbook";
 var ptx_lunr_docs = [
 {
-  "id": "colophon-1",
+  "id": "colophon",
   "level": "1",
-  "url": "colophon-1.html",
+  "url": "colophon.html",
   "type": "Colophon",
   "number": "",
   "title": "Colophon",
-  "body": "   jmm2024.clontz.org   https:\/\/jmm2024.clontz.org   copyright  "
+  "body": "   jmm2024.clontz.org   https:\/\/jmm2024.clontz.org   copyright  This work includes materials used under license from the following works:    Wikipedia       CC BY-SA 4.0      "
 },
 {
   "id": "pre-abstract",
@@ -33,8 +33,8 @@ var ptx_lunr_docs = [
   "url": "ch-git-github.html",
   "type": "Chapter",
   "number": "1",
-  "title": "Git vs. GitHub",
-  "body": " Git vs. GitHub  Hello   What Is Git?    An illustration of Git branches   An illustration of Git branches   Hello    What Is Git Hub ?  Hello   "
+  "title": "Git vs. GitHub asdfsadfas",
+  "body": " Git vs. GitHub asdfsadfas   What Is Git?    An illustration of Git history   An illustration of a project's history controlled by Git     Git is a distributed version control system that tracks changes in any set of computer files. sadfsadf Git was originally authored by Linus Torvalds in 2005 for development of the Linux kernel. Git is free and open-source software shared under the GPL-2.0-only license.  Two core concepts of Git are commits (illustrated in by circles) and branches (illustrated in by lines).    What Is Git Hub ?  Hello   "
 },
 {
   "id": "fig-git-branches",
@@ -43,7 +43,25 @@ var ptx_lunr_docs = [
   "type": "Figure",
   "number": "1.1.1",
   "title": "",
-  "body": "  An illustration of Git branches   An illustration of Git branches  "
+  "body": "  An illustration of Git history   An illustration of a project's history controlled by Git  "
+},
+{
+  "id": "p-9",
+  "level": "2",
+  "url": "ch-git-github.html#p-9",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Git "
+},
+{
+  "id": "p-10",
+  "level": "2",
+  "url": "ch-git-github.html#p-10",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "commits branches "
 },
 {
   "id": "ch-first-repo",
