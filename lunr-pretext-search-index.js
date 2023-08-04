@@ -34,7 +34,16 @@ var ptx_lunr_docs = [
   "type": "Chapter",
   "number": "1",
   "title": "Git vs. GitHub",
-  "body": " Git vs. GitHub  Hello   What Is Git?  Hello    What Is Git Hub ?  Hello   "
+  "body": " Git vs. GitHub  Hello   What Is Git?    An illustration of Git branches   An illustration of Git branches   Hello    What Is Git Hub ?  Hello   "
+},
+{
+  "id": "fig-git-branches",
+  "level": "2",
+  "url": "ch-git-github.html#fig-git-branches",
+  "type": "Figure",
+  "number": "1.1.1",
+  "title": "",
+  "body": "  An illustration of Git branches   An illustration of Git branches  "
 },
 {
   "id": "ch-first-repo",
@@ -61,16 +70,16 @@ var ptx_lunr_docs = [
   "type": "Chapter",
   "number": "4",
   "title": "Writing and Running Code",
-  "body": " Writing and Running Code  Hello  "
+  "body": " Writing and Running Code  Hello   Codespaces  Hello    Jupyter notebooks  Hello   "
 },
 {
-  "id": "ch-collaboration",
+  "id": "ch-oer",
   "level": "1",
-  "url": "ch-collaboration.html",
+  "url": "ch-oer.html",
   "type": "Chapter",
   "number": "5",
   "title": "Open Educational Resources",
-  "body": " Open Educational Resources  Hello  "
+  "body": " Open Educational Resources  Hello   PreTeXt  Hello    CheckIt  Hello   "
 },
 {
   "id": "ch-collaboration",
@@ -79,7 +88,7 @@ var ptx_lunr_docs = [
   "type": "Chapter",
   "number": "6",
   "title": "Collaborating with Students and Colleagues",
-  "body": " Collaborating with Students and Colleagues  Hello  "
+  "body": " Collaborating with Students and Colleagues  Hello   Adding collaborators  Hello    Forks and Pull Requests  Hello   "
 },
 {
   "id": "colophon-2",
