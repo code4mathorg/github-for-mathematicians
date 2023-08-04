@@ -1,10 +1,73 @@
 <?xml version='1.0' encoding='utf-8'?>
 <chapter xml:id="ch-first-repo">
     <title>Your First Repository</title>
-    <p>Hello</p>
+    <section xml:id="sec-making-an-account">
+        <title>Making an account</title>
+        <p>
+All the features of GitHub we'll be using are available
+using a free GitHub account. Make your account by
+visiting <url href="https://github.com/signup"/>.
+        </p>
+        <p>
+Many mathematicians are also eligible for GitHub's educator
+discount, which provides additional functionality and
+computational resources normally only available to
+<q>Pro</q> users. Visit
+<url href="https://education.github.com/" />
+while logged into your account to request it.
+(You do not need to wait for approval before
+continuing to the next section.)
+        </p>
+    </section>
     <section xml:id="sec-creating-the-repo">
         <title>Creating the repo</title>
-        <p>Hello</p>
+        <p>
+Once logged in, a new repository can be created by
+pressing the <kbd>+</kbd> button in the toolbar,
+or visiting <url href="https://github.com/new"/>.
+        </p>
+        <p>
+The repository will need a name, which can be something
+like <c>my-first-repo</c> for this tutorial. (GitHub
+will also suggest a cute random name like
+<c>ubiquitous-space-tribble</c> if you have writer's block.)
+        </p>
+        <p>
+Repositories can be <term>public</term> to everyone
+on the internet or <term>private</term> to only people you
+approved. I encourage you to work publicly,
+to make it easier to collaborate with the open-source
+community <ndash/> I can personally attest to
+publishing many garbage repositories on GitHub
+(along with my hopefully-useful ones), and no one
+has called me out for it yet!
+        </p>
+        <p>
+The last option we'll make sure to select is to
+<q>Initialize this repository with:
+Add a README file</q>. Then click <q>Create repository</q>.
+        </p>
+    </section>
+    <section xml:id="sec-editing-readme-md">
+        <title>Editing README.md</title>
+        <p>
+While logged into GitHub.com, you have the ability to edit
+individual files on your repositories. (If your repository
+is public, others can see those files, but cannot edit them
+unless you make them a collaborator,
+see <xref ref="ch-collaboration"/>.)
+        </p>
+        <p>
+An easy way to edit an individual file is just to click
+the pencil icon such as the one that appears on your README.
+This file is written in <term>Markdown</term>, a markup language
+that takes plain text <c>like *this*</c> and renders it
+<q>like <em>this</em></q>.
+        </p>
+        <p>
+Try to edit your file to say something like <q>I'm learning how to
+use GitHub!</q>
+        </p>
     </section>
     <section xml:id="sec-using-github-dev">
         <title>Using GitHub.dev</title>
