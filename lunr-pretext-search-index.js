@@ -34,7 +34,7 @@ var ptx_lunr_docs = [
   "type": "Chapter",
   "number": "1",
   "title": "Git vs. GitHub",
-  "body": " Git vs. GitHub  Hello   What Is Git?  Hello   "
+  "body": " Git vs. GitHub  Hello   What Is Git?  Hello    What Is Git Hub ?  Hello   "
 },
 {
   "id": "ch-first-repo",
@@ -43,7 +43,7 @@ var ptx_lunr_docs = [
   "type": "Chapter",
   "number": "2",
   "title": "Your First Repository",
-  "body": " Your First Repository  Hello  "
+  "body": " Your First Repository  Hello   Creating the repo  Hello    Using GitHub.dev  Hello    Commiting and syncing  Hello   "
 },
 {
   "id": "ch-github-pages",
@@ -52,7 +52,7 @@ var ptx_lunr_docs = [
   "type": "Chapter",
   "number": "3",
   "title": "Websites with GitHub Pages",
-  "body": " Websites with GitHub Pages  Hello  "
+  "body": " Websites with GitHub Pages  Hello   Starting with a template  Hello    Posts and pages  Hello    Tweaking the layout  Hello    Just let me host some HTML!  Hello   "
 },
 {
   "id": "ch-coding",
