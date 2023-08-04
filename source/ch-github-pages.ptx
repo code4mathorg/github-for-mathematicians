@@ -4,7 +4,7 @@
     <p>Hello</p>
     <section xml:id="sec-starting-with-a-template">
         <title>Starting with a template</title>
-        <p>Hello</p>
+        <p>Hello <me>e=mc^2</me></p>
     </section>
     <section xml:id="sec-posts-and-pages">
         <title>Posts and pages</title>
