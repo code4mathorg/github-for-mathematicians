@@ -5,6 +5,68 @@
     <section xml:id="sec-pretext">
         <title>PreTeXt</title>
         <p>Hello</p>
+        <figure width="100%" xml:id="fig-geogebra">
+            <interactive xml:id="geogebra" geogebra="KGn2d4Qd" />
+            <caption>A sample interactive</caption>
+        </figure>
+        <exercise label="number-theory-proof" adaptive="yes">
+            <title>Parsons Problem, Mathematical Proof</title>
+            <idx>even numbers</idx>
+            <statement>
+              <p>
+                Create a proof of the theorem: If <m>n</m> is an even number,
+                then <m>n\equiv 0\mod 2</m>.
+              </p>
+            </statement>
+            <blocks>
+            <block order="2">
+            <p>
+              Suppose <m>n</m> is even.
+            </p>
+            </block>
+            <block order="3">
+            <choice>
+            <p>
+              Then <m>n</m> is a prime number.
+            </p> 
+            </choice>
+            <choice correct="yes">
+            <p>
+              Then there exists an <m>m</m> so that <m>n = 2m</m>.
+            </p>
+            </choice>
+            <choice>
+            <p>
+              Then there exists an <m>m</m> so that <m>n = 2m + 1</m>.
+            </p>
+            </choice>
+            </block>
+            <block order="1" correct="no">
+            <p>
+              Click the heels of your ruby slippers together three times.
+            </p>
+            </block>
+            <block order="5">
+            <p>
+              So we have the displayed equation:
+              <me>
+                n = 2m + 0
+              </me>.
+            </p>
+            <p>
+              This is a superfluous second paragraph in this block.
+            </p>
+            </block>
+            <block order="4">
+            <p>
+              Thus <m>n\equiv 0\mod 2</m>.
+            </p>
+            </block>
+            </blocks>
+            <hint>
+              Dorothy will not be much help with this proof.
+            </hint>
+          </exercise>
     </section>
     <section xml:id="sec-checkit">
         <title>CheckIt</title>
