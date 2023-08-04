@@ -66,7 +66,21 @@ that takes plain text <c>like *this*</c> and renders it
         </p>
         <p>
 Try to edit your file to say something like <q>I'm learning how to
-use GitHub!</q>
+use GitHub!</q>, perhaps adding a link back to this document
+using <c>[this markup](https://jmm2024.clontz.org)</c>. You
+can click the Preview tab to see what your README will look like,
+or visit <url href="https://www.MarkdownTutorial.com"/> to learn
+more.
+        </p>
+        <p>
+When you're happy with your updated README, click the
+<q>Commit changes</q> button. This will create a new
+<term>commit</term>, representing a new moment in your
+project's history. You should write a useful commit message
+summarizing the work you've done since your last commit
+(or perhaps keep the default <q>Update README.md</q>)
+Doing this will update the README visible on your repository
+homepage on GitHub.com.
         </p>
     </section>
     <section xml:id="sec-using-github-dev">
