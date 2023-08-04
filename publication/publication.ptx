@@ -54,6 +54,7 @@
     <projects level="2" />
     <equations level="2" />
     <footnotes level="2" />
+    <figures level="1"/>
   </numbering>
 
   <!-- LaTeX specific options: set @print="yes" to get pdf set up   -->
@@ -112,7 +113,7 @@
     javascript, etc).  -->
     <calculator model="none" activecode="none" />
     <!-- Set the base URL of where the online version is hosted to have links in other formats -->
-    <baseurl href="https://stevenclontz.github.io/github-workshop/"/>
+    <baseurl href="https://jmm.clontz.org/"/>
     <!-- Control behavior of online WeBWorK, per type: -->
     <webwork
       inline="dynamic"

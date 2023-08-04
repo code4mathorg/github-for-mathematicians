@@ -1,16 +1,31 @@
 <?xml version='1.0' encoding='utf-8'?>
 <chapter xml:id="ch-git-github">
-    <title>Git vs. GitHub</title>
-    <p>Hello</p>
+    <title>Git vs. GitHub asdfsadfas</title>
     <section xml:id="sec-what-is-git">
         <title>What Is Git?</title>
         <figure xml:id="fig-git-branches">
             <image source="git-branches.png" width="70%">
-                <description>An illustration of Git branches</description>
+                <description>An illustration of Git history</description>
             </image>
-            <caption>An illustration of Git branches</caption>
+            <caption>
+                An illustration of a project's history
+                controlled by Git
+            </caption>
         </figure>
-        <p>Hello</p>
+        <interactive geogebra="KGn2d4Qd" />
+        <p>
+<term>Git</term> is a distributed version control system
+that tracks changes in any set of computer files. sadfsadf
+Git was originally authored by Linus Torvalds in 2005 
+for development of the Linux kernel. 
+Git is free and 
+open-source software shared under the GPL-2.0-only license.
+        </p>
+        <p>
+Two core concepts of Git are <term>commits</term> (illustrated
+in <xref ref="fig-git-branches"/> by circles) and <term>branches</term>
+(illustrated in <xref ref="fig-git-branches"/> by lines).
+        </p>
     </section>
     <section xml:id="sec-what-is-github">
         <title>What Is Git<em>Hub</em>?</title>

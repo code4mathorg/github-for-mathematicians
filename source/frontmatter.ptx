@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<frontmatter xml:id="frontmatter">
+<frontmatter xml:id="frontmatter" xmlns:xi="http://www.w3.org/2001/XInclude">
     <titlepage>
       <author>
         <personname>Steven Clontz</personname>
@@ -11,22 +11,6 @@
       </date>
     </titlepage>
 
-    <colophon>
-
-      <website>
-        <name>
-          <c>jmm2024.clontz.org</c>
-        </name>
-        <address>https://jmm2024.clontz.org</address>
-      </website>
-
-      <copyright>
-        <year>2020<ndash />2023</year>
-        <holder>You</holder>
-        <shortlicense> 
-          This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit <url href="http://creativecommons.org/licenses/by-sa/4.0/" visual="creativecommons.org/licenses/by-sa/4.0"> CreativeCommons.org</url>
-        </shortlicense>
-      </copyright>
-    </colophon>
+    <xi:include href="colophon.ptx" />
 
   </frontmatter>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+    <colophon xml:id="colophon">
+
+      <website>
+        <name>
+          <c>jmm2024.clontz.org</c>
+        </name>
+        <address>https://jmm2024.clontz.org</address>
+      </website>
+
+      <copyright>
+        <year>2023<ndash />2024</year>
+        <holder>Steven Clontz</holder>
+        <shortlicense> 
+          This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit <url href="http://creativecommons.org/licenses/by-sa/4.0/" visual="creativecommons.org/licenses/by-sa/4.0"> CreativeCommons.org</url>
+        </shortlicense>
+      </copyright>
+      <p>
+This work includes materials used under license from the
+following works:
+      </p>
+      <ul>
+          <li>
+              <p><pubtitle>Wikipedia</pubtitle></p>
+              <ul>
+                  <li>
+                      <p><url href="https://en.wikipedia.org/wiki/Git"/></p>
+                  </li>
+                  <li>
+                      <p>CC BY-SA 4.0</p>
+                  </li>
+              </ul>
+          </li>
+      </ul>
+    </colophon>
