@@ -2,4 +2,12 @@
 <chapter xml:id="ch-coding">
   <title>Writing and Running Code</title>
   <p>Hello</p>
+  <section xml:id="sec-codespaces">
+    <title>Codespaces</title>
+    <p>Hello</p>
+  </section>
+  <section xml:id="sec-jupyter-notebooks">
+    <title>Jupyter notebooks</title>
+    <p>Hello</p>
+  </section>
 </chapter>

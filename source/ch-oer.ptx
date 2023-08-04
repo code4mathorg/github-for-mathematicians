@@ -1,5 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
-<chapter xml:id="ch-collaboration">
+<chapter xml:id="ch-oer">
     <title>Open Educational Resources</title>
     <p>Hello</p>
+    <section xml:id="sec-pretext">
+        <title>PreTeXt</title>
+        <p>Hello</p>
+    </section>
+    <section xml:id="sec-checkit">
+        <title>CheckIt</title>
+        <p>Hello</p>
+    </section>
 </chapter>

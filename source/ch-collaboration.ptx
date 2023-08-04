@@ -2,4 +2,12 @@
 <chapter xml:id="ch-collaboration">
   <title>Collaborating with Students and Colleagues</title>
   <p>Hello</p>
+  <section xml:id="sec-adding-collaborators">
+    <title>Adding collaborators</title>
+    <p>Hello</p>
+  </section>
+  <section xml:id="sec-forks-and-pull-requests">
+    <title>Forks and Pull Requests</title>
+    <p>Hello</p>
+  </section>
 </chapter>
