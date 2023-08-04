@@ -4,6 +4,12 @@
     <p>Hello</p>
     <section xml:id="sec-what-is-git">
         <title>What Is Git?</title>
+        <figure xml:id="fig-git-branches">
+            <image source="git-branches.png" width="70%">
+                <description>An illustration of Git branches</description>
+            </image>
+            <caption>An illustration of Git branches</caption>
+        </figure>
         <p>Hello</p>
     </section>
     <section xml:id="sec-what-is-github">
