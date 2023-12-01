@@ -21,7 +21,7 @@
         Increasingly, the cyberinfrastructure of mathematics
         and mathematics education is built using GitHub to
         organize projects, courses, and their communities.
-        In this PEP, participants will learn the basic features
+        The goal of this book is to help readers learn the basic features
         of GitHub available using only a web browser, and how
         to use these features to participate in GitHub-hosted
         mathematical projects with colleagues and/or students. 
@@ -32,8 +32,10 @@
     <xi:include href="ch-git-github.ptx"/>
     <xi:include href="ch-first-repo.ptx"/>
     <xi:include href="ch-github-pages.ptx"/>
+    <xi:include href="ch-pi-base.ptx"/>
     <xi:include href="ch-coding.ptx"/>
     <xi:include href="ch-oer.ptx"/>
+    <xi:include href="ch-lean.ptx"/>
     <xi:include href="ch-collaboration.ptx"/>
 
     <backmatter xml:id="backmatter">

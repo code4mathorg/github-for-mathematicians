@@ -1,9 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <chapter xml:id="ch-oer">
-    <title>Open Educational Resources</title>
-    <p>Hello</p>
+    <title>PreTeXt</title>
     <section xml:id="sec-pretext">
-        <title>PreTeXt</title>
+        <title>What is PreTeXt?</title>
         <p>Hello</p>
         <figure width="100%" xml:id="fig-geogebra">
             <interactive xml:id="geogebra" geogebra="KGn2d4Qd" />

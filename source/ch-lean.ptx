@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<chapter xml:id="ch-github-pages">
-    <title>Websites</title>
+<chapter xml:id="ch-lean">
+    <title>Lean theorem prover</title>
     <p>Hello</p>
     <section xml:id="sec-starting-with-a-template">
         <title>Starting with a template</title>

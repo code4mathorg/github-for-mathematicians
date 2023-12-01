@@ -10,4 +10,8 @@
     <title>Jupyter notebooks</title>
     <p>Hello</p>
   </section>
+  <section xml:id="sec-sagemath">
+    <title>SageMath</title>
+    <p>Hello</p>
+  </section>
 </chapter>
