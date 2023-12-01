@@ -62,8 +62,8 @@ type into a command line prompt.
         <p>
 An example of a project using Git and GitHub is the
 document you're reading right now!
-This project is open-sourced and shared at
-<url href="https://github.com/StevenClontz/github-workshop"/>,
+This book is open-sourced and shared at
+<url href="https://github.com/StevenClontz/github-for-mathematicians"/>,
 and was created completely using the tools described here.
         </p>
     </section>
