@@ -15,9 +15,11 @@
         <p>
 <term>Git</term> is a distributed version control system
 that tracks changes in any set of computer files.
-Git was originally authored by Linus Torvalds in 2005 
+This software was originally authored by Linus Torvalds in 2005 
 for development of the Linux kernel. 
-Git is free and open-source software.
+Importantly, Git is free and open-source software, which means you
+have the legal and practical ability to use it however you want,
+and even modify it for your purposes if you wanted.
         </p>
         <p>
 Two core concepts of Git are <term>commits</term> (illustrated
@@ -30,11 +32,20 @@ feature, then merge this <q>feature branch</q> back into
 the <q>main branch</q> when it's complete. This is particularly
 useful when multiple people collaborate
 (<xref ref="ch-collaboration"/>)
-on a Git-managed project.
+on a Git-managed project. Finally, a Git project is often called a
+<term>repository</term>, or <term>repo</term> for short.
         </p>
         <p>
-A Git project is often called a <term>repository</term>,
-or <term>repo</term> for short.
+Since you're reading
+<pubtitle>GitHub for Mathematicians</pubtitle>, I'm obligated to
+describe Git history as either a finite partial order, or a loopless directed
+graph, depending on your preferred flavor of mathematical models. In particular,
+you might consider the normal history of a file to be a linear order:
+<c>article.tex</c>, then <c>article-dec-1.tex</c>, then <c>article-dec-1-fixed.tex</c>,
+and so on. But with Git, you don't need to track your version history with filenames,
+you (and your colleagues) can branch your history into several timelines, you
+can merge them back together again, and look up the state of your project at any point
+where you committed your work.
         </p>
     </section>
     <section xml:id="sec-what-is-github">
@@ -50,11 +61,30 @@ include <url href="https://bitbucket.org">BitBucket.org</url>
 and <url href="https://gitlab.com">GitLab.com</url>.)
         </p>
         <p>
+Importantly, GitHub
+is <em>not</em> itself open-source software, but is a service owned and operated
+by Microsoft. However, Microsoft makes GitHub available for use at no cost to the public,
+with additional <q>pro</q> features available for free to instructors and researchers.
+        </p>
+        <p>
 We'll use GitHub not only to host our repositories, but also
 because it provides all the tools needed to author content
-using only a web browser: no need for multiple installations or
-memorizing incantations like <c>git commit -m "foobar"</c> to
-type into a command line prompt.
+using only a web browser. If you've looked into using Git in the past,
+you may have hesitated due to the apparent need for software developer
+expertise to get started. However, using GitHub, there will be no need
+for complicated installations or
+memorizing command line incantations like <c>git commit -m "foobar"</c>.
+(Of course, you still <em>can</em> choose to use such tools to get as much control over
+your Git project as you want, should the need ever arise.)
+        </p>
+        <p>
+Another reason to use GitHub: community! GitHub is often marketed as a
+<q>social coding platform</q>, because it not only provides tools to create
+and deliver digital content, but it also provides social features such as
+Following users, Starring repositories, participation in Discussions and Issues,
+and more. Particular in open-source, we like to work together and support each other,
+and GitHub provides much of the social cyberinfrastructure necessary to do so
+efficiently.
         </p>
     </section>
     <section xml:id="sec-an-example">
@@ -64,7 +94,8 @@ An example of a project using Git and GitHub is the
 document you're reading right now!
 This book is open-sourced and shared at
 <url href="https://github.com/StevenClontz/github-for-mathematicians"/>,
-and was created completely using the tools described here.
+and was authored completely using the GitHub web browser features
+we will explore together.
         </p>
     </section>
 </chapter>
