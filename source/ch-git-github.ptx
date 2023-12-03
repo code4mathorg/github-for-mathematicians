@@ -67,15 +67,15 @@ by Microsoft. However, Microsoft makes GitHub available for use at no cost to th
 with additional <q>pro</q> features available for free to instructors and researchers.
         </p>
         <p>
-We'll use GitHub not only to host our repositories, but also
-because it provides all the tools needed to author content
+We'll use GitHub not only as a host for our repositories, but also
+to take advantage of all the tools it provides to author content
 using only a web browser. If you've looked into using Git in the past,
 you may have hesitated due to the apparent need for software developer
-expertise to get started. However, using GitHub, there will be no need
-for complicated installations or
+experience to get started. However, using GitHub's web applications,
+there will be no need for complicated installations or
 memorizing command line incantations like <c>git commit -m "foobar"</c>.
-(Of course, you still <em>can</em> choose to use such tools to get as much control over
-your Git project as you want, should the need ever arise.)
+(Of course, you still <em>can</em> choose to use such tools to get as much 
+control over your Git project as you want, should the need ever arise.)
         </p>
         <p>
 Another reason to use GitHub: community! GitHub is often marketed as a
@@ -95,7 +95,7 @@ document you're reading right now!
 This book is open-sourced and shared at
 <url href="https://github.com/StevenClontz/github-for-mathematicians"/>,
 and was authored completely using the GitHub web browser features
-we will explore together.
+we will explore together in this book.
         </p>
     </section>
 </chapter>
