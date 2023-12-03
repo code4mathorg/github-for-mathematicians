@@ -28,10 +28,10 @@
       </p>
     </preface>
 
-    <xi:include href="pre-workshop-info.ptx" />
+    <xi:include href="workshop-info.ptx" />
     <xi:include href="ch-git-github.ptx"/>
     <xi:include href="ch-first-repo.ptx"/>
-    <xi:include href="ch-github-pages.ptx"/>
+    <xi:include href="ch-website.ptx"/>
     <xi:include href="ch-pi-base.ptx"/>
     <xi:include href="ch-coding.ptx"/>
     <xi:include href="ch-oer.ptx"/>
