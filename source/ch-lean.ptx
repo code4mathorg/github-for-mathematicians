@@ -2,20 +2,4 @@
 <chapter xml:id="ch-lean">
     <title>Lean theorem prover</title>
     <p>Hello</p>
-    <section xml:id="sec-starting-with-a-template">
-        <title>Starting with a template</title>
-        <p>Hello <me>e=mc^2</me></p>
-    </section>
-    <section xml:id="sec-posts-and-pages">
-        <title>Posts and pages</title>
-        <p>Hello</p>
-    </section>
-    <section xml:id="sec-tweaking-the-layout">
-        <title>Tweaking the layout</title>
-        <p>Hello</p>
-    </section>
-    <section xml:id="sec-just-let-me-host-some-html">
-        <title>Just let me host some HTML!</title>
-        <p>Hello</p>
-    </section>
 </chapter>
