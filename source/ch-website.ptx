@@ -3,7 +3,6 @@
     <title>Websites</title>
     <section xml:id="sec-upload-html">
         <title>Using GitHub Pages</title>
-        <!-- TODO tell reader they can skip ahead -->
         <p>
 Having made your first repository in <xref ref="ch-first-repo"/>, and
 committed a few changes, you are now ready to share your work with the
@@ -13,9 +12,14 @@ as long as you made it a public repository, anyone can see your files.
         <p>
 Another option is to use <term>GitHub Pages</term> to host
 a customizable website with your work. This can be done with
-any existing repository, so let's try it out with our existing
-example first. Use GitHub.dev to create two files in the root
-of your project.
+any existing repository by manually authoring HTML files, so let's try it
+out with our existing example first. (Or, you can skip ahead
+to <xref ref="sec-using-a-template"/> to create a portfolio website
+without using HTML.)
+        </p>
+        <p>
+Use GitHub.dev (<xref ref="opening-github-dev"/>)
+to create three files in the root of your project.
             <ul>
                 <li>
                     <p>
@@ -27,43 +31,51 @@ right now.
                 </li>
                 <li>
                     <p>
-Create an <c>index.html</c> file. This book won't discuss how
-to author much HTML, as
+Create an <c>index.html</c> file. This book won't discuss in depth
+how to author HTML, as
 we'll learn how to author our website content in Markdown in the next
 section, but for now add the following content:
                     </p>
                     <program language="html">
                         <input>
-<xi:include href="../assets/ch-website-example.html" parse="text"/>
+<xi:include href="../assets/website-example.html" parse="text"/>
                         </input>
                     </program>
                 </li>
                 <li>
                     <p>
-Download <c>git-branches.png</c> from <xref ref="fig-git-branches"/>
+Download
+<dataurl source="git-branches.png"><c>git-branches.png</c></dataurl>
+(used for <xref ref="fig-git-branches"/>)
 and upload it to GitHub.dev.
                     </p>
                 </li>
             </ul>
+You can alternatively use this
+<dataurl source="website-example.zip">ZIP file</dataurl>
+which has all three files created for you (be sure to unzip it
+first!).
         </p>
         <p>
 Commit this update to your repository using Source Control,
 and confirm you see the two new files on your GitHub.com repository
 webpage.
         </p>
-        <p>
+        <note xml:id="enable-github-pages">
+            <p>
 To enable GitHub Pages, go to your repository Settings, and choose
 Pages from the sidebar. From there you can select to 
 <q>Deploy from a branch</q>, using the <c>main</c> branch
 and the <c>/ (root)</c>
 directory, and after a few moments your site will be enabled.
-        </p>
+            </p>
+        </note>
         <p>
 Once enabled, GitHub will provide a link to your public GitHub Pages
 website, hosted at <c>GitHub.io</c>. Click it and you'll see the
 content of your <c>index.html</c> file, which displays the image
 downloaded as <c>git-branches.png</c>. (It should look like
-<url href="./external/ch-website-example.html">this</url>.)
+<dataurl source="website-example.html">this</dataurl>.)
         </p>
         <note xml:id="distinguishing-the-githubs">
             <p>
@@ -107,22 +119,22 @@ for others (and yourself!) to find your GitHub Pages site.
         </note>
     </section>
     <section xml:id="sec-using-a-template">
-        <!-- TODO remove stuff about forks for now -->
+        <!-- TODO add better README to template repo -->
         <title>Using a Template</title>
         <p>
 While you can create a custom website by authoring HTML, it'd be
-great to not have to! There are several templates available for
+great to not have to! There are several <q>templates</q> available for
 GitHub Pages that allow you to author your content in Markdown,
 as well as providing nice themes, automatic linking between different
 sections of your website, and so on.
         </p>
-        <p>
+        <!-- <p>
 Note that GitHub Pages uses something called <q>Jekyll</q> to
 generate websites from Markdown files. So if you want to look around
 the internet for your perfect template, try seaching for <q>Jekyll templates</q>
 or <q>GitHub Pages templates</q> in your favorite search engine.
-        </p>
-        <p>
+        </p> -->
+        <!-- <p>
 For this book, I've created a <q>fork</q> of the
 <url href="https://github.com/mmistakes/minimal-mistakes/"><q>
     Minimal Mistakes
@@ -148,16 +160,13 @@ Minimal Mistakes template is made available under the terms of the
 <url href="https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE">
     open-source MIT license
 </url>.
-        </p>
-        <p>
-Certain repositories on GitHub are designated as <q>templates</q>.
-        </p>
+        </p> -->
         <definition xml:id="def-template">
             <statement>
                 <p>
-A <term>template</term> repository allows for the easy creation of
-a shallow copy of the lastest version of the files within a repository,
-without forking the full history of the project.
+A <term>template</term> repository on GitHub provides other GitHub users
+the ability to easily obtain a shallow copy of the latest commit to the
+template, created as a new repository they control.
                 </p>
             </statement>
         </definition>
@@ -166,17 +175,18 @@ This is meant for situations like a GitHub Pages website, where
 you probably don't care about every single change that was made to create the
 template you're using, and you don't plan on contributing any of your changes
 back to the original repository. Instead,
-you just want the latest working files so you can insert your own pages
-and posts and get them online.
+you just want the latest working files so you can insert your own 
+content and get it online.
         </p>
         <p>
 Visit
 <url href="https://github.com/StevenClontz/github-for-mathematicians-minimal-mistakes">
-    my Minimal Mistakes fork
+    this page
 </url>
 and click <q>Use this template</q>, and <q>Create a new repository</q>.
 This creates a new repository you own on <c>GitHub.com</c>, and
-you can follow the instructions in the previous section to enable GitHub Pages.
+you can follow the instructions in <xref ref="enable-github-pages"/>
+to enable GitHub Pages.
 Once that's done, visit your new <c>GitHub.io</c> website to see the
 placeholder content of your new website
 (don't forget to add a link to your <q>About</q> sidebar, see
@@ -222,19 +232,19 @@ be able to refresh your website and see your updated title, name, etc.
 preview our edits more quickly, and without needing to push them to a
 live website, but at the expense of a more complicated
 editing environment.) You can repeat this process after each of the
-edits below to see your results reflected on the live website.
+edits described below to see your results reflected on the live website.
             </p>
         </subsection>
-        <subsection xml:id="subsec-posts-and-pages-photo">
+        <subsection xml:id="subsec-photo">
             <title>Photo</title>
             <p>
-First things first, let's add your photo. A placeholder is available
+Next, let's add your photo. A placeholder is available
 at <c>/assets/images/bio-photo.jpg</c>. You can drag your own JPG-format
 photo onto it in the File Explorer. Then you can delete the placeholder
 <c>bio-photo.jpg</c> and rename your photo to <c>bio-photo.jpg</c>.
             </p>
         </subsection>
-        <subsection xml:id="subsec-posts">
+        <subsection xml:id="subsec-pages">
             <title>Pages</title>
             <p>
 By default you have five files in your <c>/_pages/</c> directory.
@@ -243,8 +253,69 @@ and the three <c>*-archive.md</c> files can be used to customize
 pages that display certain blog posts.
             </p>
             <p>
-The <c>about.md</c> file 
+The <c>about.md</c> file describes the content of your About page.
+The top few lines (<xref ref="about-page-metadata"/>)
+describe some metadata about the page. You can edit the
+<c>permalink</c> to change the web address that will be used for
+this page, and the <c>title</c> to change the title shown in the browser
+tab for this page.
             </p>
+            <listing xml:id="about-page-metadata">
+                <caption>About page metadata</caption>
+                <program>
+                    <input>
+---
+permalink: /about/
+title: "About"
+---
+                    </input>
+                </program>
+            </listing>
+            <p>
+Below the metadata is Markdown source that can be edited to include
+whatever content you'd like to appear within the page.
+            </p>
+            <p>
+To create additional pages, copy-paste <c>about.md</c> to create new
+files in the <c>/_pages/</c> directory, making sure to assign each
+page its own permalink. If you want these pages to appear in the navigation
+bar on top of your site, edit the <c>/_data/navigation.yml</c> configuration
+file to point to each permalink.
+            </p>
+        </subsection>
+        <subsection xml:id="subsec-posts">
+            <title>Posts</title>
+            <p>
+Posts are similar to pages, and live in the <c>/_posts/</c> directory.
+To create a new post, copy-paste any of the existing post files and
+rename it into the form <c>YYYY-MM-DD-my-new-post.md</c> (where
+<c>YYYY-MM-DD</c> is the date you want associated with the post).
+            </p>
+            <p>
+The content of your post is just Markdown, as with pages. However,
+you have slightly different metadata to edit (<xref ref="post-metadata"/>).
+In the <c>date</c> you can set the specific time of day you want your
+post to be associated with. You can also choose to assign each post
+<c>categories</c> and <c>tags</c>, which allow your posts to be sorted
+into appropriate category and tag pages, which are generated automatically
+for you.
+            </p>
+            <listing xml:id="post-metadata">
+                <caption>Post metadata</caption>
+                <program>
+                    <input>
+---
+title: "Welcome to Jekyll!"
+date: 2019-04-18T15:34:30-04:00
+categories:
+    - blog
+tags:
+    - Jekyll
+    - update
+---
+                    </input>
+                </program>
+            </listing>
         </subsection>
     </section>
 </chapter>
