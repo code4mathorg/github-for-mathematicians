@@ -3,6 +3,7 @@
     <title>Websites</title>
     <section xml:id="sec-upload-html">
         <title>Using GitHub Pages</title>
+        <!-- TODO tell reader they can skip ahead -->
         <p>
 Having made your first repository in <xref ref="ch-first-repo"/>, and
 committed a few changes, you are now ready to share your work with the
@@ -64,40 +65,49 @@ content of your <c>index.html</c> file, which displays the image
 downloaded as <c>git-branches.png</c>. (It should look like
 <url href="./external/ch-website-example.html">this</url>.)
         </p>
-        <p>
+        <note xml:id="distinguishing-the-githubs">
+            <p>
 It's good to remember how to
 distinguish the three GitHub domains:
-        <ul>
-            <li>
-                <p>
+                <ul>
+                    <li>
+                        <p>
 <c>GitHub.com</c> is where your repository lives. It can be public
 or private.
-                </p>
-            </li>
-            <li>
-                <p>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
 <c>GitHub.dev</c> is where you can make changes to your repository
 through your web browser. This is private to you and you must commit
 and push your changes to the GitHub.com repository every so often.
-                </p>
-            </li>
-            <li>
-                <p>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
 <c>GitHub.io</c> is your public GitHub Pages website, which you can
 edit by updating your repository files.
-                </p>
-            </li>
-        </ul>
-    </p>
-    <p>
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </note>
+        <p>
 I recommend you add a link to your <c>GitHub.io</c> website from
-your <c>GitHub.com</c> repository page. On your repository page,
-there's an <q>About</q> sidebar. You can edit this section to add
-whatever details you like, and there's a checkbox to automatically
-add a link to your <c>GitHub.io</c> website for everyone's convenience.
-    </p>
+your <c>GitHub.com</c> repository page.
+        </p>
+        <note xml:id="about-link-to-github-io">
+            <p>
+On your repository page, you can edit the <q>About</q> sidebar
+to add useful information about your project. In particular,
+there's a checkbox to automatically
+display your <c>GitHub.io</c> link to make it easy
+for others (and yourself!) to find your GitHub Pages site.
+            </p>
+        </note>
     </section>
     <section xml:id="sec-using-a-template">
+        <!-- TODO remove stuff about forks for now -->
         <title>Using a Template</title>
         <p>
 While you can create a custom website by authoring HTML, it'd be
@@ -113,12 +123,23 @@ the internet for your perfect template, try seaching for <q>Jekyll templates</q>
 or <q>GitHub Pages templates</q> in your favorite search engine.
         </p>
         <p>
-For this book, I've created a <term>fork</term> of the
-<url href="https://github.com/mmistakes/minimal-mistakes/">
+For this book, I've created a <q>fork</q> of the
+<url href="https://github.com/mmistakes/minimal-mistakes/"><q>
     Minimal Mistakes
-</url>
+</q></url>
 template.
-A fork of a repository is a copy someone else makes of the original.
+        </p>
+        <definition xml:id="def-fork">
+            <statement>
+                <p>
+A <term>fork</term> of a repository is a complete copy of the repository's
+history. For an open-source project, a fork allows anyone to make a copy
+of the project, make changes to their copy, and (if appropriate) contribute
+those changes back to the original project.
+                </p>
+            </statement>
+        </definition>
+        <p>
 In this case,
 I made a fork so that I could ensure my book stays compatible with the
 template I'm providing you, even if the original template receives an
@@ -129,11 +150,23 @@ Minimal Mistakes template is made available under the terms of the
 </url>.
         </p>
         <p>
-Certain repositories on GitHub are designated as <term>templates</term>. A template
-creates a shallow copy of all the files in the repository, without the full history
-of the project. This is meant for situations like a GitHub Pages website, where
-you probably don't care about every single change that was made to create the template
-you're using; you just want the latest working files so you can insert your own pages
+Certain repositories on GitHub are designated as <q>templates</q>.
+        </p>
+        <definition xml:id="def-template">
+            <statement>
+                <p>
+A <term>template</term> repository allows for the easy creation of
+a shallow copy of the lastest version of the files within a repository,
+without forking the full history of the project.
+                </p>
+            </statement>
+        </definition>
+        <p>
+This is meant for situations like a GitHub Pages website, where
+you probably don't care about every single change that was made to create the
+template you're using, and you don't plan on contributing any of your changes
+back to the original repository. Instead,
+you just want the latest working files so you can insert your own pages
 and posts and get them online.
         </p>
         <p>
@@ -146,12 +179,72 @@ This creates a new repository you own on <c>GitHub.com</c>, and
 you can follow the instructions in the previous section to enable GitHub Pages.
 Once that's done, visit your new <c>GitHub.io</c> website to see the
 placeholder content of your new website
-(don't forget to update your repository page's <q>About</q> sidebar to add a
-convenient link).
+(don't forget to add a link to your <q>About</q> sidebar, see
+<xref ref="about-link-to-github-io"/>).
         </p>
+        <note xml:id="actions-progress">
+            <p>
+Deploying to GitHub Pages can take some time, so visiting the
+<q>Actions</q> tab on your repository page will let you see how this
+process is progressing. You can also see the status of this process
+by looking for the following icon next to your commit message:
+an orange dot (in progress), a green checkmark
+(deployed), or a red X (failure).
+            </p>
+        </note>
     </section>
     <section xml:id="sec-posts-and-pages">
-        <title>Posts and pages</title>
-        <p>Hello</p>
+        <title>Customizing your site</title>
+        <introduction>
+            <p>
+Now that you have the template website hosted by GitHub Pages, you of course
+will want to customize it to yourself. For this book, I'll get you started by
+handling a few of the obvious first steps, assuming you're
+using the <c>GitHub.dev</c> service (<xref ref="opening-github-dev"/>).
+            </p>
+        </introduction>
+        <subsection xml:id="subsec-posts-and-pages-config">
+            <title>Configuration</title>
+            <p>
+First things first, let's configure some basic elements of your site.
+These settings are found in <c>/_config.yml</c>. There are several
+pieces of this file you likely aren't interested in editing
+(nor do you need to know at this point what they do), but you should
+at least find the <c>title:</c> and <c>description:</c> lines
+and edit them with your own information. The same goes for the
+<c>author: name:</c> and <c>author: bio:</c> entries as well.
+            </p>
+            <p>
+To see that this worked, use Source Control to Commit and Push your
+edits. After a while (<xref ref="actions-progress" />) you should
+be able to refresh your website and see your updated title, name, etc.
+(In <xref ref="sec-github-pages-codespace"/>, we will learn how to
+preview our edits more quickly, and without needing to push them to a
+live website, but at the expense of a more complicated
+editing environment.) You can repeat this process after each of the
+edits below to see your results reflected on the live website.
+            </p>
+        </subsection>
+        <subsection xml:id="subsec-posts-and-pages-photo">
+            <title>Photo</title>
+            <p>
+First things first, let's add your photo. A placeholder is available
+at <c>/assets/images/bio-photo.jpg</c>. You can drag your own JPG-format
+photo onto it in the File Explorer. Then you can delete the placeholder
+<c>bio-photo.jpg</c> and rename your photo to <c>bio-photo.jpg</c>.
+            </p>
+        </subsection>
+        <subsection xml:id="subsec-posts">
+            <title>Pages</title>
+            <p>
+By default you have five files in your <c>/_pages/</c> directory.
+The <c>404.md</c> file describes what visitors see when a page isn't found,
+and the three <c>*-archive.md</c> files can be used to customize
+pages that display certain blog posts.
+            </p>
+            <p>
+The <c>about.md</c> file 
+            </p>
+        </subsection>
     </section>
 </chapter>

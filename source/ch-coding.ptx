@@ -14,4 +14,8 @@
     <title>SageMath</title>
     <p>Hello</p>
   </section>
+  <section xml:id="sec-github-pages-codespace">
+    <title>GitHub Pages Codespace</title>
+    <p>Hello</p>
+  </section>
 </chapter>

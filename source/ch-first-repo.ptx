@@ -5,16 +5,31 @@
         <title>Making an account</title>
         <p>
 All the features of GitHub we'll be using are available
-using a free GitHub account. Make your account by
-visiting <url href="https://github.com/signup"/>.
+using a free GitHub account.
         </p>
+        <note xml:id="make-github-account">
+            <p>
+Make a free GitHub account by
+visiting <url href="https://github.com/signup"/>.
+            </p>
+        </note>
         <p>
 Many mathematicians are also eligible for GitHub's educator
 discount, which provides additional functionality and
 computational resources normally only available to
-<q>Pro</q> users. Visit
+<q>Pro</q> users.
+        </p>
+<note xml:id="github-education-discount">
+        <p>
+Visit
 <url href="https://education.github.com/" />
-while logged into your account to request it.
+while logged into your GitHub account to request an
+educator discount, providing <q>Pro</q> features at no cost
+to many students, instructors,
+and researchers working in schools, colleges, and universties.
+        </p>
+    </note>
+<p>
 (You do not need to wait for approval before
 continuing to the next section.)
         </p>
@@ -123,18 +138,21 @@ like at GitHub.dev. But this isn't your repository - it's just an
 example. So, we'll need a way to tell GitHub.dev we want to work on
 the repository we just made instead.
         </p>
-        <p>
-There are two very easy ways to accomplish this. The first is to just
+        <note xml:id="opening-github-dev">
+            <p>
+There are two very easy ways to access the GitHub.dev service.
+The first is to just
 change the address of your repository from <c>github.com</c> to
-<c>github.dev</c>. For example, if your repository lives at
+<c>github.dev</c> in your browser. For example, if your repository lives at
 <c>https://github.com/YourUserName/YourGreatRepo</c>, you should visit
 <c>https://github.dev/YourUserName/YourGreatRepo</c>.
-        </p>
-        <p>
+            </p>
+            <p>
 The other trick is even fancier. When you are visiting
 <c>https://github.com/YourUserName/YourGreatRepo</c> in your web browser
 and not writing in a text box, press the period (<kbd>.</kbd>) key.
-        </p>
+            </p>
+        </note>
         <p>
 Either way, you should now have a GitHub.dev window where you can manage
 all the files of your project. Using the <term>Explorer</term> sidebar, you can create

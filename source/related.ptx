@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<appendix xml:id="related">
+    <title>Additional Reading</title>
+    <p>
+        <ul>
+          <li>
+              <p>
+<url href="https://swcarpentry.github.io/git-novice/">
+    Version Control with Git
+</url>
+              </p>
+          </li>
+          <li>
+              <p>
+<url href="https://swcarpentry.github.io/python-novice-inflammation/">
+    Programming with Python
+</url>
+              </p>
+          </li>
+        </ul>
+    </p>
+</appendix>
