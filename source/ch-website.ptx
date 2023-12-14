@@ -3,7 +3,6 @@
     <title>Websites</title>
     <section xml:id="sec-upload-html">
         <title>Using GitHub Pages</title>
-        <!-- TODO tell reader they can skip ahead -->
         <p>
 Having made your first repository in <xref ref="ch-first-repo"/>, and
 committed a few changes, you are now ready to share your work with the
@@ -13,9 +12,14 @@ as long as you made it a public repository, anyone can see your files.
         <p>
 Another option is to use <term>GitHub Pages</term> to host
 a customizable website with your work. This can be done with
-any existing repository, so let's try it out with our existing
-example first. Use GitHub.dev to create two files in the root
-of your project.
+any existing repository by manually authoring HTML files, so let's try it
+out with our existing example first. (Or, you can skip ahead
+to <xref ref="sec-using-a-template"/> to create a portfolio website
+without using HTML.)
+        </p>
+        <p>
+Use GitHub.dev (<xref ref="opening-github-dev"/>)
+to create three files in the root of your project.
             <ul>
                 <li>
                     <p>
@@ -27,24 +31,30 @@ right now.
                 </li>
                 <li>
                     <p>
-Create an <c>index.html</c> file. This book won't discuss how
-to author much HTML, as
+Create an <c>index.html</c> file. This book won't discuss in depth
+how to author HTML, as
 we'll learn how to author our website content in Markdown in the next
 section, but for now add the following content:
                     </p>
                     <program language="html">
                         <input>
-<xi:include href="../assets/ch-website-example.html" parse="text"/>
+<xi:include href="../assets/website-example.html" parse="text"/>
                         </input>
                     </program>
                 </li>
                 <li>
                     <p>
-Download <c>git-branches.png</c> from <xref ref="fig-git-branches"/>
+Download
+<dataurl source="git-branches.png"><c>git-branches.png</c></dataurl>
+(used for <xref ref="fig-git-branches"/>)
 and upload it to GitHub.dev.
                     </p>
                 </li>
             </ul>
+You can alternatively use this
+<dataurl source="website-example.zip">ZIP file</dataurl>
+which has all three files created for you (be sure to unzip it
+first!).
         </p>
         <p>
 Commit this update to your repository using Source Control,
@@ -63,7 +73,7 @@ Once enabled, GitHub will provide a link to your public GitHub Pages
 website, hosted at <c>GitHub.io</c>. Click it and you'll see the
 content of your <c>index.html</c> file, which displays the image
 downloaded as <c>git-branches.png</c>. (It should look like
-<url href="./external/ch-website-example.html">this</url>.)
+<dataurl source="website-example.html">this</dataurl>.)
         </p>
         <note xml:id="distinguishing-the-githubs">
             <p>
@@ -108,6 +118,7 @@ for others (and yourself!) to find your GitHub Pages site.
     </section>
     <section xml:id="sec-using-a-template">
         <!-- TODO remove stuff about forks for now -->
+        <!-- TODO add better README to template repo -->
         <title>Using a Template</title>
         <p>
 While you can create a custom website by authoring HTML, it'd be
@@ -122,7 +133,7 @@ generate websites from Markdown files. So if you want to look around
 the internet for your perfect template, try seaching for <q>Jekyll templates</q>
 or <q>GitHub Pages templates</q> in your favorite search engine.
         </p>
-        <p>
+        <!-- <p>
 For this book, I've created a <q>fork</q> of the
 <url href="https://github.com/mmistakes/minimal-mistakes/"><q>
     Minimal Mistakes
@@ -148,7 +159,7 @@ Minimal Mistakes template is made available under the terms of the
 <url href="https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE">
     open-source MIT license
 </url>.
-        </p>
+        </p> -->
         <p>
 Certain repositories on GitHub are designated as <q>templates</q>.
         </p>
