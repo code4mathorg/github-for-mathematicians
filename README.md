@@ -7,7 +7,10 @@ maintain open and collaborative digital products.
 
 Contributions are very welcome! Please feel free to open an Issue or
 make a Pull Request to the main repository at
-<https://github.com/StevenClontz/github-for-mathematicians>.
+<https://github.com/StevenClontz/github-for-mathematicians>. By making a
+contribution, you are agreeing to transfer ownership of any contributed intellectual
+property to the author, which will in turn be made available for free and
+public use under an open license.
 
 ## Copyright
 
