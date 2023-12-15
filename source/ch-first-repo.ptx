@@ -47,10 +47,17 @@ like <c>my-first-repo</c> for this tutorial. (GitHub
 will also suggest a cute random name like
 <c>ubiquitous-space-tribble</c> if you have writer's block.)
         </p>
-        <p>
+        <definition xml:id="def-public-private">
+                <statement>
+                        <p>
 Repositories can be <term>public</term> to everyone
 on the internet or <term>private</term> to only people you
-approved. I encourage you to work publicly,
+approved.                          
+                        </p>
+                </statement>
+        </definition>
+        <p>
+I encourage you to work publicly,
 to make it easier to collaborate with the open-source
 community <ndash/> I can personally attest to
 publishing many garbage repositories on GitHub
@@ -75,10 +82,24 @@ see <xref ref="ch-collaboration"/>.)
         <p>
 An easy way to edit an individual file is just to click
 the pencil icon such as the one that appears on your README.
-This file is written in <term>Markdown</term>, a markup language
-that takes plain text <c>like *this*</c> and renders it
-<q>like <em>this</em></q>.
+This file is written in a standard markup language for
+communicating rich text online.
         </p>
+        <definition xml:id="def-markdown">
+                <statement>
+                        <p>
+<term>Markdown</term> is a markup language that
+takes plain text <c>like *this*</c> and renders it
+<q>like <em>this</em></q>.
+                        </p>
+                        <p>
+Many Markdown renderers (but not all) feature
+<m>\LaTeX</m> support, so you can also type
+<c>An equation: $x^2+y^2=z^2$.</c> and have it render
+as <q>An equation: <m>x^2+y^2=z^2</m>.</q>
+                        </p>
+                </statement>
+        </definition>
         <p>
 Try to edit your file to say something like <q>I'm learning how to
 use GitHub!</q>, perhaps adding a link back to this document
@@ -92,8 +113,21 @@ you can click on.
         <p>
 When you're happy with your updated README, click the
 <q>Commit changes</q> button. This will create a new
-<term>commit</term>, representing a new moment in your
-project's history. You should write a useful commit message
+<q>commit</q>.
+        </p>
+        <definition xml:id="def-commit">
+                <statement>
+                        <p>
+A <term>commit</term> represents a new moment in the
+history of a repository. Each commit may have
+one or more parents
+and children, describing how the (non-linear) history
+of the project changes through various branches.
+                        </p>
+                </statement>
+        </definition>
+        <p>
+ You should write a useful commit message
 summarizing the work you've done since your last commit
 (or perhaps keep the default <q>Update README.md</q>)
 Doing this will update the README visible on your repository
@@ -155,7 +189,7 @@ and not writing in a text box, press the period (<kbd>.</kbd>) key.
         </note>
         <p>
 Either way, you should now have a GitHub.dev window where you can manage
-all the files of your project. Using the <term>Explorer</term> sidebar, you can create
+all the files of your project. Using the <q>Explorer</q> sidebar, you can create
 new files, rename files, move files, upload files, and more. Selecting
 a file opens it, and lets you edit it as needed. Your changes are saved
 automatically in GitHub.dev, but they won't show up at GitHub.com just yet.
@@ -166,7 +200,7 @@ automatically in GitHub.dev, but they won't show up at GitHub.com just yet.
         <p>
 After you're tried creating/editing/uploading a few files, now it's
 time to <em>commit</em> those changes to your repository. The easiest way
-to do this is to use the <term>Source Control</term> sidebar. You may have
+to do this is to use the <q>Source Control</q> sidebar. You may have
 noticed that a numerical badge appeared by the Source Control icon as you
 created, edited, or deleted files. This number represents the number of files
 that have been changed in some way since the previous commit. By opening
@@ -175,8 +209,18 @@ the Source Control panel, you'll see a list of these files.
         <p>
 Clicking these
 file names not only lets you open the file and edit it further, but you
-are shown a <term>diff</term> - a summary of the lines that have been altered
-since the previous commit. (This is a good reason to not write in a long
+are shown a useful view of your changes.
+        </p>
+        <definition xml:id="def-diff">
+                <statement>
+                        <p>
+A <term>diff</term> is a summary of the files, and specific lines of
+those files, that have been altered since the previous commit.
+                        </p>
+                </statement>
+        </definition>
+        <p>
+(This is a good reason to not write in a long
 continuous line, but to break lines every 80ish characters or so. That way
 you can easily see where exactly a change is made between each commit.)
         </p>
@@ -186,7 +230,7 @@ saved at GitHub.dev and won't be lost if you accidentally refresh your
 web browser. However, you'll need to eventually commit those changes to
 the repository in order to share your work with anyone else, and to ensure
 that the work is preserved in the long term. The Source Control panel
-provides a place to write a <term>commit message</term>, a short
+provides a place to write a <q>commit message</q>, a short
 phrase or sentence that summarizes the work you've done. (Writer's block?
 For now just type <q>learning GitHub.dev</q>.) Then once you click
 the <q>Commit and Push</q> button, your work will be logged as a permanent
