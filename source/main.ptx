@@ -28,6 +28,7 @@
       </p>
     </preface>
 
+    <xi:include href="why.ptx" />
     <xi:include href="workshop-info.ptx" />
     <xi:include href="ch-git-github.ptx"/>
     <xi:include href="ch-first-repo.ptx"/>

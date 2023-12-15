@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<preface xml:id="why">
+    <title>Why do I need to <q>get</q> Git?</title>
+    <p>
+Increasingly, the work of mathematicians relies upon digital products
+such as software, datasets, documentation, and infrastructure. While
+most mathematicians don't need the skillset of a full-fledged software
+engineer, many of us can benefit from certain conveniences that
+software engineers take for granted.
+    </p>
+    <p>
+One such nicety is version control, software that provides support
+for tracking ongoing progress of a multi-file project contributed to
+by any number of people, and Git is the industry standard.
+For many years, Git required comfort with a command line interface
+(e.g. typing <c>git commit -m "very important message"</c> into a
+terminal). But recent developments have made this functionality
+available in a graphical user interface to anyone with a steady internet
+connection and an updated web browser, just by making an account
+at <url href="https://github.com">GitHub.com</url>.
+    </p>
+    <p>
+In <xref ref="ch-git-github"/>, <xref ref="ch-first-repo"/>, and
+<xref ref="ch-website"/> you'll learn the basics of using GitHub to
+create simple projects, including a website portfolio. Then
+<xref ref="ch-pi-base"/>, <xref ref="ch-coding"/>, <xref ref="ch-oer"/>,
+and <xref ref="ch-lean"/> will introduce how mathematicians are using
+this infrastructure to develop databases, compute results, write
+textbooks, and formally prove theorems. Finally in
+<xref ref="ch-collaboration"/> you'll learn how to collaborate with
+colleagues and engage in the broader open-source community on GitHub.
+    </p>
+    <p>
+I hope you enjoy learning how these tools can be used to advance
+your mathematical goals. And if you want to connect with a broader community
+of scholars in this space, I highly encourage you to connect with us
+at either <url href="https://code4math.org">code4math.org</url> (for
+research mathematics) or
+<url href="https://prose.runestone.academy">prose.runestone.academy</url>
+(for STEM education).
+    </p>
+</preface>
