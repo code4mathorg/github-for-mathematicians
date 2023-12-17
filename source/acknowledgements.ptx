@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<preface xml:id="acknowledgements">
+  <title>Acknowledgements</title>
+  <p>
+Thanks to the following people who've contributed to this
+handbook.
+    <ul>
+      <li>
+        <p>
+The <url href="https://aimath.org">American Institute of Mathematics</url>,
+for funding my travel to JMM 2024 to run a professional enhancement program
+based upon this handbook.
+        </p>
+      </li>
+      <li>
+        <p>
+Jeremy Avigad, for adding Codespaces support to his book
+<pubtitle>Mathematics in Lean</pubtitle> in time for JMM 2024.
+        </p>
+      </li>
+      <li>
+        <p>
+Francesca Gandini, for co-organizing the JMM 2024 professional
+enrichment program that this book was written for originally. 
+        </p>
+      </li>
+    </ul>
+  </p>
+</preface>
