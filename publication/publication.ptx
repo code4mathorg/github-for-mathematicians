@@ -113,7 +113,7 @@
     javascript, etc).  -->
     <calculator model="none" activecode="none" />
     <!-- Set the base URL of where the online version is hosted to have links in other formats -->
-    <baseurl href="https://jmm2024.clontz.org/"/>
+    <baseurl href="https://g4m.clontz.org/"/>
     <!-- Control behavior of online WeBWorK, per type: -->
     <webwork
       inline="dynamic"
