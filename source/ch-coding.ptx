@@ -3,7 +3,66 @@
   <title>Writing and Running Code</title>
   <section xml:id="sec-codespaces">
     <title>Codespaces</title>
-    <p>Hello</p>
+    <p>
+While the quick <c>GitHub.dev</c> interface is great
+for quick edits, many projects require the ability
+to run applications and execute code as you would on
+your personal computer. Fortunately, GitHub offers a
+service to run such programs on their servers.
+    </p>
+    <definition xml:id="def-codespaces">
+      <statement>
+        <p>
+A <term>Codespace</term> is a <q>dev environment</q> service
+<url href="https://github.com/features/codespaces">offered by GitHub</url>.
+Each codespace is essentially a personal virtual computer that
+runs in the cloud, that you access through your web browser.
+        </p>
+      </statement>
+    </definition>
+    <note>
+      <p>
+To create a Codespace on any repository you own, use the green
+<q>Code</q> button, select the Codespaces tab, and press
+the green <q>Create codespace on [branchname]</q> button.
+      </p>
+    </note>
+    <p>
+After the Codespace boots up, you'll have an interface similar
+to the <c>GitHub.dev</c> environment you learned about in
+<xref ref="sec-using-github-dev"/>.
+    </p>
+    <note xml:id="dev-codespace-contrast">
+      <p>
+Here are a few key differences between
+GitHub.dev and Codespaces.
+        <ol>
+          <li>
+            <p>
+A GitHub.dev URL looks like <c>github.dev/username/reponame</c>,
+while a Codespace URL looks like
+<c>random-word-123randomcharacters789.github.dev</c>.
+            </p>
+          </li>
+          <li>
+            <p>
+GitHub.dev is quicker to load than a Codespace.
+            </p>
+          </li>
+          <li>
+            <p>
+GitHub.dev has a much more limited selection of VS Code
+extensions to use.
+            </p>
+          </li>
+          <li>
+            <p>
+You can only install applications and execute code on a Codespace.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </note>
   </section>
   <section xml:id="sec-jupyter-notebooks">
     <title>Jupyter notebooks</title>
@@ -14,7 +73,43 @@
     <p>Hello</p>
   </section>
   <section xml:id="sec-github-pages-codespace">
-    <title>GitHub Pages Codespace</title>
+    <title>Previewing GitHub Pages</title>
     <p>Hello</p>
+  </section>
+  <section xml:id="sec-codespace-management">
+    <title>Previewing GitHub Pages</title>
+    <p>
+GitHub users are provided with a limited amount of free Codespace
+hours and storage each month, with additional resources available
+to Pro users, including those with the free GitHub Education
+benefit (<xref ref="github-education-discount"/>). If needed,
+there is the option to pay for additional resources.
+    </p>
+    <p>
+As a mathematician
+who almost exclusively uses GitHub Codespaces for doing their work,
+I've found that I often approach the quota for Pro users, but have
+not yet exceeded it. I accomplish this by being sure to not run
+my Codespaces when I'm not actively working on them.
+    </p>
+    <note xml:id="note-manage-codespaces">
+      <p>
+To manage your Codespace resources, visit
+<url href="https://github.com/codespaces"/>.
+You can stop a Codespace temporarily to preserve your hourly quota,
+and delete a Codespace you don't plan to use for a while to save
+on your storage quota. While actively working in a Codespace,
+you can stop it by pressing
+<kbd>Ctrl/Cmd</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>,
+typing <c>stop current codespace</c>, and confirming.
+      </p>
+      <p>
+In any case, a
+stopped Codespace can be restarted later when you want to
+resume work, even if you haven't committed and pushed your changes.
+A deleted Codespace can be recreated later based upon your most recent
+commit.
+      </p>
+    </note>
   </section>
 </chapter>
