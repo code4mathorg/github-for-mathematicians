@@ -18,9 +18,13 @@ A <term>Codespace</term> is a <q>dev environment</q> service
 Each codespace is essentially a personal virtual computer that
 runs in the cloud, that you access through your web browser.
         </p>
+        <p>
+Full documentation on Codespaces is available on
+<url href="https://docs.github.com/en/codespaces">docs.github.com</url>.
+        </p>
       </statement>
     </definition>
-    <note>
+    <note xml:id="note-create-codespace">
       <p>
 To create a Codespace on any repository you own, use the green
 <q>Code</q> button, select the Codespaces tab, and press
@@ -63,21 +67,145 @@ You can only install applications and execute code on a Codespace.
         </ol>
       </p>
     </note>
+    <p>
+One similarity between GitHub.dev and Codespaces
+(besides the obviously similar VS Code user interfaces),
+is that your work is still private to you and can only be
+shared with the public (and retained in the long term) by
+committing and pushing your progress every so often to your
+GitHub.com repository. The Source Control tool works slightly
+different in a Codespace, however.
+    </p>
+    <note xml:id="note-commit-sync">
+      <p>
+One quick way to commit and push your changes from a Codespace
+is to use <q>Source Control</q> from the left toolbar.
+        <ul>
+          <li>
+            <p>
+Enter a short commit message describing
+your changes as a note to yourself. (This is
+required and can be a pain to fix if you forget
+to do so!)
+            </p>
+          </li>
+          <li>
+            <p>
+Select <q>Commit &amp; Sync</q> from the menu
+next to the green Commit button.
+            </p>
+          </li>
+          <li>
+            <p>
+In the dialogs that follow, I suggest choosing
+to <q>Always</q> stage all your changes and commit them
+directly, then <q>OK, Don't Show Again</q> when told
+this action will pull and push commits from and to
+<c>origin/main</c>, and finally <q>Yes</q> that you
+would like your Codespace to periodically run
+<c>git fetch</c>.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </note>
   </section>
   <section xml:id="sec-jupyter-notebooks">
-    <title>Jupyter notebooks</title>
-    <p>Hello</p>
-  </section>
-  <section xml:id="sec-sagemath">
-    <title>SageMath</title>
-    <p>Hello</p>
+    <title>Python and Jupyter notebooks</title>
+    <p>
+<url href="https://python.org">Python</url> is an
+popular open-source all-purpose programming language, and
+a convenient way to write, execute, and share the
+results of Python code is a
+<url href="https://jupyter.org/">Jupyter notebook</url>.
+    </p>
+    <p>
+To get started, create a Codespace
+(<xref ref="note-create-codespace"/>)
+on either an existing or new repository
+(<xref ref="sec-creating-the-repo"/>).
+You can then create a Jupyter notebook file named
+<c>notebook.ipynb</c>.
+    </p>
+    <note xml:id="note-provision-notebook">
+      <p>
+In a Codespace, any file with the extension <c>*.ipynb</c>
+(short for <q><em>IPY</em>thon <em>N</em>ote<em>B</em>ook</q>,
+Jupyter's original name)
+will be treated as a
+Jupyter notebook. When opening this file, you'll see a notebook
+interface, and be prompted to
+<q>install the recommended 'Python' extension</q> if it's
+not already enabled - do this.
+      </p>
+      <p>
+Then in your notebook file, click the <q>Select Kernel</q>
+button, then <q>Install/Enable suggested extensions</q> for
+Python+Jupyter. You should then have the option to select
+a <q>Python environment</q> such as <c>Python 3.*.*</c>.
+      </p>
+      <p>
+If successful, you should be able to enter
+<c>import sys; print(sys.version)</c> into the displayed
+text box,
+and see the result of executing it with
+<kbd>Shift</kbd>+<kbd>Enter</kbd>.
+      </p>
+    </note>
+    <p>
+There are plenty of existing tutorials on the internet to help you
+get acquainted with Python and Jupyter now that you have them
+available to you in your Codespace. But to get you started, I've provided
+one <dataurl source="sample-notebook.ipynb">sample notebook</dataurl>
+that you can upload to your Codespace to break the ice.
+    </p>
   </section>
   <section xml:id="sec-github-pages-codespace">
     <title>Previewing GitHub Pages</title>
-    <p>Hello</p>
+    <p>
+Another useful application of Codespaces is the ability
+to preview your GitHub Pages site created in
+<xref ref="sec-using-a-template"/>. Return to that repository
+on GitHub.com and create a new Codespace
+(<xref ref="note-create-codespace"/>).
+    </p>
+    <p>
+To spin up your live preview, open a terminal by using the
+<kbd>Ctrl/Cmd</kbd>+<kbd>Shift</kbd>+<kbd>`</kbd> keys. To make
+sure the necessary software has been installed, type <c>bundle</c>
+and hit <kbd>Enter</kbd>. Then, you can enter <c>jekyll serve</c>
+to start the preview server.
+    </p>
+    <p>
+You'll see some output, and eventually
+<c>Server address: http://127.0.0.1:4000</c>. At that time an
+alert will appear that says <q>Your application on port 4000
+is available</q>. You can use its <q>Open in browser</q> button,
+or hover over the <c>http://127.0.0.1:4000</c> link to be given
+the same option.
+    </p>
+    <p>
+This should open a URL such as
+<c>random-words-123randomletters789-4000.app.github.dev</c>,
+which will show a live preview of your GitHub Pages site in a new
+tab. As soon as you make edits in your Codespace tab, you can
+return to this tab to (within a second or two) see how your edits
+will update your live site. Note that this URL is private to you,
+and your public site won't be updated until you Commit &amp; Sync
+your changes
+(<xref ref="note-commit-sync"/>).
+    </p>
+    <p>
+Personally, I use GitHub.dev (or even just the
+GitHub.com edit button) rather than a full
+Codespace when adding a quick post or making a quick edit on
+many of my GitHub Pages websites. But the Codespace option is very
+handy for when bigger changes are necessary, and you want to make
+sure everything looks just right before pushing it live to the public.
+    </p>
   </section>
   <section xml:id="sec-codespace-management">
-    <title>Previewing GitHub Pages</title>
+    <title>Managing your Codespaces</title>
     <p>
 GitHub users are provided with a limited amount of free Codespace
 hours and storage each month, with additional resources available
@@ -87,8 +215,10 @@ there is the option to pay for additional resources.
     </p>
     <p>
 As a mathematician
-who almost exclusively uses GitHub Codespaces for doing their work,
-I've found that I often approach the quota for Pro users, but have
+who almost exclusively uses GitHub Codespaces for doing the kinds
+of work described in this handbook,
+I've found that I often approach the quota provided
+for Pro users, but have
 not yet exceeded it. I accomplish this by being sure to not run
 my Codespaces when I'm not actively working on them.
     </p>
@@ -107,8 +237,13 @@ typing <c>stop current codespace</c>, and confirming.
 In any case, a
 stopped Codespace can be restarted later when you want to
 resume work, even if you haven't committed and pushed your changes.
-A deleted Codespace can be recreated later based upon your most recent
-commit.
+(But be warned: a stopped Codespace and its uncommitted changes may
+be deleted by GitHub after a few days of inactivity, so don't leave it
+alone for long.)
+      </p>
+      <p>
+A deleted Codespace can always be recreated later based upon your most
+recent commit.
       </p>
     </note>
   </section>

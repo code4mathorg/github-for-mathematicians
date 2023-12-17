@@ -93,6 +93,7 @@ or private.
 <c>GitHub.dev</c> is where you can make changes to your repository
 through your web browser. This is private to you and you must commit
 and push your changes to the GitHub.com repository every so often.
+(See also <xref ref="sec-github-pages-codespace"/>.)
                         </p>
                     </li>
                     <li>
