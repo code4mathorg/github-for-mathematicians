@@ -2,6 +2,6 @@
 <project ptx-version="2">
   <targets>
     <target name="web" format="html" deploy-dir="." />
-    <target name="print" format="pdf" deploy-dir="./pdf" />
+    <target name="print" format="pdf" deploy-dir="./pdf" output-filename="g4m.pdf" />
   </targets>
 </project>
