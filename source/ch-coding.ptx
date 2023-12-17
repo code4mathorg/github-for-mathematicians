@@ -1,7 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <chapter xml:id="ch-coding">
   <title>Writing and Running Code</title>
-  <p>Hello</p>
   <section xml:id="sec-codespaces">
     <title>Codespaces</title>
     <p>Hello</p>
