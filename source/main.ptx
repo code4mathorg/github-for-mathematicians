@@ -34,9 +34,7 @@
     <xi:include href="ch-first-repo.ptx"/>
     <xi:include href="ch-website.ptx"/>
     <xi:include href="ch-coding.ptx"/>
-    <xi:include href="ch-pi-base.ptx"/>
-    <xi:include href="ch-oer.ptx"/>
-    <xi:include href="ch-lean.ptx"/>
+    <xi:include href="ch-projects.ptx"/>
     <xi:include href="ch-collaboration.ptx"/>
 
     <backmatter xml:id="backmatter">

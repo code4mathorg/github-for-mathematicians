@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='utf-8'?>
+<chapter xml:id="ch-projects">
+    <title>Math Powered by GitHub</title>
+    <introduction>
+        <p>
+The goal of this chapter is to get you started seeing how
+mathematicans use GitHub in various ways by way of three
+specific examples.
+        </p>
+    </introduction>
+    <section xml:id="sec-pretext">
+        <title>PreTeXt</title>
+        <p>
+<url href="https://pretextbook.org/">PreTeXt</url>
+is an authoring and publishing system for 
+scholarly documents, especially in STEM disciplines.
+Worked authored in PreTeXt can be converted to HTML,
+PDF, braille, and many other formats. This book was
+written in PreTeXt!
+        </p>
+        <p>
+PreTeXt is particularly well-suited for the creation of
+interactive and accessible Open Educational Resources in
+mathematics and computer science. Works authored in PreTeXt
+can be deployed to
+<url href="https://runestone.academy">Runestone Academy</url>,
+allowing students to log into their textbook and persist progress
+on exercises and activities.
+        </p>
+        <p>
+The
+<url href="https://prose.runestone.academy">PROSE Consortium</url>
+forms the broader ecosystem serving open-source STEM open educational
+resources and offers regular drop-in meetings for community members
+to learn more about its products, which also include
+<url href="https://openwebwork.org/">WeBWorK</url> and
+<url href="https://www.doenet.org/">Doenet</url>.
+        </p>
+        <p>
+<url href="https://stevenclontz.github.io/pretext-getting-started-2023">
+    Getting Started with PreTeXt
+</url> is a tutorial that uses GitHub Codespaces to get authors
+up and writing quickly, and helps them share their works on
+GitHub and GitHub Pages.
+        </p>
+    </section>
+    <section xml:id="sec-pi-base">
+        <title><m>\pi</m>-Base Database for Topology</title>
+        <p>
+asfd
+        </p>
+    </section>
+    <section xml:id="sec-lean">
+        <title>Lean theorem prover</title>
+        <p>
+The <url href="https://leanprover-community.github.io/">Lean theorem prover</url>
+is an interactive proof assistant that allows mathematicians to formally
+verify their proofs by computer.
+        </p>
+        <p>
+The textbook
+<url href="https://github.com/leanprover-community/mathematics_in_lean?tab=readme-ov-file#to-use-this-repository-with-github-codespaces">
+    Mathematics in Lean
+</url>
+provides an excellent introduction to authoring in Lean, with GitHub
+Codespaces support. (For a more casual experience outside GitHub, the
+<url href="https://adam.math.hhu.de/">Lean game server</url> has fun
+tutorials for both Peano axioms and naive set theory.)
+        </p>
+    </section> 
+</chapter>
