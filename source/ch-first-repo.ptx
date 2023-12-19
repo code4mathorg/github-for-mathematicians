@@ -126,12 +126,14 @@ to use the <url href="https://github.dev">GitHub.dev</url> service
 offered by GitHub. Try clicking that link - you should have a
 fully-functional VS Code text editor right inside your web browser.
         </p>
-        <p>
-(This is a good point to suggest that you use an updated version
-of Chrome or Firefox when using GitHub. In particular, Safari tends
+        <note xml:id="note-browser-github-dev">
+            <p>
+It's best to use an updated version
+of Chrome, Edge, or Firefox when using GitHub. In particular, Safari tends
 to show off its rough edges when using advanced web applications like
-GitHub.dev, so it's best to choose an alternative.)
-        </p>
+GitHub.dev, so it's best to choose an alternative.
+            </p>
+        </note>
         <p>
 You can create files, edit them, upload images, and do whatever you
 like at GitHub.dev. But this isn't your repository - it's just an
