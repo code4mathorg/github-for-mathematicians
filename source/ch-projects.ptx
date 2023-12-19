@@ -1,13 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <chapter xml:id="ch-projects">
-    <title>Math Powered by GitHub</title>
-    <introduction>
-        <p>
-The goal of this chapter is to get you started seeing how
-mathematicans use GitHub in various ways by way of three
-specific examples.
-        </p>
-    </introduction>
+    <title>Math Projects Powered by GitHub</title>
     <section xml:id="sec-pretext">
         <title>PreTeXt</title>
         <p>
@@ -45,9 +38,24 @@ GitHub and GitHub Pages.
         </p>
     </section>
     <section xml:id="sec-pi-base">
-        <title><m>\pi</m>-Base Database for Topology</title>
+        <title>
+<m>\pi</m>-Base community database of topological counterexamples
+        </title>
         <p>
-asfd
+To paraphrase Mary Ellen Rudin, <q>topology is a dense forest of
+counterexamples, and a usable map of the forest is a fine thing.</q>.
+The <url href="https://topology.pi-base.org/"><m>\pi</m>-Base</url>
+aims to serve as this atlas, turning the classic text
+<url href="https://zbmath.org/0211.54401"><pubtitle>Counterexamples
+in Topology</pubtitle></url> into an open, living, and
+interactive database supported
+by a community of researchers, instructors, and students.
+        </p>
+        <p>
+To learn how to contribute to the <m>\pi</m>-Base,
+a <url href="https://github.com/pi-base/data/wiki/Tutorial">tutorial</url>
+is available to walk through the process of editing its data and
+previewing it in your own Codespace.
         </p>
     </section>
     <section xml:id="sec-lean">
@@ -63,7 +71,10 @@ The textbook
     Mathematics in Lean
 </url>
 provides an excellent introduction to authoring in Lean, with GitHub
-Codespaces support. (For a more casual experience outside GitHub, the
+Codespaces support.
+        </p>
+        <p>
+(For a more casual experience outside GitHub, the
 <url href="https://adam.math.hhu.de/">Lean game server</url> has fun
 tutorials for both Peano axioms and naive set theory.)
         </p>
