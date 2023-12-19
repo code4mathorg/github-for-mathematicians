@@ -325,56 +325,20 @@ var ptx_lunr_docs = [
   "body": " To manage your Codespace resources, visit . You can stop a Codespace temporarily to preserve your hourly quota, and delete a Codespace you don't plan to use for a while to save on your storage quota. While actively working in a Codespace, you can stop it by pressing Ctrl\/Cmd + Shift + P , typing stop current codespace , and confirming.  In any case, a stopped Codespace can be restarted later when you want to resume work, even if you haven't committed and pushed your changes. (But be warned: a stopped Codespace and its uncommitted changes may be deleted by GitHub after a few days of inactivity, so don't leave it alone for long.)  A deleted Codespace can always be recreated later based upon your most recent commit.  "
 },
 {
-  "id": "ch-pi-base",
+  "id": "ch-projects",
   "level": "1",
-  "url": "ch-pi-base.html",
+  "url": "ch-projects.html",
   "type": "Chapter",
   "number": "5",
-  "title": "<span class=\"process-math\">\\(\\pi\\)<\/span>-Base Database for Topology",
-  "body": " -Base Database for Topology  Hello  "
-},
-{
-  "id": "ch-oer",
-  "level": "1",
-  "url": "ch-oer.html",
-  "type": "Chapter",
-  "number": "6",
-  "title": "PreTeXt",
-  "body": " PreTeXt   What is PreTeXt?  Hello    A sample interactive   Parsons Problem, Mathematical Proof even numbers  Create a proof of the theorem: If is an even number, then .    Suppose is even.     Then is a prime number.    Then there exists an so that .    Then there exists an so that .     Click the heels of your ruby slippers together three times.    So we have the displayed equation: .  This is a superfluous second paragraph in this block.    Thus .   Dorothy will not be much help with this proof.   "
-},
-{
-  "id": "fig-geogebra",
-  "level": "2",
-  "url": "ch-oer.html#fig-geogebra",
-  "type": "Figure",
-  "number": "6.1.1",
-  "title": "",
-  "body": "  A sample interactive  "
-},
-{
-  "id": "number-theory-proof",
-  "level": "2",
-  "url": "ch-oer.html#number-theory-proof",
-  "type": "Checkpoint",
-  "number": "6.1.2",
-  "title": "Parsons Problem, Mathematical Proof.",
-  "body": "Parsons Problem, Mathematical Proof even numbers  Create a proof of the theorem: If is an even number, then .    Suppose is even.     Then is a prime number.    Then there exists an so that .    Then there exists an so that .     Click the heels of your ruby slippers together three times.    So we have the displayed equation: .  This is a superfluous second paragraph in this block.    Thus .   Dorothy will not be much help with this proof. "
-},
-{
-  "id": "ch-lean",
-  "level": "1",
-  "url": "ch-lean.html",
-  "type": "Chapter",
-  "number": "7",
-  "title": "Lean theorem prover",
-  "body": " Lean theorem prover  Hello  "
+  "title": "Math Powered by GitHub",
+  "body": " Math Powered by GitHub   The goal of this chapter is to get you started seeing how mathematicans use GitHub in various ways by way of three specific examples.    PreTeXt   PreTeXt is an authoring and publishing system for scholarly documents, especially in STEM disciplines. Worked authored in PreTeXt can be converted to HTML, PDF, braille, and many other formats. This book was written in PreTeXt!  PreTeXt is particularly well-suited for the creation of interactive and accessible Open Educational Resources in mathematics and computer science. Works authored in PreTeXt can be deployed to Runestone Academy , allowing students to log into their textbook and persist progress on exercises and activities.  The PROSE Consortium forms the broader ecosystem serving open-source STEM open educational resources and offers regular drop-in meetings for community members to learn more about its products, which also include WeBWorK and Doenet .   Getting Started with PreTeXt is a tutorial that uses GitHub Codespaces to get authors up and writing quickly, and helps them share their works on GitHub and GitHub Pages.    -Base Database for Topology  asfd    Lean theorem prover  The Lean theorem prover is an interactive proof assistant that allows mathematicians to formally verify their proofs by computer.  The textbook Mathematics in Lean provides an excellent introduction to authoring in Lean, with GitHub Codespaces support. (For a more casual experience outside GitHub, the Lean game server has fun tutorials for both Peano axioms and naive set theory.)   "
 },
 {
   "id": "ch-collaboration",
   "level": "1",
   "url": "ch-collaboration.html",
   "type": "Chapter",
-  "number": "8",
+  "number": "6",
   "title": "Collaborating with Others",
   "body": " Collaborating with Others   LiveShare  Hello    Adding collaborators  Hello    Forks and Pull Requests  Hello   "
 },

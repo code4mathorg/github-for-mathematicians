@@ -91,37 +91,6 @@ window.MathJax = {
 <link href="https://pretextbook.org/css/0.83/style_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.83/colors_blue_red.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.83/setcolors.css" rel="stylesheet" type="text/css">
-<!--** eBookCongig is necessary to configure interactive       **-->
-<!--** Runestone components to run locally in reader's browser **-->
-<!--** No external communication:                              **-->
-<!--**     log level is 0, Runestone Services are disabled     **-->
-<script type="text/javascript">
-eBookConfig = {};
-eBookConfig.useRunestoneServices = false;
-eBookConfig.host = 'http://127.0.0.1:8000';
-eBookConfig.course = 'PTX_Course_Title_Here';
-eBookConfig.basecourse = 'PTX_Base_Course';
-eBookConfig.isLoggedIn = false;
-eBookConfig.email = '';
-eBookConfig.isInstructor = false;
-eBookConfig.logLevel = 0;
-eBookConfig.username = '';
-eBookConfig.readings = null;
-eBookConfig.activities = null;
-eBookConfig.downloadsEnabled = false;
-eBookConfig.allow_pairs = false;
-eBookConfig.enableScratchAC = false;
-eBookConfig.build_info = "";
-eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.2.8';
-eBookConfig.jobehost = '';
-eBookConfig.proxyuri_runs = '';
-eBookConfig.proxyuri_files = '';
-eBookConfig.enable_chatcodes =  false;
-</script>
-<!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.8/prefix-runtime.ec55fa20f167401c.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.8/prefix-347.8328b60515045466.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.8/prefix-runestone.aeac7cf9ad5c07ef.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.2.8/prefix-347.f9add1ca35d5ad93.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.2.8/prefix-runestone.f64dcc3632d7a0c3.css">
 </head>
 <body class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
@@ -196,18 +165,20 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-coding.html#sec-codespace-management" class="internal"><span class="codenumber">4.4</span> <span class="title">Managing your Codespaces</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ch-pi-base.html" class="internal"><span class="codenumber">5</span> <span class="title"><span class="process-math">\(\pi\)</span>-Base Database for Topology</span></a></div></li>
 <li class="toc-item toc-chapter">
-<div class="toc-title-box"><a href="ch-oer.html" class="internal"><span class="codenumber">6</span> <span class="title">PreTeXt</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-oer.html#sec-pretext" class="internal"><span class="codenumber">6.1</span> <span class="title">What is PreTeXt?</span></a></div></li></ul>
-</li>
-<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ch-lean.html" class="internal"><span class="codenumber">7</span> <span class="title">Lean theorem prover</span></a></div></li>
-<li class="toc-item toc-chapter">
-<div class="toc-title-box"><a href="ch-collaboration.html" class="internal"><span class="codenumber">8</span> <span class="title">Collaborating with Others</span></a></div>
+<div class="toc-title-box"><a href="ch-projects.html" class="internal"><span class="codenumber">5</span> <span class="title">Math Powered by GitHub</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-collaboration.html#sec-liveshare" class="internal"><span class="codenumber">8.1</span> <span class="title">LiveShare</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-collaboration.html#sec-adding-collaborators" class="internal"><span class="codenumber">8.2</span> <span class="title">Adding collaborators</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-collaboration.html#sec-forks-and-pull-requests" class="internal"><span class="codenumber">8.3</span> <span class="title">Forks and Pull Requests</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-projects.html#sec-pretext" class="internal"><span class="codenumber">5.1</span> <span class="title">PreTeXt</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-projects.html#sec-pi-base" class="internal"><span class="codenumber">5.2</span> <span class="title"><span class="process-math">\(\pi\)</span>-Base Database for Topology</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-projects.html#sec-lean" class="internal"><span class="codenumber">5.3</span> <span class="title">Lean theorem prover</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-collaboration.html" class="internal"><span class="codenumber">6</span> <span class="title">Collaborating with Others</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-collaboration.html#sec-liveshare" class="internal"><span class="codenumber">6.1</span> <span class="title">LiveShare</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-collaboration.html#sec-adding-collaborators" class="internal"><span class="codenumber">6.2</span> <span class="title">Adding collaborators</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-collaboration.html#sec-forks-and-pull-requests" class="internal"><span class="codenumber">6.3</span> <span class="title">Forks and Pull Requests</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-backmatter">
@@ -227,7 +198,7 @@ eBookConfig.enable_chatcodes =  false;
 <figure class="figure figure-like" id="fig-git-branches"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="external/git-branches.png" class="contained" alt="An illustration of Git history"></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.1.1<span class="period">.</span></span><span class="space"> </span>An illustration of a project’s history controlled by Git</figcaption></figure><div class="para" id="sec-what-is-git-3">
 <dfn class="terminology">Git</dfn> is a distributed version control system that tracks changes in any set of computer files. This software was originally authored by Linus Torvalds in 2005 for development of the Linux kernel. Importantly, Git is free and open-source software, which means you have the legal and practical ability to use it however you want, and even modify it for your purposes if you wanted.</div>
-<div class="para" id="sec-what-is-git-4">Two core concepts of Git are <dfn class="terminology">commits</dfn> (illustrated in <a href="" class="xref" data-knowl="./knowl/xref/fig-git-branches.html" title="Figure 1.1.1">Figure 1.1.1</a> by circles) and <dfn class="terminology">branches</dfn> (illustrated in <a href="" class="xref" data-knowl="./knowl/xref/fig-git-branches.html" title="Figure 1.1.1">Figure 1.1.1</a> by lines). A commit represents the state of of your project at a particular point in its history. Branches allow this history to not be linear: you can branch off to experiment on a particular new feature, then merge this “feature branch” back into the “main branch” when it’s complete. This is particularly useful when multiple people collaborate (<a href="ch-collaboration.html" class="internal" title="Chapter 8: Collaborating with Others">Chapter 8</a>) on a Git-managed project. Finally, a Git project is often called a <dfn class="terminology">repository</dfn>, or <dfn class="terminology">repo</dfn> for short.</div>
+<div class="para" id="sec-what-is-git-4">Two core concepts of Git are <dfn class="terminology">commits</dfn> (illustrated in <a href="" class="xref" data-knowl="./knowl/xref/fig-git-branches.html" title="Figure 1.1.1">Figure 1.1.1</a> by circles) and <dfn class="terminology">branches</dfn> (illustrated in <a href="" class="xref" data-knowl="./knowl/xref/fig-git-branches.html" title="Figure 1.1.1">Figure 1.1.1</a> by lines). A commit represents the state of of your project at a particular point in its history. Branches allow this history to not be linear: you can branch off to experiment on a particular new feature, then merge this “feature branch” back into the “main branch” when it’s complete. This is particularly useful when multiple people collaborate (<a href="ch-collaboration.html" class="internal" title="Chapter 6: Collaborating with Others">Chapter 6</a>) on a Git-managed project. Finally, a Git project is often called a <dfn class="terminology">repository</dfn>, or <dfn class="terminology">repo</dfn> for short.</div>
 <div class="para" id="sec-what-is-git-5">Since you’re reading <span class="booktitle">GitHub for Mathematicians</span>, I’m obligated to describe Git history as either a finite partial order, or a loopless directed graph, depending on your preferred flavor of mathematical models. In particular, you might consider the normal history of a file to be a linear order: <code class="code-inline tex2jax_ignore">article.tex</code>, then <code class="code-inline tex2jax_ignore">article-dec-1.tex</code>, then <code class="code-inline tex2jax_ignore">article-dec-1-fixed.tex</code>, and so on. But with Git, you don’t need to track your version history with filenames, you (and your colleagues) can branch your history into several timelines, you can merge them back together again, and look up the state of your project at any point where you committed your work.</div></section><section class="section" id="sec-what-is-github"><h3 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">1.2</span><span class="space"> </span><span class="title">What Is Git<em class="emphasis">Hub</em>?</span>
 </h3>
