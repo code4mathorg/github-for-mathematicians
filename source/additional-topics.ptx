@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<appendix xml:id="additional-topics">
+    <title>Additional Topics</title>
+    <section xml:id="sec-vs-code-application">
+        <title>VS Code Application</title>
+        <p>TODO</p>
+    </section>
+    <section xml:id="sec-terminal">
+        <title>Using the Terminal</title>
+        <p>TODO</p>
+    </section>
+</appendix>

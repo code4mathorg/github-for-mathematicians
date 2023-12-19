@@ -9,29 +9,27 @@ using a free GitHub account.
         </p>
         <note xml:id="make-github-account">
             <p>
-Make a free GitHub account by
+Anyone can create a free GitHub account by
 visiting <url href="https://github.com/signup"/>.
             </p>
         </note>
         <p>
-Many mathematicians are also eligible for GitHub's educator
-discount, which provides additional functionality and
-computational resources normally only available to
-<q>Pro</q> users.
+For additional free resources, you may also be eligible for
+a waiver.
         </p>
 <note xml:id="github-education-discount">
         <p>
-Visit
+Many students and faculty of schools, colleges, and universties
+are eligible to request an
+educator discount, providing <q>Pro</q> features at no cost,
+by visiting
 <url href="https://education.github.com/" />
-while logged into your GitHub account to request an
-educator discount, providing <q>Pro</q> features at no cost
-to many students, instructors,
-and researchers working in schools, colleges, and universties.
+while logged into their GitHub account.
         </p>
     </note>
 <p>
-(You do not need to wait for approval before
-continuing to the next section.)
+You do not need to wait for approval of your educator
+discount before continuing to the next section.
         </p>
     </section>
     <section xml:id="sec-creating-the-repo">
