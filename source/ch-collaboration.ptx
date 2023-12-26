@@ -6,10 +6,11 @@
     <p>
 A nice feature of collaborative authoring tools such
 as Google Docs and Overleaf is the ability for several
-collaborators to edit the same file synchronously.
+collaborators to edit the same file synchronously. This
+works similarly to <c>GitHub.dev</c>.
     </p>
     <p>
-      TODO...
+      TODO... 
     </p>
   </section>
   <section xml:id="sec-adding-collaborators">

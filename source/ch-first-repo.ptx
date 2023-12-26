@@ -155,11 +155,16 @@ and not writing in a text box, press the period (<kbd>.</kbd>) key.
         </note>
         <p>
 Either way, you should now have a GitHub.dev window where you can manage
-all the files of your project. Using the <term>Explorer</term> sidebar, you can create
+all the files of your project. Using the <term>Explorer</term> sidebar
+(<xref ref="fig-explorer"/>), you can create
 new files, rename files, move files, upload files, and more. Selecting
 a file opens it, and lets you edit it as needed. Your changes are saved
 automatically in GitHub.dev, but they won't show up at GitHub.com just yet.
         </p>
+        <figure xml:id="fig-explorer">
+                <image width="60%" source="screenshots/newfile-dev.png"/>
+                <caption>Explorer sidebar and New File button</caption>
+        </figure>
     </section>
     <section xml:id="sec-commiting-and-syncing">
         <title>Commiting your Work</title>
