@@ -3,11 +3,53 @@
   <title>Collaborating with Others</title>
   <section xml:id="sec-liveshare">
     <title>LiveShare</title>
-    <p>Hello</p>
+    <p>
+A nice feature of collaborative authoring tools such
+as Google Docs and Overleaf is the ability for several
+collaborators to edit the same file synchronously.
+    </p>
+    <p>
+      TODO...
+    </p>
   </section>
   <section xml:id="sec-adding-collaborators">
     <title>Adding collaborators</title>
-    <p>Hello</p>
+    <p>
+A particular downside of LiveShare (<xref ref="sec-liveshare"/>)
+is that it requires
+the repository owner to create the Codespace and provision
+the LiveShare session. As a result, there's no way for a
+collaborator to make a contribution via LiveShare to a GitHub project
+without the active involvement of the repository owner.
+    </p>
+    <p>
+To address this, one solution is for the repository owner to
+add other GitHub users as collaborators.
+    </p>
+    <definition xml:id="def-collabotors">
+      <statement>
+        <p>
+A <term>collaborator</term> for a GitHub repository has the ability
+to commit and sync changes to the project, as well as adjust certain settings
+of the repository.
+<url href="https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-user-account-settings/permission-levels-for-a-personal-account-repository">
+  GitHub documentation
+</url>
+provides some details on the different permissions/abilities that owners
+have in comparison to collaborators.
+        </p>
+      </statement>
+    </definition>
+    <p>
+Collaborators are added by going to your repository's Settings tab,
+using the Collaborators link in the sidebar. Each collaborator will
+need their own GitHub account, and must accept the invitation to
+collaborate before gaining access.
+    </p>
+    <p>
+Once they have access, a collaborator can create a Codespace
+(<xref ref="def-codespaces"/>)
+    </p>
   </section>
   <section xml:id="sec-forks-and-pull-requests">
     <title>Forks and Pull Requests</title>
