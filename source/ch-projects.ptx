@@ -2,7 +2,7 @@
 <chapter xml:id="ch-projects">
     <title>Math Projects Powered by GitHub</title>
     <section xml:id="sec-pretext">
-        <title>PreTeXt</title>
+        <title>PreTeXt authoring system</title>
         <p>
 <url href="https://pretextbook.org/">PreTeXt</url>
 is an authoring and publishing system for 
@@ -77,6 +77,17 @@ Codespaces support.
 (For a more casual experience outside GitHub, the
 <url href="https://adam.math.hhu.de/">Lean game server</url> has fun
 tutorials for both Peano axioms and naive set theory.)
+        </p>
+    </section> 
+    <section xml:id="sec-code4math">
+        <title><c>code4math</c></title>
+        <p>
+In December 2023, the American Institute of Mathematics
+hosted a workshop of researchers to explore the future
+of sociotechnical infrastructure for mathematics. One outcome
+of this work was the establishment of
+<url href="https://code4math.org"/>, a community for mathematicians
+engaged in this work.
         </p>
     </section> 
 </chapter>
