@@ -11,6 +11,21 @@
       </date>
     </titlepage>
 
+    <preface xml:id="pr-abstract">
+      <title>Abstract</title>
+      <p>
+        Increasingly, the cyberinfrastructure of mathematics
+        and mathematics education is built using GitHub to
+        organize projects, courses, and their communities.
+        The goal of this book is to help readers learn the basic features
+        of GitHub available using only a web browser, and how
+        to use these features to participate in GitHub-hosted
+        mathematical projects with colleagues and/or students. 
+      </p>
+    </preface>
+
     <xi:include href="colophon.ptx" />
+  
+    <xi:include href="pr-acknowledgements.ptx" />
 
   </frontmatter>

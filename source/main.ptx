@@ -14,22 +14,7 @@
   <book xml:id="g4m">
     <title>GitHub for Mathematicians</title>
     <xi:include href="frontmatter.ptx" />
-
-    <preface xml:id="pre-abstract">
-      <title>Abstract</title>
-      <p>
-        Increasingly, the cyberinfrastructure of mathematics
-        and mathematics education is built using GitHub to
-        organize projects, courses, and their communities.
-        The goal of this book is to help readers learn the basic features
-        of GitHub available using only a web browser, and how
-        to use these features to participate in GitHub-hosted
-        mathematical projects with colleagues and/or students. 
-      </p>
-    </preface>
-
-    <xi:include href="acknowledgements.ptx" />
-    <xi:include href="workshop-info.ptx" />
+  
     <xi:include href="ch-git-github.ptx"/>
     <xi:include href="ch-first-repo.ptx"/>
     <xi:include href="ch-website.ptx"/>
@@ -40,7 +25,7 @@
     <backmatter xml:id="backmatter">
       <title>Backmatter</title>
       <xi:include href="related.ptx"/>
-      <xi:include href="additional-topics.ptx"/>
+      <xi:include href="ax-additional-topics.ptx"/>
       <colophon>
         <p> This book was authored in <pretext />. </p>
       </colophon>
