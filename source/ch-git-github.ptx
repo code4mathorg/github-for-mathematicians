@@ -74,9 +74,10 @@ you may have hesitated due to the apparent need for software developer
 experience to get started. However, using GitHub's web applications,
 there will be no need for complicated installations or
 memorizing command line incantations like <c>git commit -m "foobar"</c>
-to type into a terminal (<xref ref="sec-terminal"/>).
+to type into a terminal.
 (Of course, you still <em>can</em> choose to use such tools to get as much 
-control over your Git project as you want, should the need ever arise.)
+control over your Git project as you want, should the need ever arise:
+see <xref ref="additional-topics"/>)
         </p>
         <p>
 Another reason to use GitHub: community! GitHub is often marketed as a
@@ -95,8 +96,8 @@ An example of a project using Git and GitHub is the
 document you're reading right now!
 This book is open-sourced and shared at
 <url href="https://github.com/StevenClontz/github-for-mathematicians"/>,
-and was authored completely using the GitHub web browser features
-we will explore together in this book.
+and was authored completely in Google Chrome using only the GitHub features
+we will explore together in this handbook.
         </p>
     </section>
 </chapter>

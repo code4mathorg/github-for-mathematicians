@@ -2,6 +2,10 @@
 
 <appendix xml:id="additional-topics">
     <title>Additional Topics</title>
+    <section xml:id="sec-github-desktop">
+        <title>GitHub Desktop</title>
+        <p>TODO</p>
+    </section>
     <section xml:id="sec-vs-code-application">
         <title>VS Code Application</title>
         <p>TODO</p>
