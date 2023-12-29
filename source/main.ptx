@@ -24,7 +24,7 @@
 
     <backmatter xml:id="backmatter">
       <title>Backmatter</title>
-      <xi:include href="related.ptx"/>
+      <xi:include href="ax-related.ptx"/>
       <xi:include href="ax-additional-topics.ptx"/>
       <colophon>
         <p> This book was authored in <pretext />. </p>
