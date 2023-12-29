@@ -2,25 +2,35 @@
 <chapter xml:id="ch-collaboration">
   <title>Collaborating with Others</title>
   <section xml:id="sec-liveshare">
-    <title>LiveShare</title>
+    <title>Live Share</title>
     <p>
 A nice feature of collaborative authoring tools such
 as Google Docs and Overleaf is the ability for several
-collaborators to edit the same file synchronously. This
-works similarly to <c>GitHub.dev</c>.
+collaborators to edit the same file synchronously, with
+a feature set similar to <c>GitHub.dev</c>.
     </p>
     <p>
-      TODO... 
+Using the Extensions sidebar, search for and install
+Microsoft's <q>Live Share</q> extension. Once installed,
+you will have a <q>Live Share</q> option in your
+bottom toolar. Clicking it will automatically copy a URL
+ending in
+<c>https://.../join?[randomStringOfCharacters]</c>.
+If you share this URL with a colleague (or
+colleagues) you trust, they will be able to collaboratively
+edit your repository's text files with you via their web
+browser. When you commit your
+changes, they will be listed as co-authors of the commit.
     </p>
   </section>
   <section xml:id="sec-adding-collaborators">
-    <title>Adding collaborators</title>
+    <title>Collaborators and Pull Requests</title>
     <p>
-A particular downside of LiveShare (<xref ref="sec-liveshare"/>)
+A particular downside of Live Share (<xref ref="sec-liveshare"/>)
 is that it requires
 the repository owner to create the Codespace and provision
-the LiveShare session. As a result, there's no way for a
-collaborator to make a contribution via LiveShare to a GitHub project
+the Live Share session. As a result, there's no way for a
+collaborator to make a contribution via Live Share to a GitHub project
 without the active involvement of the repository owner.
     </p>
     <p>
@@ -48,12 +58,117 @@ need their own GitHub account, and must accept the invitation to
 collaborate before gaining access.
     </p>
     <p>
-Once they have access, a collaborator can create a Codespace
-(<xref ref="def-codespaces"/>)
+Once they have access, a collaborator can either use GitHub.dev
+(<xref ref="opening-github-dev"/>) or create their own
+Codespace (<xref ref="def-codespaces"/>).
     </p>
+    <warning>
+      <p>
+If two collaborators on the same repository make commits on
+the same branch, they will desynchronize your project's history:
+person A's history will think that commit <c>X</c> is followed by
+<c>Y</c> on branch <c>main</c>, but person B's history will think that
+commit <c>X</c> is followed by <c>Z</c> on branch <c>main</c>.
+      </p>
+      <p>
+As seen in <xref ref="fig-git-branches"/>, Git is meant to
+support non-linear history. However, to support this, contributors
+must name their distinct branches.
+      </p>
+    </warning>
+    <note>
+      <p>
+One workflow to support multiple collaborators on the same
+repository is to <em>never directly commit to the <c>main</c> branch</em>,
+even if you're the owner.
+      </p>
+      <p>
+To commit to an alternative branch in GitHub.dev or Codespaces, select
+<c>main</c> in the bottom toolbar, then type the name of your new branch,
+and select <q>Create new branch</q>. The name of this branch could
+be topical, e.g. <c>add-derivative-chapter</c>, but it's also fine to
+pick some other unique identifier, e.g. <c>lastname-YYYY-MM-DD</c>.
+      </p>
+    </note>
+    <p>
+Once a collaborator is working on a branch, they are free to edit as
+they wish, and can (and should) commit and push/sync with GitHub to
+persist their contributions to the team's repository.
+    </p>
+    <p>
+To facilitate communication among collaborators working on
+different branches, it's good practice to open a draft pull request
+once a new branch is created.
+    </p>
+    <definition xml:id="def-pull-request">
+      <statement>
+        <p>
+A <term>pull request</term> (or <term>PR</term> for short)
+is a discussion thread for a branch
+that proposes changes to a different (often, the <c>main</c>) branch.
+When the branch's changes are ready to be merged, this can be
+accomplished by pressing a button on the pull request webpage.
+        </p>
+        <p>
+A PR can be marked as a <term>draft</term>
+or <term>ready to review</term>.
+        </p>
+      </statement>
+    </definition>
+    <note>
+      <p>
+Depending on whether the collaborator is using GitHub.dev or
+Codespaces, they may be prompted to create a pull request when first
+pushing/syncing changes. If not, a pull request can be created by
+navigating to the GitHub.com repository page.
+      </p>
+      <p>
+Recent pushes to a
+branch will reveal a prompt to create the pull request immediately.
+Otherwise, the PR can be created by using the Pull Requests tab
+of the page.
+      </p>
+      <p>
+Unless the PR is for a single commit that's immediately
+<q>ready for review</q>, a new PR should be created as
+a draft.
+      </p>
+    </note>
+    <p>
+With a draft pull request created, the contributor can
+continue to commit and push/sync to the branch until it is
+ready for review. The discussion features of GitHub can allow
+contributors to discuss the proposed changes, whether they are in
+draft or review-ready status.
+    </p>
+    <note>
+      <p>
+A draft pull request has a large button near the end of the
+discussion thread to mark the pull request as ready for review.
+      </p>
+      <p>
+A ready for review pull request can be converted to a draft
+by using a small link on the right sidebar.
+      </p>
+    </note>
+    <p>
+Depending on the complexity or maturity of the project,
+you may wish to develop a review process with your collaborators,
+or simply use the PR workflow to clearly communicate when changes
+are being made to the main branch, and ensure no two collaborators
+make incompatible changes to the same branch.
+    </p>
+    <note>
+      <p>
+There are several options for merging a branch's pull request.
+I recommend the <q>Squash and Merge</q> option, which converts all
+the branch's commits/changes into a single new commit extending the
+target branch.
+      </p>
+    </note>
   </section>
-  <section xml:id="sec-forks-and-pull-requests">
-    <title>Forks and Pull Requests</title>
+  <section xml:id="sec-forks">
+    <title>Forks</title>
     <p>Hello</p>
   </section>
 </chapter>
