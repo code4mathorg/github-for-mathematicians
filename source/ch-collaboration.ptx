@@ -166,9 +166,84 @@ the branch's commits/changes into a single new commit extending the
 target branch.
       </p>
     </note>
+    <p>
+As long as contributions are made using appropriate branches
+and pull requests, you will have minimal problems with conflicting
+changes made between different collaborators, with GitHub handling
+the merging process automatically, even if two collaborators edit
+the same file. (But not always, see <xref ref="sec-conflicts"/>.)
+    </p>
+    <p>
+But a common error that I frequently make myself: what if you forget
+to create a branch with your work, and you acccidentally commit
+to <c>main</c> directly? The first safety rail I recommend is to
+set up a policy on your repository that will prevent this accidental
+commit to be pushed to GitHub.
+    </p>
+    <note xml:id="note-branch-protection">
+      <p>
+To prevent unintended changes to your <c>main</c> branch,
+follow the instructions at
+<url href="https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule#creating-a-branch-protection-rule">
+  GitHub's documentation</url>,
+using <c>main</c> as your <q>Branch name pattern</q>, and
+enabling required pull requests.
+      </p>
+    </note>
+    <p>
+Finally, there's no button to push that will fix a commit
+made to the local copy of <c>main</c> accidentally, but there
+is a quick-enough fix nonetheless.
+    </p>
+    <note>
+      <p>
+With branch protection <xref ref="note-branch-protection"/> enabled,
+if you accidentally make updates directly to your personal <c>main</c>
+branch, attempting to push these from a Codespace will result in
+tthe error message <c>Can't push refs to remote.
+Try running "Pull" first to integrate your changes.</c>
+      </p>
+      <p>
+To fix this, open the Terminal and type <xref ref="lst-branch-fix-1"/>,
+changing <c>my-new-branch</c> to the branch name you want to create.
+Use <kbd>Enter</kbd> to execute the command.
+      </p>
+      <p>
+Then, copy-paste <xref ref="lst-branch-fix-2"/> and your local
+<c>main</c> branch will match the official repository, and any changes
+you've made will be reflected on the <c>my-new-branch</c> branch
+instead.
+      </p>
+    </note>
+    <listing xml:id="lst-branch-fix-1">
+      <program>
+        <input>
+BRANCH=my-new-branch
+        </input>
+      </program>
+      <caption>Defining the name for a new branch</caption>
+    </listing>
+    <listing xml:id="lst-branch-fix-2">
+      <program>
+        <input>
+git stash
+git branch $BRANCH
+git reset --hard origin/main
+git checkout $BRANCH
+git stash pop
+        </input>
+      </program>
+      <caption>Moving local changes to <c>main</c> to a branch</caption>
+    </listing>
   </section>
   <section xml:id="sec-forks">
     <title>Forks</title>
     <p>Hello</p>
+  </section>
+  <section xml:id="sec-conflicts">
+    <title>Handling Merge Conflicts</title>
+    <p>
+To come in a future revision of this handbook...
+    </p>
   </section>
 </chapter>
