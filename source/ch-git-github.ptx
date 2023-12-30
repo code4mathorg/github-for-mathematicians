@@ -40,7 +40,8 @@ Since you're reading
 <pubtitle>GitHub for Mathematicians</pubtitle>, I'm obligated to
 describe Git history as either a finite partial order, or a loopless directed
 graph, depending on your preferred flavor of mathematical models. In particular,
-you might consider the normal history of a file to be a linear order:
+you might consider the normal history of a file to be a linear order
+or directed path:
 <c>article.tex</c>, then <c>article-dec-1.tex</c>, then <c>article-dec-1-fixed.tex</c>,
 and so on. But with Git, you don't need to track your version history with filenames,
 you (and your colleagues) can branch your history into several timelines, you
@@ -77,7 +78,7 @@ memorizing command line incantations like <c>git commit -m "foobar"</c>
 to type into a terminal.
 (Of course, you still <em>can</em> choose to use such tools to get as much 
 control over your Git project as you want, should the need ever arise:
-see <xref ref="additional-topics"/>)
+see <xref ref="ax-additional-topics"/>)
         </p>
         <p>
 Another reason to use GitHub: community! GitHub is often marketed as a
@@ -96,7 +97,7 @@ An example of a project using Git and GitHub is the
 document you're reading right now!
 This book is open-sourced and shared at
 <url href="https://github.com/StevenClontz/github-for-mathematicians"/>,
-and was authored completely in Google Chrome using only the GitHub features
+and was authored completely in a web browser using only the GitHub features
 we will explore together in this handbook.
         </p>
     </section>

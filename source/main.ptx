@@ -9,6 +9,8 @@
     <latex-image-preamble>
       \usepackage{tikz}
     </latex-image-preamble>
+    <brandlogo 
+      source="g4m.png" />
   </docinfo>
 
   <book xml:id="g4m">
