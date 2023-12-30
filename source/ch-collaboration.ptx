@@ -2,25 +2,35 @@
 <chapter xml:id="ch-collaboration">
   <title>Collaborating with Others</title>
   <section xml:id="sec-liveshare">
-    <title>LiveShare</title>
+    <title>Live Share</title>
     <p>
 A nice feature of collaborative authoring tools such
 as Google Docs and Overleaf is the ability for several
-collaborators to edit the same file synchronously. This
-works similarly to <c>GitHub.dev</c>.
+collaborators to edit the same file synchronously, with
+a feature set similar to <c>GitHub.dev</c>.
     </p>
     <p>
-      TODO... 
+Using the Extensions sidebar, search for and install
+Microsoft's <q>Live Share</q> extension. Once installed,
+you will have a <q>Live Share</q> option in your
+bottom toolar. Clicking it will automatically copy a URL
+ending in
+<c>https://.../join?[randomStringOfCharacters]</c>.
+If you share this URL with a colleague (or
+colleagues) you trust, they will be able to collaboratively
+edit your repository's text files with you via their web
+browser. When you commit your
+changes, they will be listed as co-authors of the commit.
     </p>
   </section>
-  <section xml:id="sec-adding-collaborators">
-    <title>Adding collaborators</title>
+  <section xml:id="sec-collaborators-prs">
+    <title>Collaborators and Pull Requests</title>
     <p>
-A particular downside of LiveShare (<xref ref="sec-liveshare"/>)
+A particular downside of Live Share (<xref ref="sec-liveshare"/>)
 is that it requires
 the repository owner to create the Codespace and provision
-the LiveShare session. As a result, there's no way for a
-collaborator to make a contribution via LiveShare to a GitHub project
+the Live Share session. As a result, there's no way for a
+collaborator to make a contribution via Live Share to a GitHub project
 without the active involvement of the repository owner.
     </p>
     <p>
@@ -48,12 +58,237 @@ need their own GitHub account, and must accept the invitation to
 collaborate before gaining access.
     </p>
     <p>
-Once they have access, a collaborator can create a Codespace
-(<xref ref="def-codespaces"/>)
+Once they have access, a collaborator can either use GitHub.dev
+(<xref ref="opening-github-dev"/>) or create their own
+Codespace (<xref ref="def-codespaces"/>).
+    </p>
+    <warning>
+      <p>
+If two collaborators on the same repository make commits on
+the same branch, they will desynchronize your project's history:
+person A's history will think that commit <c>X</c> is followed by
+<c>Y</c> on branch <c>main</c>, but person B's history will think that
+commit <c>X</c> is followed by <c>Z</c> on branch <c>main</c>.
+      </p>
+      <p>
+As seen in <xref ref="fig-git-branches"/>, Git is meant to
+support non-linear history. However, to support this, contributors
+must name their distinct branches.
+      </p>
+    </warning>
+    <note>
+      <p>
+One workflow to support multiple collaborators on the same
+repository is to <em>never directly commit to the <c>main</c> branch</em>,
+even if you're the owner.
+      </p>
+      <p>
+To commit to an alternative branch in GitHub.dev or Codespaces, select
+<c>main</c> in the bottom toolbar, then type the name of your new branch,
+and select <q>Create new branch</q>. The name of this branch could
+be topical, e.g. <c>add-derivative-chapter</c>, but it's also fine to
+pick some other unique identifier, e.g. <c>lastname-YYYY-MM-DD</c>.
+      </p>
+    </note>
+    <p>
+Once a collaborator is working on a branch, they are free to edit as
+they wish, and can (and should) commit and push/sync with GitHub to
+persist their contributions to the team's repository.
+    </p>
+    <p>
+To facilitate communication among collaborators working on
+different branches, it's good practice to open a draft pull request
+once a new branch is created.
+    </p>
+    <definition xml:id="def-pull-request">
+      <statement>
+        <p>
+A <term>pull request</term> (or <term>PR</term> for short)
+is a discussion thread for a branch
+that proposes changes to a different (often, the <c>main</c>) branch.
+When the branch's changes are ready to be merged, this can be
+accomplished by pressing a button on the pull request webpage.
+        </p>
+        <p>
+A PR can be marked as a <term>draft</term>
+or <term>ready to review</term>.
+        </p>
+      </statement>
+    </definition>
+    <note>
+      <p>
+Depending on whether the collaborator is using GitHub.dev or
+Codespaces, they may be prompted to create a pull request when first
+pushing/syncing changes. If not, a pull request can be created by
+navigating to the repository page on GitHub.com.
+      </p>
+      <p>
+Recent pushes to a
+branch will reveal a prompt to create the pull request immediately.
+Otherwise, the PR can be created by using the Pull Requests tab
+of the page.
+      </p>
+      <p>
+Unless the PR is for a single commit that's immediately
+<q>ready for review</q>, a new PR should be created as
+a draft.
+      </p>
+    </note>
+    <p>
+With a draft pull request created, the contributor can
+continue to commit and push/sync to the branch until it is
+ready for review. The discussion features of GitHub can allow
+contributors to discuss the proposed changes, whether they are in
+draft or review-ready status.
+    </p>
+    <note>
+      <p>
+A draft pull request has a large button near the end of the
+discussion thread to mark the pull request as ready for review.
+      </p>
+      <p>
+A ready for review pull request can be converted to a draft
+by using a small link on the right sidebar.
+      </p>
+    </note>
+    <p>
+Depending on the complexity or maturity of the project,
+you may wish to develop a review process with your collaborators,
+or simply use the PR workflow to clearly communicate when changes
+are being made to the main branch, and ensure no two collaborators
+make incompatible changes to the same branch. Whatever you choose,
+you'll eventually want to incorporate these branched changes into
+your <c>main</c> branch.
+    </p>
+    <note>
+      <p>
+There are several options for merging a branch's pull request.
+I recommend the <q>Squash and Merge</q> option, which converts all
+the branch's commits/changes into a single new commit extending the
+target branch.
+      </p>
+    </note>
+    <p>
+As long as contributions are made using appropriate branches
+and pull requests, you will have minimal problems with conflicting
+changes made between different collaborators, with GitHub handling
+the merging process automatically, even if two collaborators edit
+the same file. (But not always, see <xref ref="sec-conflicts"/>.)
+    </p>
+    <p>
+But a common error that I frequently make myself: what if you forget
+to create a branch with your work, and you acccidentally commit
+to <c>main</c> directly? The first safety rail I recommend is to
+set up a policy on your repository that will prevent this accidental
+commit to be pushed to GitHub.
+    </p>
+    <note xml:id="note-branch-protection">
+      <p>
+To prevent unintended changes to your <c>main</c> branch,
+follow the instructions at
+<url href="https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule#creating-a-branch-protection-rule">
+  GitHub's documentation</url>,
+using <c>main</c> as your <q>Branch name pattern</q>, and
+enabling required pull requests.
+      </p>
+    </note>
+    <p>
+Finally, there's no button to push that will fix a commit
+made to the local copy of <c>main</c> accidentally, but there
+is a quick-enough fix nonetheless.
+    </p>
+    <note>
+      <p>
+With branch protection <xref ref="note-branch-protection"/> enabled,
+if you accidentally make updates directly to your personal <c>main</c>
+branch, attempting to push these from a Codespace will result in
+tthe error message <c>Can't push refs to remote.
+Try running "Pull" first to integrate your changes.</c>
+      </p>
+      <p>
+To fix this, open the Terminal and type <xref ref="lst-branch-fix-1"/>,
+changing <c>my-new-branch</c> to the branch name you want to create.
+Use <kbd>Enter</kbd> to execute the command.
+      </p>
+      <p>
+Then, copy-paste <xref ref="lst-branch-fix-2"/> and your local
+<c>main</c> branch will match the official repository, and any changes
+you've made will be reflected on the <c>my-new-branch</c> branch
+instead.
+      </p>
+    </note>
+    <listing xml:id="lst-branch-fix-1">
+      <program>
+        <input>
+BRANCH=my-new-branch
+        </input>
+      </program>
+      <caption>Defining the name for a new branch</caption>
+    </listing>
+    <listing xml:id="lst-branch-fix-2">
+      <program>
+        <input>
+git stash
+git branch $BRANCH
+git reset --hard origin/main
+git checkout $BRANCH
+git stash pop
+        </input>
+      </program>
+      <caption>Moving local changes to <c>main</c> to a branch</caption>
+    </listing>
+  </section>
+  <section xml:id="sec-forks">
+    <title>Forks</title>
+    <p>
+One great thing about working with open source on GitHub is that
+not only can you collaborate with your trusted colleagues, but
+you can also work with collaborators who do not have write access
+to your repository.
+    </p>
+    <definition xml:id="def-forks">
+      <statement>
+        <p>
+A <term>fork</term> for a public repository is a copy of the project's
+entire history, made either for the main branch or for all publicly
+shared branches.
+        </p>
+      </statement>
+    </definition>
+    <p>
+Managing contributions from forked repositories is done using the
+same workflow as I recomend for collaborating with trusted colleagues
+that you've given write access to your repository
+(<xref ref="sec-collaborators-prs"/>). The only difference
+is that an outside collaborator is creating branches and making commits
+on their forked copy of your project, not a branch of your original
+repository. But GitHub still gives essentially the same options for
+the outside collaborator to create a pull request to your project,
+without given them access to any data you aren't already sharing with
+the public.
+    </p>
+    <note>
+      <p>
+To create a fork of a public repository, press the <q>Fork</q> button
+on its GitHub.com homepage. You can name this fork whatever you like,
+it will be tracke don GitHub as a fork of the original project, with
+the ability to make <q>upstream</q> contributions by way of
+pull requests.
+      </p>
+    </note>
+    <p>
+Those of us who work in open source typically <em>love</em> getting
+pull requests from random collaborators. For example, if you find a
+typo in this book, you can fxi it by creating a fork at
+<url href="https://github.com/StevenClontz/github-for-mathematicians/fork"/>,
+editing the appropriate <c>source/*.ptx</c> file to fix the word,
+and open a pull request.
     </p>
   </section>
-  <section xml:id="sec-forks-and-pull-requests">
-    <title>Forks and Pull Requests</title>
-    <p>Hello</p>
+  <section xml:id="sec-conflicts">
+    <title>Handling Merge Conflicts</title>
+    <p>
+To come in a future revision of this handbook...
+    </p>
   </section>
 </chapter>

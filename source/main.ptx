@@ -24,8 +24,12 @@
 
     <backmatter xml:id="backmatter">
       <title>Backmatter</title>
-      <xi:include href="related.ptx"/>
+      <xi:include href="ax-related.ptx"/>
       <xi:include href="ax-additional-topics.ptx"/>
+      <appendix xml:id="ax-defs-notes">
+        <title>Definitions and Notes Quick Ref</title>
+        <list-of elements="definition note" divisions="section" empty="no" />
+      </appendix>
       <colophon>
         <p> This book was authored in <pretext />. </p>
       </colophon>
