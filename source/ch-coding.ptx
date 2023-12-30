@@ -111,7 +111,7 @@ would like your Codespace to periodically run
     </note>
   </section>
   <section xml:id="sec-jupyter-notebooks">
-    <title>Python and Jupyter notebooks</title>
+    <title>Python and Jupyter Notebooks</title>
     <p>
 <url href="https://python.org">Python</url> is an
 popular open-source all-purpose programming language, and
@@ -205,7 +205,7 @@ sure everything looks just right before pushing it live to the public.
     </p>
   </section>
   <section xml:id="sec-codespace-management">
-    <title>Managing your Codespaces</title>
+    <title>Managing Your Codespaces</title>
     <p>
 GitHub users are provided with a limited amount of free Codespace
 hours and storage each month, with additional resources available

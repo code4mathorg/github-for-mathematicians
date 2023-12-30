@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <chapter xml:id="ch-github-pages" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <title>Websites</title>
+    <title>GitHub Pages</title>
     <section xml:id="sec-upload-html">
-        <title>Using GitHub Pages</title>
+        <title>Creating a Simple Webpage</title>
         <p>
 Having made your first repository in <xref ref="ch-first-repo"/>, and
 committed a few changes, you are now ready to share your work with the
@@ -23,10 +23,10 @@ to create three files in the root of your project.
             <ul>
                 <li>
                     <p>
-Create a blank text file named <c>.nojekyll</c>
-(note the period at the start).
-This will disable some advanced features of GitHub Pages we don't need
-right now.
+Create a file named <c>.nojekyll</c> 
+(note the period at the start) but don't add any text to it.
+Simply creating this file will disable some advanced features
+of GitHub Pages we don't need right now.
                     </p>
                 </li>
                 <li>
@@ -205,7 +205,7 @@ an orange dot (in progress), a green checkmark
         </note>
     </section>
     <section xml:id="sec-posts-and-pages">
-        <title>Customizing your site</title>
+        <title>Customizing Your Site</title>
         <introduction>
             <p>
 Now that you have the template website hosted by GitHub Pages, you of course

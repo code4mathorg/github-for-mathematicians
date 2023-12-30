@@ -2,7 +2,7 @@
 <chapter xml:id="ch-first-repo">
     <title>Your First Repository</title>
     <section xml:id="sec-making-an-account">
-        <title>Making an account</title>
+        <title>Making an Account</title>
         <p>
 All the features of GitHub we'll be using are available
 using a free GitHub account.
@@ -33,7 +33,7 @@ discount before continuing to the next section.
         </p>
     </section>
     <section xml:id="sec-creating-the-repo">
-        <title>Creating the repo</title>
+        <title>Creating the Repo</title>
         <p>
 Once logged in, a new repository can be created by
 pressing the <kbd>+</kbd> button in the toolbar,
@@ -109,7 +109,7 @@ down the line.
         </p>
     </section>
     <section xml:id="sec-using-github-dev">
-        <title>Using GitHub.dev</title>
+        <title>Using <c>GitHub.dev</c></title>
         <p>
 Using the GitHub.com interface to author or edit just one file
 can be useful (I do this all the time to make quick typo fixes on
@@ -167,7 +167,7 @@ automatically in GitHub.dev, but they won't show up at GitHub.com just yet.
         </figure>
     </section>
     <section xml:id="sec-commiting-and-syncing">
-        <title>Commiting your Work</title>
+        <title>Commiting Your Work</title>
         <p>
 After you're tried creating/editing/uploading a few files, now it's
 time to <em>commit</em> those changes to your repository. The easiest way

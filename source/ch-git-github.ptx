@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <chapter xml:id="ch-git-github">
-    <title>Git vs. GitHub</title>
+    <title>Intro to Git &amp; GitHub</title>
     <section xml:id="sec-what-is-git">
         <title>What Is Git?</title>
         <figure xml:id="fig-git-branches">
@@ -91,7 +91,7 @@ efficiently.
         </p>
     </section>
     <section xml:id="sec-an-example">
-        <title>An example</title>
+        <title>G4M on GitHub.com</title>
         <p>
 An example of a project using Git and GitHub is the
 document you're reading right now!
