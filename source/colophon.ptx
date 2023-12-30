@@ -18,16 +18,27 @@ This work includes materials used under license from the
 following works:
       </p>
       <ul>
-          <li>
-              <p><pubtitle>Wikipedia</pubtitle></p>
-              <ul>
-                  <li>
-                      <p><url href="https://en.wikipedia.org/wiki/Git"/></p>
-                  </li>
-                  <li>
-                      <p>CC BY-SA 4.0</p>
-                  </li>
-              </ul>
-          </li>
+        <li>
+            <p><pubtitle>Wikipedia</pubtitle></p>
+            <ul>
+                <li>
+                    <p><url href="https://en.wikipedia.org/wiki/Git"/></p>
+                </li>
+                <li>
+                    <p>CC BY-SA 4.0</p>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p><pubtitle>Git</pubtitle></p>
+            <ul>
+                <li>
+                    <p><url href="https://git-scm.com/downloads/logos"/></p>
+                </li>
+                <li>
+                    <p>CC BY 3.0</p>
+                </li>
+            </ul>
+        </li>
       </ul>
     </colophon>
