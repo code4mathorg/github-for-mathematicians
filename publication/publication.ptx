@@ -127,6 +127,7 @@
     <!-- StatCounter requires both values to be set            -->
     <!-- <analytics google-gst="UA-0123456-1" statcounter-project="0123456"
     statcounter-security="0123456"/> -->
+    <index-page ref="g4m"/>
   </html>
 
   <!-- To use WeBWorK, you need a server.  -->
