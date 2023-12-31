@@ -7,6 +7,9 @@
    id="svg11"
    sodipodi:docname="g4m.svg"
    inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   inkscape:export-filename="g4m.png"
+   inkscape:export-xdpi="156.52174"
+   inkscape:export-ydpi="156.52174"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -23,7 +26,7 @@
      inkscape:document-units="pt"
      showgrid="false"
      inkscape:zoom="6.6358696"
-     inkscape:cx="44.003276"
+     inkscape:cx="55.154791"
      inkscape:cy="61.408681"
      inkscape:window-width="1920"
      inkscape:window-height="1001"
@@ -33,6 +36,16 @@
      inkscape:current-layer="svg11" />
   <defs
      id="defs5">
+    <inkscape:path-effect
+       effect="powermask"
+       id="path-effect2541"
+       is_visible="true"
+       lpeversion="1"
+       uri="#mask-powermask-path-effect2541"
+       invert="false"
+       hide_mask="false"
+       background="true"
+       background_color="#ffffffff" />
     <inkscape:path-effect
        effect="powerclip"
        id="path-effect2509"
@@ -66,29 +79,67 @@
          values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 "
          in="fbSourceGraphic" />
     </filter>
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath2503">
-      <g
-         aria-label="∑"
-         id="g2507"
-         style="font-size:28px;font-family:'Courier New';-inkscape-font-specification:'Courier New';text-align:center;text-anchor:middle;display:none;fill:#ffffff;stroke-width:0.999997;stroke-linecap:round;stroke-linejoin:round">
-        <path
-           d="M 36.588078,58.728516 H 18.636906 v -0.50586 L 27.78339,45.904297 18.636906,33.777344 v -0.50586 h 17.472656 l 0.369141,4.607422 h -0.546875 q -0.21875,-1.886719 -1.066407,-2.693359 -0.833984,-0.806641 -2.33789,-0.806641 H 22.410343 l 7.683594,10.34961 -8.599609,11.580078 h 11.183593 q 0.957032,0 2.091797,-0.369141 0.779297,-0.246094 1.285156,-0.916016 0.519532,-0.65625 0.861329,-2.078125 l 0.546875,0.109375 z"
-           style="font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';stroke-width:1"
-           id="path2505" />
-      </g>
+    <filter
+       id="mask-powermask-path-effect2523_inverse"
+       inkscape:label="filtermask-powermask-path-effect2523"
+       style="color-interpolation-filters:sRGB"
+       height="100"
+       width="100"
+       x="-50"
+       y="-50">
+      <feColorMatrix
+         id="mask-powermask-path-effect2523_primitive1"
+         values="1"
+         type="saturate"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         id="mask-powermask-path-effect2523_primitive2"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 "
+         in="fbSourceGraphic" />
+    </filter>
+    <mask
+       maskUnits="userSpaceOnUse"
+       id="mask-powermask-path-effect2541">
       <path
-         id="lpe_path-effect2509"
-         style="font-size:28px;font-family:'Courier New';-inkscape-font-specification:'Courier New';text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.999997;stroke-linecap:round;stroke-linejoin:round"
-         class="powerclip"
-         d="M -5.0001843,-4.8867572 H 96.887289 V 97.001857 H -5.0001843 Z m 41.5882623,63.6152732 0.875,-5.673829 -0.546875,-0.109375 q -0.341797,1.421875 -0.861329,2.078125 -0.505859,0.669922 -1.285156,0.916016 -1.134765,0.369141 -2.091797,0.369141 H 21.494328 l 8.599609,-11.580078 -7.683594,-10.34961 h 10.117188 q 1.503906,0 2.33789,0.806641 0.847657,0.80664 1.066407,2.693359 h 0.546875 L 36.109562,33.271484 H 18.636906 v 0.50586 l 9.146484,12.126953 -9.146484,12.318359 v 0.50586 z" />
-    </clipPath>
+         id="mask-powermask-path-effect2541_box"
+         style="fill:#ffffff;fill-opacity:1"
+         d="M -1.0001843,-0.88675719 H 92.887289 V 93.001857 H -1.0001843 Z" />
+      <text
+         xml:space="preserve"
+         style="font-size:28px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';text-align:center;text-anchor:middle;fill:#d766d6;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         x="27.012285"
+         y="52.685551"
+         id="text2539"><tspan
+           sodipodi:role="line"
+           id="tspan2537"
+           style="fill:#d766d6;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-opacity:1"
+           x="27.012285"
+           y="52.685551">∑</tspan></text>
+    </mask>
+    <filter
+       id="mask-powermask-path-effect2541_inverse"
+       inkscape:label="filtermask-powermask-path-effect2541"
+       style="color-interpolation-filters:sRGB"
+       height="100"
+       width="100"
+       x="-50"
+       y="-50">
+      <feColorMatrix
+         id="mask-powermask-path-effect2541_primitive1"
+         values="1"
+         type="saturate"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         id="mask-powermask-path-effect2541_primitive2"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 "
+         in="fbSourceGraphic" />
+    </filter>
   </defs>
   <g
-     clip-path="url(#clipPath2503)"
+     clip-path="none"
      id="g9"
-     inkscape:path-effect="#path-effect2509">
+     mask="url(#mask-powermask-path-effect2541)"
+     inkscape:path-effect="#path-effect2541">
     <path
        style="stroke:none;fill-rule:nonzero;fill:#100f0d;fill-opacity:1"
        d="M 90.156,41.965 50.036,1.848 a 5.913,5.913 0 0 0 -8.368,0 l -8.332,8.332 10.566,10.566 a 7.03,7.03 0 0 1 7.23,1.684 7.043,7.043 0 0 1 1.673,7.277 l 10.183,10.184 a 7.026,7.026 0 0 1 7.278,1.672 7.04,7.04 0 0 1 0,9.957 7.045,7.045 0 0 1 -9.961,0 7.038,7.038 0 0 1 -1.532,-7.66 l -9.5,-9.497 V 59.36 a 7.04,7.04 0 0 1 1.86,11.29 7.04,7.04 0 0 1 -9.957,0 7.04,7.04 0 0 1 0,-9.958 7.034,7.034 0 0 1 2.308,-1.539 V 33.926 a 7.001,7.001 0 0 1 -2.308,-1.535 7.049,7.049 0 0 1 -1.516,-7.7 L 29.242,14.273 1.734,41.777 a 5.918,5.918 0 0 0 0,8.371 L 41.855,90.27 a 5.92,5.92 0 0 0 8.368,0 L 90.156,50.336 a 5.925,5.925 0 0 0 0,-8.371"
