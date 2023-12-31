@@ -39,7 +39,7 @@ GitHub and GitHub Pages.
     </section>
     <section xml:id="sec-pi-base">
         <title>
-<m>\pi</m>-Base community database of topological counterexamples
+<m>\pi</m>-Base Community Database of Topological Counterexamples
         </title>
         <p>
 To paraphrase Mary Ellen Rudin, <q>topology is a dense forest of
@@ -59,7 +59,7 @@ previewing it in your own Codespace.
         </p>
     </section>
     <section xml:id="sec-lean">
-        <title>Lean theorem prover</title>
+        <title>Lean Theorem Prover</title>
         <p>
 The <url href="https://leanprover-community.github.io/">Lean theorem prover</url>
 is an interactive proof assistant that allows mathematicians to formally
