@@ -162,7 +162,7 @@ a file opens it, and lets you edit it as needed. Your changes are saved
 automatically in GitHub.dev, but they won't show up at GitHub.com just yet.
         </p>
         <figure xml:id="fig-explorer">
-                <image width="60%" source="screenshots/newfile-dev.png"/>
+                <image width="60%" source="screenshots/codespace-explorer-newfile.png"/>
                 <caption>Explorer sidebar and New File button</caption>
         </figure>
     </section>

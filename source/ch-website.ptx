@@ -68,6 +68,10 @@ Pages from the sidebar. From there you can select to
 <q>Deploy from a branch</q>, using the <c>main</c> branch
 and the <c>/ (root)</c>
 directory, and after a few moments your site will be enabled.
+<figure xml:id="fig-web-setting">
+    <image width="100%" source="screenshots/pages-setting.png"/> 
+    <caption>Settings to deploy a web page.</caption>
+</figure>     
             </p>
         </note>
         <p>
@@ -188,6 +192,10 @@ and click <q>Use this template</q>, and <q>Create a new repository</q>.
 This creates a new repository you own on <c>GitHub.com</c>, and
 you can follow the instructions in <xref ref="enable-github-pages"/>
 to enable GitHub Pages.
+<figure xml:id="fig-pages-template">
+    <image width="100%" source="screenshots/pages-template.png"/> 
+    <caption>Use this template button.</caption>
+</figure>     
 Once that's done, visit your new <c>GitHub.io</c> website to see the
 placeholder content of your new website
 (don't forget to add a link to your <q>About</q> sidebar, see
@@ -202,6 +210,10 @@ by looking for the following icon next to your commit message:
 an orange dot (in progress), a green checkmark
 (deployed), or a red X (failure).
             </p>
+            <figure xml:id="fig-web-actions">
+                <image width="100%" source="screenshots/pages-actions.png"/> 
+                <caption>Actions tab on Github.com.</caption>
+        </figure>       
         </note>
     </section>
     <section xml:id="sec-posts-and-pages">
@@ -283,6 +295,13 @@ page its own permalink. If you want these pages to appear in the navigation
 bar on top of your site, edit the <c>/_data/navigation.yml</c> configuration
 file to point to each permalink.
             </p>
+            <p> You can preview a compiled version of your markdown files (<c>.md </c>) on the web, without having to run any commands.
+                It is enough to open a markdown file and split the screen.
+            </p>
+            <figure xml:id="fig-mdpreview">
+                    <image width="100%" source="screenshots/codespace-preview-md.png"/>
+                    <caption>Split screen to preview markdown file.</caption>
+            </figure>
         </subsection>
         <subsection xml:id="subsec-posts">
             <title>Posts</title>
