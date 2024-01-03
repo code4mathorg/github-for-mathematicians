@@ -58,7 +58,7 @@ need their own GitHub account, and must accept the invitation to
 collaborate before gaining access.
     </p>
     <p>
-Once they have access, a collaborator can either use GitHub.dev
+Once they have access, a collaborator can either use <c>GitHub.dev</c>
 (<xref ref="opening-github-dev"/>) or create their own
 Codespace (<xref ref="def-codespaces"/>).
     </p>
@@ -83,7 +83,7 @@ repository is to <em>never directly commit to the <c>main</c> branch</em>,
 even if you're the owner.
       </p>
       <p>
-To commit to an alternative branch in GitHub.dev or Codespaces, select
+To commit to an alternative branch in <c>GitHub.dev</c> or Codespaces, select
 <c>main</c> in the bottom toolbar, then type the name of your new branch,
 and select <q>Create new branch</q>. The name of this branch could
 be topical, e.g. <c>add-derivative-chapter</c>, but it's also fine to
@@ -117,10 +117,10 @@ or <term>ready to review</term>.
     </definition>
     <note>
       <p>
-Depending on whether the collaborator is using GitHub.dev or
+Depending on whether the collaborator is using <c>GitHub.dev</c> or
 Codespaces, they may be prompted to create a pull request when first
 pushing/syncing changes. If not, a pull request can be created by
-navigating to the repository page on GitHub.com.
+navigating to the repository page on <c>GitHub.com</c>.
       </p>
       <p>
 Recent pushes to a
@@ -270,7 +270,7 @@ the public.
     <note>
       <p>
 To create a fork of a public repository, press the <q>Fork</q> button
-on its GitHub.com homepage. You can name this fork whatever you like,
+on its <c>GitHub.com</c> homepage. You can name this fork whatever you like,
 it will be tracke don GitHub as a fork of the original project, with
 the ability to make <q>upstream</q> contributions by way of
 pull requests.
