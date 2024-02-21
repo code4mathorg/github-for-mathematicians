@@ -7,4 +7,230 @@
 I dunno
         </p>
     </section>
+
+
+    <section xml:id="sec-hello-world">
+        <title>hello-world</title>
+    </section>
+
+        
+
+        <section xml:id="sec-first-animation">
+            <title>My First Animation</title>
+
+            <activity>
+                <introduction>
+                    <p>
+                        Open <c>MyFirstAnimation.py</c>, and consider the first block <c>class tanline(Scene):</c>.
+                    </p>
+                    <p>
+                        Read the documentation and the code presented.  This particular function <c>tanline</c> creates a curve, displays
+                        the algebraic work needed to find a tangent line, and then displays said tangent line.
+                    </p>
+                    
+                </introduction>
+
+                <task>
+                    <statement>
+                        <p>
+                            Run the code to produce a video file.
+                        </p>
+                    </statement>
+                </task>
+
+                <task>
+                    <statement>
+                        <p>
+                            Edit the code to find and display the line tangent to the curve when <m>x=2</m>.
+                        </p>
+                    </statement>
+                </task>
+
+                <task>
+                    <statement>
+                        <p>
+                            Change the window so that <m>x</m> ranges from <m>0</m> to <m>10</m>
+                        </p>
+                    </statement>
+                </task>
+
+                <task>
+                    <statement>
+                        <p>
+                            Choose a function <m>f</m> and <m>x</m> value of your choice, and edit the code to find
+                            and display the line tangent to <m>y=f(x)</m> at your choisen <m>x</m> value.
+                        </p>
+                    </statement>
+                </task>
+                
+            </activity>
+
+
+            <activity>
+                <introduction>
+                    <p>
+                        Open <c>MyFirstAnimation.py</c> , and consider the first block <c>class sinchange(Scene):</c>.
+                    </p>
+                    <p>
+                        This particular block of code plots a transformed sine function of the form <m>y=a\sin(bx)+c</m>. Where initially
+                        <m>a=1, b=1, c=0</m>.  We then adjust the values for <m>a, b</m> and <m>c</m> over time.
+                    </p>
+                </introduction>
+
+                <task>
+                    <statement>
+                        <p>
+                            Run the code to produce a video file.
+                        </p>
+                    </statement>
+                </task>
+
+                <task>
+                    <statement>
+                        <p>
+                            Edit the array <c>a=[1,2, 2,  2,  -1/3]</c>, and the <c>rhs</c> entries to adjust the vertical stretch.
+                        </p>
+                    </statement>
+                </task>
+
+                <task>
+                    <statement>
+                        <p>
+                            Edit the array <c>b=[1,1, 1/2,1/2,-2]</c>, and the <c>rhs</c> entries to adjust the horizontal stretch.
+                        </p>
+                    </statement>
+                </task>
+
+                <task>
+                    <statement>
+                        <p>
+                            Edit the array <c>c=[0,0, 0,  -3, 2]</c>, and the <c>rhs</c> entries to adjust the vertical shift.
+                        </p>
+                    </statement>
+                </task>
+
+                
+                
+            </activity>
+
+            <activity>
+                <introduction>
+                    <p>
+                        Open <c>DerivativeRules.py</c>
+
+                    </p>
+                    <p>
+                        The function <c>FindProduct</c> displays a product rule computation, <c>FindQuotient</c> displays a quotient rule computation,
+                        and <c>FindPower</c> displays a faux-quotient rule computation using powers.
+                    </p>
+                </introduction>
+                <task>
+                    <p>
+                        Run the function <c>FindProduct</c> to produce a video file.
+                    </p>
+                </task>
+
+                <task>
+                    <p>
+                        Pick your favorite product of functions and edit the code to produce the appropriate derivation.
+                    </p>
+                </task>
+
+                <task>
+                    <p>
+                        Copy and paste the <c>FindProduct</c> function and rename it <c>FindChain</c>.
+                    </p>
+                </task>
+
+                <task>
+                    <p>
+                        Edit this new command to display an animation for your favorite chain rule derivation.
+                    </p>
+                </task>
+
+            </activity>
+
+            <activity>
+                <introduction>
+                    <p>
+                        Open <c>Riemann.py</c>. Third function, Riemann rectangle.
+                    </p>
+                    <p>
+                        Explain Code
+                    </p>
+                </introduction>
+
+                <task>
+                    <statement>
+                        <p>
+                            Have them compile.
+                        </p>
+                    </statement>
+                </task>
+
+                <task>
+                    <statement>
+                        <p>
+                            Change <m>n</m>.
+                        </p>
+                    </statement>
+                </task>
+
+                <task>
+                    <statement>
+                        <p>
+                            Change the function.
+                        </p>
+                    </statement>
+                </task>
+
+                
+                
+            </activity>
+
+
+            <activity>
+                <introduction>
+                    <p>
+                        Open <c>3dstuff</c>
+                    </p>
+                </introduction>
+                <task>
+                    <statement>
+                        <p>
+                            Run code.
+                        </p>
+                    </statement>
+                </task>
+                <task>
+                    <statement>
+                        <p>
+                            Change angles.
+                        </p>
+                    </statement>
+                </task>
+                <task>
+                    <statement>
+                        <p>
+                            Change surface.
+                        </p>
+                    </statement>
+                </task>
+            </activity>
+
+
+            
+
+            
+
+            
+
+            <p>
+                
+            </p>
+            
+            
+        </section>
+
+    
 </chapter>
