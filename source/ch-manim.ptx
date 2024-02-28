@@ -1,59 +1,140 @@
 <?xml version='1.0' encoding='utf-8'?>
 <chapter xml:id="ch-manim">
     <title>Manim</title>
+    <introduction>
+        <p>
+This chapter is co-authored by <xref ref="frontmatter">Tien Chih</xref>.
+        </p>
+    </introduction>
     <section xml:id="sec-what-is-manim">
         <title>What Is Manim?</title>
         <p>
-            Community Manim, (also just called Manim) stands for <q>Math Animation</q>
-            It is a publically maintained, open-source commmunity version of a custom
-            python package initially created by Grant Sanderson, more commonly known as
-            <em>3Blue1Brown</em>.  <url>https://www.3blue1brown.com/</url>, <url>https://www.youtube.com/c/3blue1brown</url>
+            <pubtitle>Manim</pubtitle> stands for <q>Math Animation</q>.
+            The <pubtitle>Community Manim</pubtitle> Python package is a 
+            publically maintained, open-source commmunity version of a custom
+            Python package initially created by Grant Sanderson, more commonly known as
+            <em>3Blue1Brown</em>.
+            <ul>
+                <li>
+                    <p>
+                        <url>https://www.3blue1brown.com/</url>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <url>https://www.youtube.com/c/3blue1brown</url>
+                    </p>
+                </li>
+            </ul>
         </p>
         <p>
             Manim provides tools that can bring mathematical ideas and concepts to life that
-            static words and explanations may not capture.  The TBIL Calculus I video series
-            was animated entirely by Manim: <url>https://www.youtube.com/playlist?list=PLwXCBkIf7xBODPeQxULagMeWSK4YtLYog</url>.
+            static words and explanations may not capture. As an example, the 
+            <url href="http://tbil.org">TBIL.org</url> Calculus I video series
+            <url href="https://www.youtube.com/playlist?list=PLwXCBkIf7xBODPeQxULagMeWSK4YtLYog">
+                at this YouTube playlist
+            </url>
+            was animated entirely by Tien Chich using Manim.
         </p>
     </section>
 
+    <section xml:id="sec-manim-codespace">
+        <title>Creating a Manim Codespace</title>
+        
+        <p>
+            A turn-key repository for creating a Codespace 
+            (<xref ref="sec-codespaces"/>) for Manim is available at
+            <url href="https://github.com/StevenClontz/manim-workshop">
+                StevenClontz/manim-workshop
+            </url>. Follow the instructions there to obtain an interface
+            for authoring Manim content using just your web browser
+            (Chrome/Edge/Firefox recommended).
+        </p>
+    </section>
 
     <section xml:id="sec-hello-world">
-        <title>helloworld</title>
+        <title>Hello World!</title>
         <introduction>
             <p>
-                We will run our very first Manim animation.
+                Let's run our very first Manim animation.
             </p>
         </introduction>
-        <task>
-            <statement>
+        <activity>
+            <introduction>
                 <p>
-                    Open <c>helloworld.py</c>, and look through the code.
+                    Open <c>main.py</c> and look for the line
+                    <c>class HelloWorld(Scene):</c>.
                 </p>
-            </statement>
-        </task>
-        <task>
-            <statement>
-                <p>
-                    Run <c>helloworld.py</c>.  Congratulations, you have made 
-                    your first manim animation!
-                </p>
-            </statement>
-        </task>
+            </introduction>
+            <task>
+                <statement>
+                    <p>
+                        Open a Terminal and execute the command
+                        <c>manim render -ql main.py HelloWorld</c>.
+                        (See the README file for other options
+                        to render Manim scenes.)
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Open the file
+                        <c>media/videos/main/480p15/HelloWorld.mp4</c>
+                        to view your newly rendered video.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        See if you can add these lines to the code so
+                        the video ends by saying <q>My name is YOUR NAME HERE</q>.
+                        <ul>
+                            <li>
+                                <p>
+                                    <c>name = MathTex(r"\text{My name is YOUR NAME HERE.}")</c>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <c>self.play(Transform(hello, name))</c>
+                                </p>
+                            </li>
+                        </ul>
+                        Don't forget to re-run
+                        <c>manim render -ql main.py HelloWorld</c>
+                        to update your rendered video.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        See if you can make the circle <c>GREEN</c> instead
+                        of <c>PINK</c>.
+                    </p>
+                </statement>
+            </task>
+        </activity>
     </section>
 
         
 
-        <section xml:id="sec-first-animation">
-            <title>My First Animation</title>
+        <section xml:id="sec-more-animations">
+            <title>More Animations</title>
 
             <activity>
                 <introduction>
                     <p>
-                        Open <c>MyFirstAnimation.py</c>, and consider the first block <c>class tanline(Scene):</c>.
+                        Open <c>main.py</c> and look for the line
+                        <c>class TanLine(Scene):</c>.
                     </p>
                     <p>
-                        Read the documentation and the code presented.  This particular function <c>tanline</c> creates a curve, displays
-                        the algebraic work needed to find a tangent line, and then displays said tangent line.
+                        Review the comments and the code within this block.  
+                        This particular scene <c>TanLine</c> creates a curve, displays
+                        the algebraic work needed to find a tangent line, and then displays 
+                        said tangent line.
                     </p>
                     
                 </introduction>
@@ -61,7 +142,9 @@
                 <task>
                     <statement>
                         <p>
-                            Run the code to produce a video file.
+                            Run <c>manim render -ql main.py TanLine</c> 
+                            to produce a video file at
+                            <c>media/videos/main/480p15/TanLine.mp4</c>.
                         </p>
                     </statement>
                 </task>
@@ -69,7 +152,8 @@
                 <task>
                     <statement>
                         <p>
-                            Edit the code to find and display the line tangent to the curve when <m>x=2</m>.
+                            Edit the code to find and display the line tangent
+                            to the curve when <m>x=2</m>.
                         </p>
                     </statement>
                 </task>
@@ -77,7 +161,8 @@
                 <task>
                     <statement>
                         <p>
-                            Change the window so that <m>x</m> ranges from <m>0</m> to <m>10</m>
+                            Change the window so that <m>x</m> ranges from
+                            <m>0</m> to <m>10</m>.
                         </p>
                     </statement>
                 </task>
@@ -85,27 +170,36 @@
                 <task>
                     <statement>
                         <p>
-                            Choose a function <m>f</m> and <m>x</m> value of your choice, and edit the code to find
-                            and display the line tangent to <m>y=f(x)</m> at your choisen <m>x</m> value.
-                        </p>
-                        <p>
-                            I find <url>https://www.desmos.com/</url> very helpful
-                            in determining appropriate window sizes and scaling.
+                            Choose a function <m>f</m> and <m>x</m> value of your
+                            choice, and edit the code to find
+                            and display the line tangent to <m>y=f(x)</m> at your 
+                            chosen <m>x</m> value.
                         </p>
                     </statement>
                 </task>
                 
             </activity>
 
+            <remark>
+                <p>
+                    The web-based <url href="https://www.desmos.com/">Desmos</url> 
+                    tool can be very helpful
+                    in determining appropriate window sizes and scaling.
+                </p>
+            </remark>
+
 
             <activity>
                 <introduction>
                     <p>
-                        Open <c>MyFirstAnimation.py</c> , and consider the first block <c>class sinchange(Scene):</c>.
+                        Open <c>main.py</c> and look for the line
+                        <c>class SinChnage(Scene):</c>.
                     </p>
                     <p>
-                        This particular block of code plots a transformed sine function of the form <m>y=a\sin(bx)+c</m>. Where initially
-                        <m>a=1, b=1, c=0</m>.  We then adjust the values for <m>a, b</m> and <m>c</m> over time.
+                        This particular block of code plots a transformed sine function 
+                        of the form <m>y=a\sin(bx)+c</m>. Where initially
+                        <m>a=1, b=1, c=0</m>.  We then adjust the values for <m>a, b</m> 
+                        and <m>c</m> over time.
                     </p>
                 </introduction>
 
@@ -145,15 +239,20 @@
                 
             </activity>
 
+
             <activity>
                 <introduction>
                     <p>
-                        Open <c>DerivativeRules.py</c>
-
+                        Open <c>main.py</c> and look for the lines
+                        <c>class FindProduct(Scene):</c>,
+                        <c>class FindQuotient(Scene):</c>, and
+                        <c>class FindPower(Scene):</c>.
                     </p>
                     <p>
-                        The function <c>FindProduct</c> displays a product rule computation, <c>FindQuotient</c> displays a quotient rule computation,
-                        and <c>FindPower</c> displays a faux-quotient rule computation using powers.
+                        The scene <c>FindProduct</c> displays a product rule computation, 
+                        <c>FindQuotient</c> displays a quotient rule computation,
+                        and <c>FindPower</c> displays a faux-quotient rule computation 
+                        using powers.
                     </p>
                 </introduction>
                 <task>
@@ -164,19 +263,22 @@
 
                 <task>
                     <p>
-                        Pick your favorite product of functions and edit the code to produce the appropriate derivation.
+                        Pick your favorite product of functions and edit the code to 
+                        produce the appropriate derivation.
                     </p>
                 </task>
 
                 <task>
                     <p>
-                        Copy and paste the <c>FindProduct</c> function and rename it <c>FindChain</c>.
+                        Copy and paste the <c>FindProduct</c> function and rename it 
+                        <c>FindChain</c>.
                     </p>
                 </task>
 
                 <task>
                     <p>
-                        Edit this new command to display an animation for your favorite chain rule derivation.
+                        Edit this new command to display an animation for your favorite 
+                        chain rule derivation.
                     </p>
                 </task>
 
@@ -185,7 +287,8 @@
             <activity>
                 <introduction>
                     <p>
-                        Open <c>MyFirstAnimation.py</c>. Third function, Riemann rectangle.
+                        Open <c>main.py</c> and look for the line
+                        <c>class Riemann(Scene):</c>.
                     </p>
                     <p>
                         This code displays a Riemann sum for a funcion, and displays the ongoing sum for
@@ -205,7 +308,7 @@
                 <task>
                     <statement>
                         <p>
-                            Change the function to a function of your chocie.  You may need to resize the window.
+                            Change the function to a function of your choice.  You may need to resize the window.
                             Recall the identitites <me>\sum_{i=1}^n i = \frac{n(n+1)}{2}, \sum_{i=1}^n i^2 = \frac{n(n+1)(2n+1)}{6},
                                 \sum_{i=1}^n i^3 = \left( \frac{n(n+1)}{2}\right)^2.</me>
                         </p>
@@ -215,75 +318,32 @@
                 
                 
             </activity>
-
-            <!--
-
-            <activity>
-                <introduction>
-                    <p>
-                        Open <c>3dstuff</c>
-                    </p>
-                </introduction>
-                <task>
-                    <statement>
-                        <p>
-                            Run code.
-                        </p>
-                    </statement>
-                </task>
-                <task>
-                    <statement>
-                        <p>
-                            Change angles.
-                        </p>
-                    </statement>
-                </task>
-                <task>
-                    <statement>
-                        <p>
-                            Change surface.
-                        </p>
-                    </statement>
-                </task>
-            </activity>-->
-
-            <section xml:id="sec-resources">
-                <title>Additional Resources:</title>
-                <statement>
-                    <p>
-                        Here are a list of helpful links regarding manim authoring:
-                        <ul>
-                            <li>
-                                <p>
-                                    <url>https://docs.manim.community/en/stable/index.html</url>.  This is my goto
-                                    place for FAQ's, working examples etc..
-                                </p>
-                            </li>
-                        
-                            <li>
-                                <p>
-                                    <url>https://discord.com/invite/bYCyhM9Kz2</url> a discord for manim,
-                                    people can help here and you can run python code within the discord.
-                                </p>
-                            </li>
-                        </ul>
-                    </p>
-                </statement>
-                
-            </section>
             
-
-
             
+        </section>
 
-            
-
-            
-
-            <p>
-                
-            </p>
-            
+        <section xml:id="sec-resources">
+            <title>Additional Resources:</title>
+            <statement>
+                <p>
+                    Here are a list of helpful links regarding Manim authoring:
+                    <ul>
+                        <li>
+                            <p>
+                                <url>https://docs.manim.community/en/stable/index.html</url>.  This is Tien's goto
+                                place for FAQ's, working examples etc..
+                            </p>
+                        </li>
+                    
+                        <li>
+                            <p>
+                                <url>https://discord.com/invite/bYCyhM9Kz2</url> a Discord for Manim,
+                                people can help here and you can run Python code within the Discord.
+                            </p>
+                        </li>
+                    </ul>
+                </p>
+            </statement>
             
         </section>
 

@@ -90,4 +90,14 @@ of this work was the establishment of
 engaged in this work.
         </p>
     </section> 
+    <section xml:id="sec-prose">
+        <title>PROSE Consortium</title>
+        <p>
+The PROSE Consortium is a community of
+instructors, developers, and researchers focusd on open-source
+tools and resources for mathematics and computer science education.
+You can engage with this group by visiting their homepage at
+<url href="https://prose.runestone.academy"/>.
+        </p>
+    </section> 
 </chapter>
