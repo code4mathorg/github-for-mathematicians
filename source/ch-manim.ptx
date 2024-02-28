@@ -4,13 +4,41 @@
     <section xml:id="sec-what-is-manim">
         <title>What Is Manim?</title>
         <p>
-I dunno
+            Community Manim, (also just called Manim) stands for <q>Math Animation</q>
+            It is a publically maintained, open-source commmunity version of a custom
+            python package initially created by Grant Sanderson, more commonly known as
+            <em>3Blue1Brown</em>.  <url>https://www.3blue1brown.com/</url>, <url>https://www.youtube.com/c/3blue1brown</url>
+        </p>
+        <p>
+            Manim provides tools that can bring mathematical ideas and concepts to life that
+            static words and explanations may not capture.  The TBIL Calculus I video series
+            was animated entirely by Manim: <url>https://www.youtube.com/playlist?list=PLwXCBkIf7xBODPeQxULagMeWSK4YtLYog</url>.
         </p>
     </section>
 
 
     <section xml:id="sec-hello-world">
-        <title>hello-world</title>
+        <title>helloworld</title>
+        <introduction>
+            <p>
+                We will run our very first Manim animation.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Open <c>helloworld.py</c>, and look through the code.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Run <c>helloworld.py</c>.  Congratulations, you have made 
+                    your first manim animation!
+                </p>
+            </statement>
+        </task>
     </section>
 
         
@@ -59,6 +87,10 @@ I dunno
                         <p>
                             Choose a function <m>f</m> and <m>x</m> value of your choice, and edit the code to find
                             and display the line tangent to <m>y=f(x)</m> at your choisen <m>x</m> value.
+                        </p>
+                        <p>
+                            I find <url>https://www.desmos.com/</url> very helpful
+                            in determining appropriate window sizes and scaling.
                         </p>
                     </statement>
                 </task>
@@ -153,33 +185,29 @@ I dunno
             <activity>
                 <introduction>
                     <p>
-                        Open <c>Riemann.py</c>. Third function, Riemann rectangle.
+                        Open <c>MyFirstAnimation.py</c>. Third function, Riemann rectangle.
                     </p>
                     <p>
-                        Explain Code
+                        This code displays a Riemann sum for a funcion, and displays the ongoing sum for
+                        <m>R_n</m>.
                     </p>
                 </introduction>
 
                 <task>
                     <statement>
                         <p>
-                            Have them compile.
+                            Run the code to see the output.
                         </p>
                     </statement>
                 </task>
 
-                <task>
-                    <statement>
-                        <p>
-                            Change <m>n</m>.
-                        </p>
-                    </statement>
-                </task>
 
                 <task>
                     <statement>
                         <p>
-                            Change the function.
+                            Change the function to a function of your chocie.  You may need to resize the window.
+                            Recall the identitites <me>\sum_{i=1}^n i = \frac{n(n+1)}{2}, \sum_{i=1}^n i^2 = \frac{n(n+1)(2n+1)}{6},
+                                \sum_{i=1}^n i^3 = \left( \frac{n(n+1)}{2}\right)^2.</me>
                         </p>
                     </statement>
                 </task>
@@ -188,6 +216,7 @@ I dunno
                 
             </activity>
 
+            <!--
 
             <activity>
                 <introduction>
@@ -216,7 +245,33 @@ I dunno
                         </p>
                     </statement>
                 </task>
-            </activity>
+            </activity>-->
+
+            <section xml:id="sec-resources">
+                <title>Additional Resources:</title>
+                <statement>
+                    <p>
+                        Here are a list of helpful links regarding manim authoring:
+                        <ul>
+                            <li>
+                                <p>
+                                    <url>https://docs.manim.community/en/stable/index.html</url>.  This is my goto
+                                    place for FAQ's, working examples etc..
+                                </p>
+                            </li>
+                        
+                            <li>
+                                <p>
+                                    <url>https://discord.com/invite/bYCyhM9Kz2</url> a discord for manim,
+                                    people can help here and you can run python code within the discord.
+                                </p>
+                            </li>
+                        </ul>
+                    </p>
+                </statement>
+                
+            </section>
+            
 
 
             
