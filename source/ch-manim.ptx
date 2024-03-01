@@ -193,7 +193,7 @@ This chapter is co-authored by <xref ref="frontmatter">Tien Chih</xref>.
                 <introduction>
                     <p>
                         Open <c>main.py</c> and look for the line
-                        <c>class SinChnage(Scene):</c>.
+                        <c>class SinChange(Scene):</c>.
                     </p>
                     <p>
                         This particular block of code plots a transformed sine function 
