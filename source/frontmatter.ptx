@@ -6,6 +6,14 @@
         <department>Department of Mathematics and Statistics</department>
         <institution>Univeristy of South Alabama</institution>
       </author>
+      <credit>
+        <title>Contributing Authors</title>
+        <author>
+          <personname>Tien Chih</personname>
+          <department>Natural Science and Mathematics</department>
+          <institution>Emory College at Oxford University</institution>
+        </author>
+      </credit>
       <date>
         <today />
       </date>

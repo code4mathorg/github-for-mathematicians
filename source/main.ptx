@@ -21,9 +21,9 @@
     <xi:include href="ch-first-repo.ptx"/>
     <xi:include href="ch-website.ptx"/>
     <xi:include href="ch-coding.ptx"/>
-    <xi:include href="ch-manim.ptx"/>
     <xi:include href="ch-collaboration.ptx"/>
     <xi:include href="ch-projects.ptx"/>
+    <xi:include href="ch-manim.ptx"/>
 
     <backmatter xml:id="backmatter">
       <title>Backmatter</title>
