@@ -18,7 +18,7 @@ to <xref ref="sec-using-a-template"/> to create a portfolio website
 without using HTML.)
         </p>
         <p>
-Use GitHub.dev (<xref ref="opening-github-dev"/>)
+Use <c>GitHub.dev</c> (<xref ref="opening-github-dev"/>)
 to create three files in the root of your project.
             <ul>
                 <li>
@@ -47,7 +47,7 @@ section, but for now add the following content:
 Download
 <dataurl source="git-branches.png"><c>git-branches.png</c></dataurl>
 (used for <xref ref="fig-git-branches"/>)
-and upload it to GitHub.dev.
+and upload it to <c>GitHub.dev</c>.
                     </p>
                 </li>
             </ul>
@@ -58,7 +58,7 @@ first!).
         </p>
         <p>
 Commit this update to your repository using Source Control,
-and confirm you see the two new files on your GitHub.com repository
+and confirm you see the two new files on your <c>GitHub.com</c> repository
 webpage.
         </p>
         <note xml:id="enable-github-pages">
@@ -96,7 +96,7 @@ or private.
                         <p>
 <c>GitHub.dev</c> is where you can make changes to your repository
 through your web browser. This is private to you and you must commit
-and push your changes to the GitHub.com repository every so often.
+and push your changes to the <c>GitHub.com</c> repository every so often.
 (See also <xref ref="sec-github-pages-codespace"/>.)
                         </p>
                     </li>
@@ -212,7 +212,7 @@ an orange dot (in progress), a green checkmark
             </p>
             <figure xml:id="fig-web-actions">
                 <image width="100%" source="screenshots/pages-actions.png"/> 
-                <caption>Actions tab on Github.com.</caption>
+                <caption>Actions tab on <c>Github.com</c>.</caption>
         </figure>       
         </note>
     </section>

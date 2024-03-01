@@ -39,23 +39,23 @@ to the <c>GitHub.dev</c> environment you learned about in
     <note xml:id="dev-codespace-contrast">
       <p>
 Here are a few key differences between
-GitHub.dev and Codespaces.
+<c>GitHub.dev</c> and Codespaces.
         <ol>
           <li>
             <p>
-A GitHub.dev URL looks like <c>github.dev/username/reponame</c>,
+A <c>GitHub.dev</c> URL looks like <c>github.dev/username/reponame</c>,
 while a Codespace URL looks like
 <c>random-word-123randomcharacters789.github.dev</c>.
             </p>
           </li>
           <li>
             <p>
-GitHub.dev is quicker to load than a Codespace.
+<c>GitHub.dev</c> is quicker to load than a Codespace.
             </p>
           </li>
           <li>
             <p>
-GitHub.dev has a much more limited selection of VS Code
+<c>GitHub.dev</c> has a much more limited selection of VS Code
 extensions to use.
             </p>
           </li>
@@ -68,12 +68,12 @@ You can only install applications and execute code on a Codespace.
       </p>
     </note>
     <p>
-One similarity between GitHub.dev and Codespaces
+One similarity between <c>GitHub.dev</c> and Codespaces
 (besides the obviously similar VS Code user interfaces),
 is that your work is still private to you and can only be
 shared with the public (and retained in the long term) by
 committing and pushing your progress every so often to your
-GitHub.com repository. The Source Control tool works slightly
+<c>GitHub.com</c> repository. The Source Control tool works slightly
 different in a Codespace, however.
     </p>
     <note xml:id="note-commit-sync">
@@ -166,7 +166,7 @@ that you can upload to your Codespace to break the ice.
 Another useful application of Codespaces is the ability
 to preview your GitHub Pages site created in
 <xref ref="sec-using-a-template"/>. Return to that repository
-on GitHub.com and create a new Codespace
+on <c>GitHub.com</c> and create a new Codespace
 (<xref ref="note-create-codespace"/>).
     </p>
     <p>
@@ -196,8 +196,8 @@ your changes
 (<xref ref="note-commit-sync"/>).
     </p>
     <p>
-Personally, I use GitHub.dev (or even just the
-GitHub.com edit button) rather than a full
+Personally, I use <c>GitHub.dev</c> (or even just the
+<c>GitHub.com</c> edit button) rather than a full
 Codespace when adding a quick post or making a quick edit on
 many of my GitHub Pages websites. But the Codespace option is very
 handy for when bigger changes are necessary, and you want to make
@@ -247,7 +247,7 @@ recent commit.
       </p>
     </note>
 <p>Putting it all together, we have seen three ways to access files on your repo.
-  Going from the least easy to edit to the most editable we have: <c>github.com</c>, <c>github.dev</c>, <c>random-codespace-string.github.dev</c>. Here is what these environments look like.</p>
+  Going from the least easy to edit to the most editable we have: <c>GitHub.com</c>, <c>GitHub.dev</c>, <c>random-codespace-string.github.dev</c>. Here is what these environments look like.</p>
   <figure xml:id="fig-faces-of-github">
     <image width="100%" source="screenshots/github-com.png"/>
     <image width="100%" source="screenshots/github-dev.png"/>
