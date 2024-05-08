@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project ptx-version="2">
+  <targets>
+    <target name="web" format="html" deploy-dir="." />
+    <target name="print" format="pdf" deploy-dir="./pdf" output-filename="g4m.pdf" />
+  </targets>
+</project>
