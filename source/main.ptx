@@ -14,7 +14,7 @@
   </docinfo>
 
   <book xml:id="g4m">
-    <title>GitHub for Mathematicians</title>
+    <title>GitHub for Dummies</title>
     <xi:include href="frontmatter.ptx" />
   
     <xi:include href="ch-git-github.ptx"/>
