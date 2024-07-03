@@ -14,5 +14,5 @@ public use under an open license.
 
 ## Copyright
 
-This work is copyright 2023 Steven Clontz, available for free and public use
+This work is copyright 2023-2024 Steven Clontz, available for free and public use
 under an [open license](./LICENSE.md).
