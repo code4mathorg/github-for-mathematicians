@@ -25,7 +25,7 @@ and even modify it for your purposes if you wanted.
 Two core concepts of Git are <term>commits</term> (illustrated
 in <xref ref="fig-git-branches"/> by circles) and <term>branches</term>
 (illustrated in <xref ref="fig-git-branches"/> by lines). A
-commit represents the state of of your project at a particular
+commit represents the state of your project at a particular
 point in its history. Branches allow this history to not be
 linear: you can branch off to experiment on a particular new
 feature, then merge this <q>feature branch</q> back into
@@ -96,7 +96,7 @@ efficiently.
 An example of a project using Git and GitHub is the
 document you're reading right now!
 This book is open-sourced and shared at
-<url href="https://github.com/StevenClontz/github-for-mathematicians"/>,
+<url href="https://github.com/code4mathorg/github-for-mathematicians"/>,
 and was authored completely in a web browser using only the GitHub features
 we will explore together in this handbook.
         </p>
