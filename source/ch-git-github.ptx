@@ -25,7 +25,7 @@ and even modify it for your purposes if you wanted.
 Two core concepts of Git are <term>commits</term> (illustrated
 in <xref ref="fig-git-branches"/> by circles) and <term>branches</term>
 (illustrated in <xref ref="fig-git-branches"/> by lines). A
-commit represents the state of of your project at a particular
+commit represents the state of your project at a particular
 point in its history. Branches allow this history to not be
 linear: you can branch off to experiment on a particular new
 feature, then merge this <q>feature branch</q> back into
