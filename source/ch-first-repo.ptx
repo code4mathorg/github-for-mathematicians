@@ -101,7 +101,7 @@ homepage on <c>GitHub.com</c>.
 Finally, you might be interested in visiting the <q>Insights</q>
 tab for your repository, and specifically the <q>Network</q> page.
 It should reveal a graphic similar to <xref ref="fig-git-branches"/>
-visualizing the history of you project across all GitHub collaborators.
+visualizing the history of your project across all GitHub collaborators.
 Right now you don't have any collaborators and just a couple commits,
 but keeping in mind this model for your project history will be
 useful as we juggle various commits and pushes and syncs and so on
