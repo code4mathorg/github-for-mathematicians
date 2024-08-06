@@ -158,16 +158,38 @@ Unless your Codespace has been customized via a
 into here), you'll be using the default Codespace
 image provided by GitHub. This environment is ready
 to execute code from various standard programming
+<<<<<<< Updated upstream
 lanugages, though for some of them you may
 need to run the script using the Terminal.
+=======
+lanugages, though for something of them you may
+need to run the script using the <q>Terminal</q>.
+>>>>>>> Stashed changes
     </p>
+<definition xml:id="def-terminal">
+  <statement>
+    <p>
+A <term>terminal</term> is a command-line prompt used to
+run programs that don't have a graphical user interface.
+Type the command and hit <kbd>Enter</kbd> to run it.
+    </p>
+  </statement>
+</definition>
+<remark xml:id="remark-terminal-shortcut">
+  <statement>
+    <p>
+To open a terminal on demand in a Codespace, use the shortcut
+<kbd>Ctrl/Cmd</kbd>+<kbd>Shift</kbd>+<kbd>`</kbd>.
+    </p>
+  </statement>
+</remark>
     <p>
 What do you think the programs in
 <xref ref="listing-python-fib"/>,
 <xref ref="listing-ruby-fib"/>, and
 <xref ref="listing-javascript-fib"/>
-will output?
-Execute them in your Codespace to find out!
+will output? Copy-paste them into a file in your Codespace,
+then run to find out!
     </p>
     <listing xml:id="listing-python-fib">
       <program language="python">
@@ -183,7 +205,7 @@ for _ in range(10):
   a,b = b,a+b
         </input>
       </program>
-      <caption>Python code</caption>
+      <caption>Sample Python code</caption>
     </listing>
     <listing xml:id="listing-ruby-fib">
       <program language="ruby">
@@ -200,7 +222,7 @@ puts b
 end
         </input>
       </program>
-      <caption>Ruby code</caption>
+      <caption>Sample Ruby code</caption>
     </listing>
     <listing xml:id="listing-javascript-fib">
       <program language="javascript">
@@ -220,7 +242,7 @@ Array.from({ length: 10 }, _ => {
 
         </input>
       </program>
-      <caption>Javascript code</caption>
+      <caption>Sample Javascript code</caption>
     </listing>
   </section>
   <section xml:id="sec-github-pages-codespace">
@@ -234,7 +256,7 @@ on <c>GitHub.com</c> and create a new Codespace
     </p>
     <p>
 To spin up your live preview, open a terminal by using the
-<kbd>Ctrl/Cmd</kbd>+<kbd>Shift</kbd>+<kbd>`</kbd> keys. To make
+shortcut noted in <xref ref="remark-terminal-shortcut"/>. To make
 sure the necessary software has been installed, type <c>bundle</c>
 and hit <kbd>Enter</kbd>. Then, you can enter <c>jekyll serve</c>
 to start the preview server.
