@@ -97,6 +97,15 @@ summarizing the work you've done since your last commit
 Doing this will update the README visible on your repository
 homepage on <c>GitHub.com</c>.
         </p>
+        <remark xml:id="remark-readme">
+                <p>
+README files are important! If you ever want to share your
+repository source with someone else, it's the first thing
+they will read. Likewise, if you want to use someone else's
+repository, they will hopefully include first steps in their
+own README file.
+                </p>
+        </remark>
         <p>
 Finally, you might be interested in visiting the <q>Insights</q>
 tab for your repository, and specifically the <q>Network</q> page.
