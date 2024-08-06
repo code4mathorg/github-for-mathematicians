@@ -7,4 +7,55 @@
 ...
     </p>
   </section>
+  <section xml:id="sec-old-jupyter-stuff">
+    <title>Old jupyter stuff</title>
+    
+    <p>
+      <url href="https://python.org">Python</url> is an
+      popular open-source all-purpose programming language, and
+      a convenient way to write, execute, and share the
+      results of Python code is a
+      <url href="https://jupyter.org/">Jupyter notebook</url>.
+          </p>
+          <p>
+      To get started, create a Codespace
+      (<xref ref="note-create-codespace"/>)
+      on either an existing or new repository
+      (<xref ref="sec-creating-the-repo"/>).
+      You can then create a Jupyter notebook file named
+      <c>notebook.ipynb</c>.
+          </p>
+          <note xml:id="note-provision-notebook">
+            <p>
+      In a Codespace, any file with the extension <c>*.ipynb</c>
+      (short for <q><em>IPY</em>thon <em>N</em>ote<em>B</em>ook</q>,
+      Jupyter's original name)
+      will be treated as a
+      Jupyter notebook. When opening this file, you'll see a notebook
+      interface, and be prompted to
+      <q>install the recommended 'Python' extension</q> if it's
+      not already enabled - do this.
+            </p>
+            <p>
+      Then in your notebook file, click the <q>Select Kernel</q>
+      button, then <q>Install/Enable suggested extensions</q> for
+      Python+Jupyter. You should then have the option to select
+      a <q>Python environment</q> such as <c>Python 3.*.*</c>.
+            </p>
+            <p>
+      If successful, you should be able to enter
+      <c>import sys; print(sys.version)</c> into the displayed
+      text box,
+      and see the result of executing it with
+      <kbd>Shift</kbd>+<kbd>Enter</kbd>.
+            </p>
+          </note>
+          <p>
+      There are plenty of existing tutorials on the internet to help you
+      get acquainted with Python and Jupyter now that you have them
+      available to you in your Codespace. But to get you started, I've provided
+      one <dataurl source="sample-notebook.ipynb">sample notebook</dataurl>
+      that you can upload to your Codespace to break the ice.
+          </p>
+  </section>
 </chapter>

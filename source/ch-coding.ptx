@@ -110,55 +110,118 @@ would like your Codespace to periodically run
       </p>
     </note>
   </section>
-  <section xml:id="sec-jupyter-notebooks">
-    <title>Python and Jupyter Notebooks</title>
+  <section xml:id="sec-run-code">
+    <title>Writing and Running Code</title>
     <p>
-<url href="https://python.org">Python</url> is an
-popular open-source all-purpose programming language, and
-a convenient way to write, execute, and share the
-results of Python code is a
-<url href="https://jupyter.org/">Jupyter notebook</url>.
+Now that we've provisioned our Codespace virtual cloud computer,
+we can use it to write and execute code using our web browser for
+essentially any programming lanugage.
     </p>
     <p>
-To get started, create a Codespace
-(<xref ref="note-create-codespace"/>)
-on either an existing or new repository
-(<xref ref="sec-creating-the-repo"/>).
-You can then create a Jupyter notebook file named
-<c>notebook.ipynb</c>.
+Our first example will be Python, a popular general-purpose programming
+language (and the same language we will use in <xref ref="ch-jupyter"/>
+for Jupyter notebooks). In your Codespace, right-click on the file Explorer
+to create a <q>New File...</q>. Name this file <c>something.py</c> so your
+Codespace recognizes the file as a Python script (due to the <c>.py</c> file
+extension).
+This should trigger the prompt shown in <xref ref="fig-python-extension-screenshot"/>
+to install a Python extension - go ahead and do it.
     </p>
-    <note xml:id="note-provision-notebook">
-      <p>
-In a Codespace, any file with the extension <c>*.ipynb</c>
-(short for <q><em>IPY</em>thon <em>N</em>ote<em>B</em>ook</q>,
-Jupyter's original name)
-will be treated as a
-Jupyter notebook. When opening this file, you'll see a notebook
-interface, and be prompted to
-<q>install the recommended 'Python' extension</q> if it's
-not already enabled - do this.
-      </p>
-      <p>
-Then in your notebook file, click the <q>Select Kernel</q>
-button, then <q>Install/Enable suggested extensions</q> for
-Python+Jupyter. You should then have the option to select
-a <q>Python environment</q> such as <c>Python 3.*.*</c>.
-      </p>
-      <p>
-If successful, you should be able to enter
-<c>import sys; print(sys.version)</c> into the displayed
-text box,
-and see the result of executing it with
-<kbd>Shift</kbd>+<kbd>Enter</kbd>.
-      </p>
-    </note>
+    <figure xml:id="fig-python-extension-screenshot">
+      <image width="100%" source="screenshots/codespace-python-extension.png">
+        <shortdescription>
+A screenshot of the prompt that displays in a Codespace
+to install the Python extension.
+        </shortdescription>
+      </image>
+      <caption>Prompt to install the Python extension.</caption>
+    </figure>
     <p>
-There are plenty of existing tutorials on the internet to help you
-get acquainted with Python and Jupyter now that you have them
-available to you in your Codespace. But to get you started, I've provided
-one <dataurl source="sample-notebook.ipynb">sample notebook</dataurl>
-that you can upload to your Codespace to break the ice.
+Add the line <c>print("Hello world!")</c> to your file.
+A <q>play</q> icon (<kbd>▶</kbd>) should be displayed
+in the upper-right corner of the text editor (thanks to the
+Python extension you installed). Clicking
+this button should execute the code to print a greeting
+as in <xref ref="fig-python-script-screenshot"/>.
     </p>
+    <figure xml:id="fig-python-script-screenshot">
+      <image width="100%" source="screenshots/codespace-python-script.png">
+        <shortdescription>
+A screenshot of a Python script being executed within a Codespace.
+        </shortdescription>
+      </image>
+      <caption>Running a Python script in a Codespace.</caption>
+    </figure>
+    <p>
+Unless your Codespace has been customized via a
+<c>.devcontainer.json</c> file (which we won't get
+into here), you'll be using the default Codespace
+image provided by GitHub. This environment is ready
+to execute code from various standard programming
+lanugages, though for something of them you may
+need to run the script using the Terminal.
+    </p>
+    <p>
+What do you think the programs in
+<xref ref="listing-python-fib"/>,
+<xref ref="listing-ruby-fib"/>, and
+<xref ref="listing-javascript-fib"/>
+will output?
+Execute them in your Codespace to find out!
+    </p>
+    <listing xml:id="listing-python-fib">
+      <program language="python">
+        <input>
+# name this Python file something.py
+# execute using the ▶ button or by running this in a terminal:
+#   python something.rb
+a,b = 1,1
+print(a)
+print(b)
+for _ in range(10):
+  print(a+b)
+  a,b = b,a+b
+        </input>
+      </program>
+      <caption>Python code</caption>
+    </listing>
+    <listing xml:id="listing-ruby-fib">
+      <program language="ruby">
+        <input>
+# name this Ruby file something.rb
+# execute by running this in a terminal:
+#   ruby something.rb
+a,b = 1,1
+puts a
+puts b
+10.times do
+  puts a+b
+  a,b = b,a+b
+end
+        </input>
+      </program>
+      <caption>Ruby code</caption>
+    </listing>
+    <listing xml:id="listing-javascript-fib">
+      <program language="javascript">
+        <input>
+// name this Javascript file something.js
+// execute by running this in a terminal:
+//   node something.js
+let a = 1, b = 1
+console.log(a)
+console.log(b)
+Array.from({ length: 10 }, _ => {
+  console.log(a+b)
+  let _a = a
+  a = b
+  b = _a + b
+})
+
+        </input>
+      </program>
+      <caption>Javascript code</caption>
+    </listing>
   </section>
   <section xml:id="sec-github-pages-codespace">
     <title>Previewing GitHub Pages</title>
