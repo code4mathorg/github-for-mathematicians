@@ -279,7 +279,8 @@ pull requests.
     <p>
 Those of us who work in open source typically <em>love</em> getting
 pull requests from random collaborators. For example, if you find a
-typo in this book, you can fxi <!-- fxi is funny in context-->it by creating a fork at
+typo in this book, you can fxi <!-- except this one, it's a joke :-) -->
+it by creating a fork at
 <url href="https://github.com/StevenClontz/github-for-mathematicians/fork"/>,
 editing the appropriate <c>source/*.ptx</c> file to fix the word,
 and open a pull request.
