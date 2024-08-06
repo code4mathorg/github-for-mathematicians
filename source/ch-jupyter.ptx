@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<chapter xml:id="ch-jupyter">
+  <title>Jupyter Notebooks</title>
+  <section xml:id="sec-jupyter-codespace">
+    <title>Jupyter Codespace</title>
+    <p>
+...
+    </p>
+  </section>
+</chapter>
