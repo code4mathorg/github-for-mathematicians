@@ -161,23 +161,23 @@ to execute code from various standard programming
 lanugages, though for some of them you may
 need to run the script using the Terminal.
     </p>
-<definition xml:id="def-terminal">
-  <statement>
-    <p>
+    <definition xml:id="def-terminal">
+      <statement>
+        <p>
 A <term>terminal</term> is a command-line prompt used to
 run programs that don't have a graphical user interface.
 Type the command and hit <kbd>Enter</kbd> to run it.
-    </p>
-  </statement>
-</definition>
-<remark xml:id="remark-terminal-shortcut">
-  <statement>
-    <p>
+        </p>
+      </statement>
+    </definition>
+    <remark xml:id="remark-terminal-shortcut">
+      <statement>
+        <p>
 To open a terminal on demand in a Codespace, use the shortcut
 <kbd>Ctrl/Cmd</kbd>+<kbd>Shift</kbd>+<kbd>`</kbd>.
-    </p>
-  </statement>
-</remark>
+        </p>
+      </statement>
+    </remark>
     <p>
 What do you think the programs in
 <xref ref="listing-python-fib"/>,
