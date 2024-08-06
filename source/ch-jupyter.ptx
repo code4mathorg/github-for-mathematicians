@@ -1,23 +1,66 @@
 <?xml version='1.0' encoding='utf-8'?>
 <chapter xml:id="ch-jupyter">
   <title>Jupyter Notebooks</title>
-  <section xml:id="sec-jupyter-codespace">
-    <title>Jupyter Codespace</title>
+  <introduction>
     <p>
-...
+In <xref ref="sec-run-code"/> you wrote and ran a few short
+scripts in various programming languages. But often, we want
+to not only be able to write and execute code, but do so
+piece-by-piece, and share the results with other people
+without requiring them to run the code themselves...
+    </p>
+  </introduction>
+  <section xml:id="sec-intro-to-jupyter">
+    <title>Intro to Jupyter</title>
+    <definition xml:id="def-jupyter">
+      <statement>
+        <p>
+A <term>Jupyter notebook</term> is a file that stores
+commentary, code, and output in an all-in-one format suitable for
+sharing with other people.
+        </p>
+      </statement>
+    </definition>
+    <p>
+Jupyter is a popular open-source tool used in
+data science, scientific computing, and computational journalism.
+GitHub provides a Codespace ready for running Jupyter notebooks
+out of the box:
+<url href="https://github.com/github/codespaces-jupyter/"/>.
     </p>
   </section>
-  <section xml:id="sec-old-jupyter-stuff">
-    <title>Old jupyter stuff</title>
-    
+  <section xml:id="sec-github-codespaces-jupyter">
+    <title>GitHub's Jupyter Codespace</title>
     <p>
-      <url href="https://python.org">Python</url> is an
-      popular open-source all-purpose programming language, and
-      a convenient way to write, execute, and share the
-      results of Python code is a
-      <url href="https://jupyter.org/">Jupyter notebook</url>.
-          </p>
-          <p>
+Let's begin by going to
+<url href="https://github.com/github/codespaces-jupyter/">
+  github/codespaces-jupyter</url>
+directly. Before we dive into editing a notebook ourselves,
+we can first browse the <c>notebooks</c> directory on
+the repository page. We see three files, each with the
+extension <c>*.ipynb</c>
+(short for <q><em>IPY</em>thon <em>N</em>ote<em>B</em>ook</q>,
+Jupyter's original name).
+    </p>
+    <p>
+Clicking on each file, you'll note that while there's code,
+most of the file is actually narrative and visualization.
+That's the appeal of Jupyter for many people: it's about
+communicating <em>stories</em>, not just data or software.
+    </p>
+    <p>
+Additionally, you'll see a <c>data</c> directory, which
+includes a <c>*.csv</c> <em>C</em>omma <em>S</em>eparated
+<em>V</em>alues spreadsheet. This file can be read into a
+notebook for analysis.
+    </p>
+    <p>
+Now, let's follow the instructions of the repository's
+README file (<xref ref="remark-readme"/>).
+    </p>
+  </section>
+  <!-- <section>
+    <p>
       To get started, create a Codespace
       (<xref ref="note-create-codespace"/>)
       on either an existing or new repository
@@ -27,9 +70,7 @@
           </p>
           <note xml:id="note-provision-notebook">
             <p>
-      In a Codespace, any file with the extension <c>*.ipynb</c>
-      (short for <q><em>IPY</em>thon <em>N</em>ote<em>B</em>ook</q>,
-      Jupyter's original name)
+      In a Codespace, any file with the extension 
       will be treated as a
       Jupyter notebook. When opening this file, you'll see a notebook
       interface, and be prompted to
@@ -54,8 +95,8 @@
       There are plenty of existing tutorials on the internet to help you
       get acquainted with Python and Jupyter now that you have them
       available to you in your Codespace. But to get you started, I've provided
-      one <dataurl source="sample-notebook.ipynb">sample notebook</dataurl>
+      one <dataurl source="first-notebook.ipynb">sample notebook</dataurl>
       that you can upload to your Codespace to break the ice.
           </p>
-  </section>
+  </section> -->
 </chapter>
