@@ -17,12 +17,12 @@ This chapter is co-authored by <xref ref="frontmatter">Tien Chih</xref>.
             <ul>
                 <li>
                     <p>
-                        <url>https://www.3blue1brown.com/</url>
+                        <url href="https://www.3blue1brown.com/">https://www.3blue1brown.com/</url>
                     </p>
                 </li>
                 <li>
                     <p>
-                        <url>https://www.youtube.com/c/3blue1brown</url>
+                        <url href="https://www.youtube.com/c/3blue1brown">https://www.youtube.com/c/3blue1brown</url>
                     </p>
                 </li>
             </ul>
@@ -330,21 +330,23 @@ This chapter is co-authored by <xref ref="frontmatter">Tien Chih</xref>.
                     <ul>
                         <li>
                             <p>
-                                <url>https://docs.manim.community/en/stable/index.html</url>.  This is Tien's goto
+                                <url href="https://docs.manim.community/en/stable/index.html">
+                                https://docs.manim.community/en/stable/index.html</url>.  This is Tien's goto
                                 place for FAQ's, working examples etc..
                             </p>
                         </li>
 
                         <li>
                             <p>
-                                <url>https://www.youtube.com/watch?v=KsemDUSJeWk&amp;list=PLwXCBkIf7xBODPeQxULagMeWSK4YtLYog</url>.
+                                <url href="https://www.youtube.com/watch?v=KsemDUSJeWk&amp;list=PLwXCBkIf7xBODPeQxULagMeWSK4YtLYog">
+                                https://www.youtube.com/watch?v=KsemDUSJeWk&amp;list=PLwXCBkIf7xBODPeQxULagMeWSK4YtLYog</url>.
                                 This is a video playlist of Calculus I material authored by Tien.
                             </p>
                         </li>
 
                         <li>
                             <p>
-                                <url>https://www.youtube.com/@MathVisualProofs</url>.
+                                <url href="https://www.youtube.com/@MathVisualProofs">https://www.youtube.com/@MathVisualProofs</url>.
                                 This the youtube video channel <em>Mathematical Visual Proofs</em>
                                 by Dr. Tom Edgar, an expert on Manim.
                             </p>
@@ -352,7 +354,7 @@ This chapter is co-authored by <xref ref="frontmatter">Tien Chih</xref>.
 
                         <li>
                             <p>
-                                <url>https://www.free-stock-music.com/</url>.
+                                <url href="https://www.free-stock-music.com/">https://www.free-stock-music.com/</url>.
                                 This is a website for royalty-free, Creative-Commons
                                 licensed stock music.
                             </p>
@@ -360,8 +362,8 @@ This chapter is co-authored by <xref ref="frontmatter">Tien Chih</xref>.
                     
                         <li>
                             <p>
-                                <url>https://discord.com/invite/bYCyhM9Kz2</url> a Discord for Manim,
-                                people can help here and you can run Python code within the Discord.
+                                <url href="https://discord.com/invite/bYCyhM9Kz2">https://discord.com/invite/bYCyhM9Kz2</url>
+                                a Discord for Manim, people can help here and you can run Python code within the Discord.
                             </p>
                         </li>
                     </ul>
