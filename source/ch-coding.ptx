@@ -158,13 +158,8 @@ Unless your Codespace has been customized via a
 into here), you'll be using the default Codespace
 image provided by GitHub. This environment is ready
 to execute code from various standard programming
-<<<<<<< Updated upstream
 lanugages, though for some of them you may
 need to run the script using the Terminal.
-=======
-lanugages, though for something of them you may
-need to run the script using the <q>Terminal</q>.
->>>>>>> Stashed changes
     </p>
 <definition xml:id="def-terminal">
   <statement>
