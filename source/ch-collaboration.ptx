@@ -22,6 +22,17 @@ edit your repository's text files with you via their web
 browser. When you commit your
 changes, they will be listed as co-authors of the commit.
     </p>
+    <remark>
+      <p>
+As of writing, my experience with LiveShare has been hit-or-miss,
+so I'll suggest another mechanism for live collaboration.
+Sometimes when I'm working on a Git repository
+with a collague on Zoom, I'll share my screen and give my collaborator
+control of my mouse and keyboard, or vice versa. Obviously
+you should only do this with a collaborator you trust, but it's
+a simple solution to quickly work together on the same repo!
+      </p>
+    </remark>
   </section>
   <section xml:id="sec-collaborators-prs">
     <title>Collaborators and Pull Requests</title>
