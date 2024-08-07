@@ -21,8 +21,8 @@
     <xi:include href="ch-first-repo.ptx"/>
     <xi:include href="ch-website.ptx"/>
     <xi:include href="ch-coding.ptx"/>
-    <xi:include href="ch-jupyter.ptx"/>
     <xi:include href="ch-collaboration.ptx"/>
+    <xi:include href="ch-jupyter.ptx"/>
     <xi:include href="ch-projects.ptx"/>
     <xi:include href="ch-manim.ptx"/>
 

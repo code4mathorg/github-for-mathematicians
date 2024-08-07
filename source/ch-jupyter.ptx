@@ -56,7 +56,11 @@ notebook for analysis.
     </p>
     <p>
 Now, let's follow the instructions of the repository's
-README file (<xref ref="remark-readme"/>).
+README file (<xref ref="remark-readme"/>). As of writing,
+it recommends to just use the <c>Code</c> button to open
+a Codespace, without needing to fork (<xref ref="sec-forks"/>)
+the repository. This allows you to <q>try out</q> the Codespace
+without saving your work long-term.
     </p>
   </section>
   <!-- <section>
