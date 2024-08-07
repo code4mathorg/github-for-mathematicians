@@ -73,18 +73,26 @@ see <xref ref="ch-collaboration"/>.)
         <p>
 An easy way to edit an individual file is just to click
 the pencil icon such as the one that appears on your README.
-This file is written in <term>Markdown</term>, a markup language
-that takes plain text <c>like *this*</c> and renders it
-<q>like <em>this</em></q>.
+This file is written in <q>Markdown</q>.
         </p>
+        <definition xml:id="def-markdown">
+                <statement>
+                        <p>
+<term>Markdown</term> is a markup language
+that takes plain text <c>like *this*</c> and renders it
+<q>like <em>this</em></q>. Sites like
+<url href="https://www.MarkdownTutorial.com"/> and
+<url href="https://www.MarkdownGuide.org"/> offer more
+complete tutorials.
+                        </p>
+                </statement>
+        </definition>
         <p>
 Try to edit your file to say something like <q>I'm learning how to
 use GitHub!</q>, perhaps adding a link back to this document
 using <c>[this markup](https://g4m.clontz.org)</c>. You
-can click the Preview tab to see what your README will look like,
-and visit sites like <url href="https://www.MarkdownTutorial.com"/> or
-<url href="https://www.MarkdownGuide.org"/> to learn
-more. GitHub also provides a panel of several formatting options
+can click the Preview tab to see what your README will look like.
+GitHub also provides a panel of several formatting options
 you can click on.
         </p>
         <p>

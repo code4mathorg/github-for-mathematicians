@@ -60,47 +60,77 @@ README file (<xref ref="remark-readme"/>). As of writing,
 it recommends to just use the <c>Code</c> button to open
 a Codespace, without needing to fork (<xref ref="sec-forks"/>)
 the repository. This allows you to <q>try out</q> the Codespace
-without saving your work long-term.
+without saving your work long-term, but you can still create a fork
+with your changes later if you decide to.
     </p>
   </section>
-  <!-- <section>
+  <section xml:id="sec-jupyter-kernel">
+    <title>Kernels</title>
     <p>
-      To get started, create a Codespace
-      (<xref ref="note-create-codespace"/>)
-      on either an existing or new repository
-      (<xref ref="sec-creating-the-repo"/>).
-      You can then create a Jupyter notebook file named
-      <c>notebook.ipynb</c>.
-          </p>
-          <note xml:id="note-provision-notebook">
-            <p>
-      In a Codespace, any file with the extension 
-      will be treated as a
-      Jupyter notebook. When opening this file, you'll see a notebook
-      interface, and be prompted to
-      <q>install the recommended 'Python' extension</q> if it's
-      not already enabled - do this.
-            </p>
-            <p>
-      Then in your notebook file, click the <q>Select Kernel</q>
-      button, then <q>Install/Enable suggested extensions</q> for
-      Python+Jupyter. You should then have the option to select
-      a <q>Python environment</q> such as <c>Python 3.*.*</c>.
-            </p>
-            <p>
-      If successful, you should be able to enter
-      <c>import sys; print(sys.version)</c> into the displayed
-      text box,
-      and see the result of executing it with
-      <kbd>Shift</kbd>+<kbd>Enter</kbd>.
-            </p>
-          </note>
-          <p>
-      There are plenty of existing tutorials on the internet to help you
-      get acquainted with Python and Jupyter now that you have them
-      available to you in your Codespace. But to get you started, I've provided
-      one <dataurl source="first-notebook.ipynb">sample notebook</dataurl>
-      that you can upload to your Codespace to break the ice.
-          </p>
-  </section> -->
+At the core of any Jupyter notebook is its <q>kernel</q>.
+    </p>
+    <definition xml:id="def-kernel">
+      <statement>
+        <p>
+The <term>kernel</term> of a Jupyter notebook is a process that wires up
+a notebook to a particular programming language.
+        </p>
+      </statement>
+    </definition>
+    <p>
+Kernels for several different programming languages exist. We will use
+a Python kernel in this book, not least of which because it's one of the
+most commonly used kernels, and the kernel that's already set up for use
+with the GitHub Jupyter Codespace repo.
+    </p>
+    <p>
+In your Codespace, use the <q>Select kernel</q> button, to choose
+a <q>Python environment</q>. You should be able to select the default
+global environment without needing to create a new one. Your notebook
+is ready once you see <c>Python 3.x.y</c> (for some values of <m>x,y</m>)
+in the upper-right corner of the notebook.
+    </p>
+  </section>
+  <section xml:id="sec-cells">
+    <title>Cells</title>
+    <p>
+A notebook is composed of many consecutive parts, known as <q>cells</q>.
+    </p>
+    <definition xml:id="def-cells">
+      <statement>
+        <p>
+A <term>cell</term> of a notebook encapsulates either
+commentary/documentation (as a <term>Markdown cell</term>) or
+code (as a <term>Code cell</term>). Cells can be rearranged,
+inserted, cut, pasted, and so on.
+        </p>
+      </statement>
+    </definition>
+    <p>
+Each Markdown cell uses, well, Markdown (<xref ref="def-markdown"/>)
+to describe content that should be displayed to the reader, similar
+to a README file in your repository.
+    </p>
+    <p>
+But it's the Code cells that set a notebook apart. Each Code cell
+in a notebook is run consecutively, with the result of the final
+line of code being displayed for the reader. Importantly, these
+outputs are saved to the notebook itself, meaning that by sharing
+the notebook with a colleague, they can see the output of your
+code without running it themselves! This is not only convenient,
+but it's essential when communicating the result of code that
+uses software your reader does not have installed themselves.
+Likewise, it allows for showing the results of code via a web
+browser, such as at
+<url href="https://github.com/github/codespaces-jupyter/blob/main/notebooks/image-classifier.ipynb">this link</url>.
+    </p>
+  </section>
+  <section xml:id="sec-sample-notebook">
+    <title>A sample notebook</title>
+    <p>
+I've provided a
+<dataurl source="first-notebook.ipynb">sample notebook</dataurl>
+that you can upload to your Codespace to experiment with.
+    </p>
+  </section>
 </chapter>
