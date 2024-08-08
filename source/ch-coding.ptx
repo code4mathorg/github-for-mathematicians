@@ -340,4 +340,29 @@ Here is what these environments look like.
       <caption>Repo from different points of view.</caption>
     </figure>
   </section>
+  <section xml:id="sec-powering-up-your-codespce">
+    <title>Powering up your Codespce</title>
+    <p>
+By default, your codespace will use a
+2-core processor, 8GB of RAM, and 32GB of storage, with a quota of
+40 usage hours per month. This is fine for many tasks,
+but if you're doing data analysis (<xref ref="ch-jupyter"/>) or
+formalized mathematics (<xref ref="sec-lean"/>) you may want some
+more resources at your disposal.
+    </p>
+    <remark xml:id="remark-change-machine-type">
+      <p>
+You can double (or quadruple, or <m>8\times</m>, etc.) your resources
+by <q>changing the machine type</q>. There are several ways to accomplish
+this, via <url href="https://github.com/codespaces/"/>, or by typing
+<q>Change Machine Type</q> in the Codespace command pallette
+(accessed via <kbd>Ctrl/Cmd</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>).
+      </p>
+      <p>
+Note however, that if you double your resources, you are also doubling your
+usage time (e.g. running a 4-core machine uses one hour of your quota
+every 30 minutes).
+      </p>
+    </remark>
+  </section>
 </chapter>
