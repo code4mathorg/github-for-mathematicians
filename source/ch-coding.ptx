@@ -296,10 +296,11 @@ there is the option to pay for additional resources.
     <p>
 As a mathematician
 who almost exclusively uses GitHub Codespaces for doing the kinds
-of work described in this handbook,
-I've found that I often approach the quota provided
-for Pro users, but have
-not yet exceeded it. I accomplish this by being sure to not run
+of work described in this handbook (and does so for much longer
+periods of time than a tpyical mathematician),
+I've only surpassed GitHub's free quota on the rare occassion
+(and when I do, I've paid only \$2-\$6 per month).
+I accomplish this by halting
 my Codespaces when I'm not actively working on them.
     </p>
     <note xml:id="note-manage-codespaces">
