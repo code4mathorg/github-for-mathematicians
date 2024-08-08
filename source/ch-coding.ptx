@@ -327,13 +327,17 @@ A deleted Codespace can always be recreated later based upon your most
 recent commit.
       </p>
     </note>
-<p>Putting it all together, we have seen three ways to access files on your repo.
-  Going from the least easy to edit to the most editable we have: <c>GitHub.com</c>, <c>GitHub.dev</c>, <c>random-codespace-string.github.dev</c>. Here is what these environments look like.</p>
-  <figure xml:id="fig-faces-of-github">
-    <image width="100%" source="screenshots/github-com.png"/>
-    <image width="100%" source="screenshots/github-dev.png"/>
-    <image width="100%" source="screenshots/github-codespace.png"/>
-    <caption>Repo from different points of view.</caption>
-</figure>
+    <p>
+Putting it all together, we have seen three ways to access files on your repo.
+Going from the least easy to edit to the most editable we have: <c>GitHub.com</c>,
+<c>GitHub.dev</c>, <c>random-codespace-string.github.dev</c>.
+Here is what these environments look like.
+    </p>
+    <figure xml:id="fig-faces-of-github">
+      <image width="100%" source="screenshots/github-com.png"/>
+      <image width="100%" source="screenshots/github-dev.png"/>
+      <image width="100%" source="screenshots/github-codespace.png"/>
+      <caption>Repo from different points of view.</caption>
+    </figure>
   </section>
 </chapter>
