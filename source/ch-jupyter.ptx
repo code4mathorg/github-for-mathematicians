@@ -144,4 +144,13 @@ how to beef up your Codespace with more resources, should you
 need to crunch a particularly large dataset.
     </p>
   </section>
+  <section xml:id="sec-r-jupyter">
+    <title>Using R with Jupyter</title>
+    <p>
+To use R instead of Python with your Jupyter notebook,
+a custom dev container (<xref ref="sec-custom-codespaces"/>)
+configured for R notebooks is available at
+<url href="https://github.com/revodavid/devcontainers-rstudio"/>.
+    </p>
+  </section>
 </chapter>
