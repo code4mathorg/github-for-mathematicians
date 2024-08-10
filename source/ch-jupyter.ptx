@@ -133,6 +133,17 @@ I've provided a
 that you can upload to your Codespace to experiment with.
     </p>
   </section>
+  <section xml:id="sec-big-data">
+    <title>Handling big datasets</title>
+    <p>
+A (possible) disadvantage of using Codespaces compared to your
+own computer is that all processing happens in the cloud, so
+you're limited by the resources made available to you by
+GitHub. But <xref ref="remark-change-machine-type"/> describes
+how to beef up your Codespace with more resources, should you
+need to crunch a particularly large dataset.
+    </p>
+  </section>
   <section xml:id="sec-r-jupyter">
     <title>Using R with Jupyter</title>
     <p>

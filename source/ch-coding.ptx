@@ -296,10 +296,11 @@ there is the option to pay for additional resources.
     <p>
 As a mathematician
 who almost exclusively uses GitHub Codespaces for doing the kinds
-of work described in this handbook,
-I've found that I often approach the quota provided
-for Pro users, but have
-not yet exceeded it. I accomplish this by being sure to not run
+of work described in this handbook (and does so for much longer
+periods of time than a tpyical mathematician),
+I've only surpassed GitHub's free quota on the rare occassion
+(and when I do, I've paid only \$2-\$6 per month).
+I accomplish this by halting
 my Codespaces when I'm not actively working on them.
     </p>
     <note xml:id="note-manage-codespaces">
@@ -326,14 +327,43 @@ A deleted Codespace can always be recreated later based upon your most
 recent commit.
       </p>
     </note>
-<p>Putting it all together, we have seen three ways to access files on your repo.
-  Going from the least easy to edit to the most editable we have: <c>GitHub.com</c>, <c>GitHub.dev</c>, <c>random-codespace-string.github.dev</c>. Here is what these environments look like.</p>
-  <figure xml:id="fig-faces-of-github">
-    <image width="100%" source="screenshots/github-com.png"/>
-    <image width="100%" source="screenshots/github-dev.png"/>
-    <image width="100%" source="screenshots/github-codespace.png"/>
-    <caption>Repo from different points of view.</caption>
-</figure>
+    <p>
+Putting it all together, we have seen three ways to access files on your repo.
+Going from the least easy to edit to the most editable we have: <c>GitHub.com</c>,
+<c>GitHub.dev</c>, <c>random-codespace-string.github.dev</c>.
+Here is what these environments look like.
+    </p>
+    <figure xml:id="fig-faces-of-github">
+      <image width="100%" source="screenshots/github-com.png"/>
+      <image width="100%" source="screenshots/github-dev.png"/>
+      <image width="100%" source="screenshots/github-codespace.png"/>
+      <caption>Repo from different points of view.</caption>
+    </figure>
+  </section>
+  <section xml:id="sec-powering-up-your-codespce">
+    <title>Powering up your Codespce</title>
+    <p>
+By default, your codespace will use a
+2-core processor, 8GB of RAM, and 32GB of storage, with a quota of
+40 usage hours per month. This is fine for many tasks,
+but if you're doing data analysis (<xref ref="ch-jupyter"/>) or
+formalized mathematics (<xref ref="sec-lean"/>) you may want some
+more resources at your disposal.
+    </p>
+    <remark xml:id="remark-change-machine-type">
+      <p>
+You can double (or quadruple, or <m>8\times</m>, etc.) your resources
+by <q>changing the machine type</q>. There are several ways to accomplish
+this, via <url href="https://github.com/codespaces/"/>, or by typing
+<q>Change Machine Type</q> in the Codespace command pallette
+(accessed via <kbd>Ctrl/Cmd</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>).
+      </p>
+      <p>
+Note however, that if you double your resources, you are also doubling your
+usage time (e.g. running a 4-core machine uses one hour of your quota
+every 30 minutes).
+      </p>
+    </remark>
   </section>
   <section xml:id="sec-custom-codespaces">
     <title>Custom Codespaces</title>
