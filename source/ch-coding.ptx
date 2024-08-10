@@ -335,4 +335,14 @@ recent commit.
     <caption>Repo from different points of view.</caption>
 </figure>
   </section>
+  <section xml:id="sec-custom-codespaces">
+    <title>Custom Codespaces</title>
+    <p>
+A key feature of Codespaces is that they can be customized by the use of a
+<c>.devcontainer.json</c> file (or <c>.devcontainer</c> directory). Such files describe
+the virtual machine that should be provisioned when creating a Codespace,
+allowing for the automatic installation of appropriate software/libraries/dependencies
+necessary for the use of a given repository.
+    </p>
+  </section>
 </chapter>

@@ -133,4 +133,13 @@ I've provided a
 that you can upload to your Codespace to experiment with.
     </p>
   </section>
+  <section xml:id="sec-r-jupyter">
+    <title>Using R with Jupyter</title>
+    <p>
+To use R instead of Python with your Jupyter notebook,
+a custom dev container (<xref ref="sec-custom-codespaces"/>)
+configured for R notebooks is available at
+<url href="https://github.com/revodavid/devcontainers-rstudio"/>.
+    </p>
+  </section>
 </chapter>
