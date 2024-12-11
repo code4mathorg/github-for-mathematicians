@@ -165,8 +165,11 @@ using <c>main</c> as your <q>Branch name pattern</q>, and
 enabling required pull requests.
       </p>
     </note>
+  </section>
+  <section xml:id="sec-collaborators-undo-main">
+    <title>Undoing accidental commmits to <c>main</c></title>
     <p>
-Finally, there's no button to push that will fix a commit
+Unfortunately, there's no button to push that will fix a commit
 made to the local copy of <c>main</c> accidentally, but there
 is a quick-enough fix nonetheless.
     </p>
@@ -179,7 +182,9 @@ tthe error message <c>Can't push refs to remote.
 Try running "Pull" first to integrate your changes.</c>
       </p>
       <p>
-To fix this, open the Terminal and type <xref ref="lst-branch-fix-1"/>,
+To fix this, open a Terminal 
+(<xref ref="remark-terminal-shortcut"/>)
+and type <xref ref="lst-branch-fix-1"/>,
 changing <c>my-new-branch</c> to the branch name you want to create.
 Use <kbd>Enter</kbd> to execute the command.
       </p>
