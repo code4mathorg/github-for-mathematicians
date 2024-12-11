@@ -173,12 +173,18 @@ Unfortunately, there's no button to push that will fix a commit
 made to the local copy of <c>main</c> accidentally, but there
 is a quick-enough fix nonetheless.
     </p>
+    <warning>
+      <p>
+        This fix must be done in a Codespace,
+        not GitHub.dev.
+      </p>
+    </warning>
     <note>
       <p>
 With branch protection <xref ref="note-branch-protection"/> enabled,
 if you accidentally make updates directly to your personal <c>main</c>
 branch, attempting to push these from a Codespace will result in
-tthe error message <c>Can't push refs to remote.
+the error message <c>Can't push refs to remote.
 Try running "Pull" first to integrate your changes.</c>
       </p>
       <p>
@@ -235,7 +241,7 @@ shared branches.
     </definition>
     <p>
 Managing contributions from forked repositories is done using the
-same workflow as I recomend for collaborating with trusted colleagues
+same workflow as we recommend for collaborating with trusted colleagues
 that you've given write access to your repository
 (<xref ref="sec-collaborators-prs"/>). The only difference
 is that an outside collaborator is creating branches and making commits
