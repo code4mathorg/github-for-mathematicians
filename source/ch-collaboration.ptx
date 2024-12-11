@@ -1,52 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <chapter xml:id="ch-collaboration">
   <title>Collaborating with Others</title>
-  <section xml:id="sec-liveshare">
-    <title>Live Share</title>
-    <p>
-A nice feature of collaborative authoring tools such
-as Google Docs and Overleaf is the ability for several
-collaborators to edit the same file synchronously, with
-a feature set similar to <c>GitHub.dev</c>.
-    </p>
-    <p>
-Using the Extensions sidebar, search for and install
-Microsoft's <q>Live Share</q> extension. Once installed,
-you will have a <q>Live Share</q> option in your
-bottom toolar. Clicking it will automatically copy a URL
-ending in
-<c>https://.../join?[randomStringOfCharacters]</c>.
-If you share this URL with a colleague (or
-colleagues) you trust, they will be able to collaboratively
-edit your repository's text files with you via their web
-browser. When you commit your
-changes, they will be listed as co-authors of the commit.
-    </p>
-    <remark>
-      <p>
-As of writing, my experience with LiveShare has been hit-or-miss,
-so I'll suggest another mechanism for live collaboration.
-Sometimes when I'm working on a Git repository
-with a collague on Zoom, I'll share my screen and give my collaborator
-control of my mouse and keyboard, or vice versa. Obviously
-you should only do this with a collaborator you trust, but it's
-a simple solution to quickly work together on the same repo!
-      </p>
-    </remark>
-  </section>
   <section xml:id="sec-collaborators-prs">
     <title>Collaborators and Pull Requests</title>
     <p>
-A particular downside of Live Share (<xref ref="sec-liveshare"/>)
-is that it requires
-the repository owner to create the Codespace and provision
-the Live Share session. As a result, there's no way for a
-collaborator to make a contribution via Live Share to a GitHub project
-without the active involvement of the repository owner.
-    </p>
-    <p>
-To address this, one solution is for the repository owner to
-add other GitHub users as collaborators.
+A direct way to allow multiple people you trust to work on the
+same repository is to add these GitHub users as collaborators.
     </p>
     <definition xml:id="def-collabotors">
       <statement>
@@ -89,16 +48,19 @@ must name their distinct branches.
     </warning>
     <note>
       <p>
-One workflow to support multiple collaborators on the same
+Our recommendation to support multiple collaborators on the same
 repository is to <em>never directly commit to the <c>main</c> branch</em>,
 even if you're the owner.
       </p>
       <p>
 To commit to an alternative branch in <c>GitHub.dev</c> or Codespaces, select
 <c>main</c> in the bottom toolbar, then type the name of your new branch,
-and select <q>Create new branch</q>. The name of this branch could
-be topical, e.g. <c>add-derivative-chapter</c>, but it's also fine to
-pick some other unique identifier, e.g. <c>lastname-YYYY-MM-DD</c>.
+and select <q>Create new branch</q>. It's a good idea to name your
+branch in the form <c>UserName/short-description-of-topic</c>,
+or if you're unsure of the topic, you can just use the current
+date: <c>UserName/YYYYMMDD</c>. Note that prefixing with your
+<c>UserName</c> helps prevent two people from accidentally using the same
+branch name.
       </p>
     </note>
     <p>
@@ -203,21 +165,32 @@ using <c>main</c> as your <q>Branch name pattern</q>, and
 enabling required pull requests.
       </p>
     </note>
+  </section>
+  <section xml:id="sec-collaborators-undo-main">
+    <title>Undoing accidental commmits to <c>main</c></title>
     <p>
-Finally, there's no button to push that will fix a commit
+Unfortunately, there's no button to push that will fix a commit
 made to the local copy of <c>main</c> accidentally, but there
 is a quick-enough fix nonetheless.
     </p>
+    <warning>
+      <p>
+        This fix must be done in a Codespace,
+        not GitHub.dev.
+      </p>
+    </warning>
     <note>
       <p>
 With branch protection <xref ref="note-branch-protection"/> enabled,
 if you accidentally make updates directly to your personal <c>main</c>
 branch, attempting to push these from a Codespace will result in
-tthe error message <c>Can't push refs to remote.
+the error message <c>Can't push refs to remote.
 Try running "Pull" first to integrate your changes.</c>
       </p>
       <p>
-To fix this, open the Terminal and type <xref ref="lst-branch-fix-1"/>,
+To fix this, open a Terminal 
+(<xref ref="remark-terminal-shortcut"/>)
+and type <xref ref="lst-branch-fix-1"/>,
 changing <c>my-new-branch</c> to the branch name you want to create.
 Use <kbd>Enter</kbd> to execute the command.
       </p>
@@ -268,7 +241,7 @@ shared branches.
     </definition>
     <p>
 Managing contributions from forked repositories is done using the
-same workflow as I recomend for collaborating with trusted colleagues
+same workflow as we recommend for collaborating with trusted colleagues
 that you've given write access to your repository
 (<xref ref="sec-collaborators-prs"/>). The only difference
 is that an outside collaborator is creating branches and making commits
@@ -300,7 +273,66 @@ and open a pull request.
   <section xml:id="sec-conflicts">
     <title>Handling Merge Conflicts</title>
     <p>
-To come in a future revision of this handbook...
+Perhaps the most complicated scenario when collaborating
+on a Git repository is the dreaded <em>merge conflict</em>.
+    </p>
+    <definition xml:id="def-merge-conflict">
+      <statement>
+        <p>
+While Git is fairly good about merging together changes
+made by different contributors to different
+files within a project into a cohesive whole, a
+<term>merge conflict</term> can occur when two different
+contributors attempt to make changes to the same file
+(particularly, the same line) at the same time. When the
+second contributor opens a pull request, GitHub will warn
+about this conflict.
+        </p>
+      </statement>
+    </definition>
+    <p>
+Handling merge conflicts can be tricky!
+Git/GitHub have various tools to help you review and correct
+a merge conflict. If you're fortunate, you'll be able to resolve
+things on the pull request page: see
+<url href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github">
+Resolving a merge conflict on GitHub
+</url> for full details.
+    </p>
+    <p>
+You'll be presented with files with some strange markers as in
+<xref ref="listing-merge-conflict"/>. The lines between
+<c>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</c> and
+<c>=======</c> were merged first, and the lines between
+<c>=======</c> and
+<c>&gt;&gt;&gt;&gt;&gt;&gt;&gt; branch-a</c> are the conflicting
+changes trying to be merged.
+    </p>
+    <listing xml:id="listing-merge-conflict">
+      <program>
+        <input>If you have questions, please
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+open an Issue
+=======
+ask them in Discussions.
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; branch-a
+        </input>
+      </program>
+      <caption>A merge conflict</caption>
+    </listing>
+    <p>
+You can then choose which change to retain, deleting all the
+extra <c>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</c>,
+<c>=======</c>, and
+<c>&gt;&gt;&gt;&gt;&gt;&gt;&gt; branch-a</c> lines.
+    </p>
+    <p>
+However, sometimes the merge conflict is too involved to be
+corrected using the web interface. In that situation, you will
+need to use a Codespace and follow the instructions at either
+<url href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-using-the-command-line">Resolving a merge conflict using the command line</url>
+or
+<url href="https://code.visualstudio.com/docs/sourcecontrol/overview#_merge-conflicts">Using Git source control in VS Code | Merge conflicts</url>.
     </p>
   </section>
 </chapter>
