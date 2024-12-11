@@ -273,7 +273,66 @@ and open a pull request.
   <section xml:id="sec-conflicts">
     <title>Handling Merge Conflicts</title>
     <p>
-To come in a future revision of this handbook...
+Perhaps the most complicated scenario when collaborating
+on a Git repository is the dreaded <em>merge conflict</em>.
+    </p>
+    <definition xml:id="def-merge-conflict">
+      <statement>
+        <p>
+While Git is fairly good about merging together changes
+made by different contributors to different
+files within a project into a cohesive whole, a
+<term>merge conflict</term> can occur when two different
+contributors attempt to make changes to the same file
+(particularly, the same line) at the same time. When the
+second contributor opens a pull request, GitHub will warn
+about this conflict.
+        </p>
+      </statement>
+    </definition>
+    <p>
+Handling merge conflicts can be tricky!
+Git/GitHub have various tools to help you review and correct
+a merge conflict. If you're fortunate, you'll be able to resolve
+things on the pull request page: see
+<url href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github">
+Resolving a merge conflict on GitHub
+</url> for full details.
+    </p>
+    <p>
+You'll be presented with files with some strange markers as in
+<xref ref="listing-merge-conflict"/>. The lines between
+<c>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</c> and
+<c>=======</c> were merged first, and the lines between
+<c>=======</c> and
+<c>&gt;&gt;&gt;&gt;&gt;&gt;&gt; branch-a</c> are the conflicting
+changes trying to be merged.
+    </p>
+    <listing xml:id="listing-merge-conflict">
+      <program>
+        <input>If you have questions, please
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+open an Issue
+=======
+ask them in Discussions.
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; branch-a
+        </input>
+      </program>
+      <caption>A merge conflict</caption>
+    </listing>
+    <p>
+You can then choose which change to retain, deleting all the
+extra <c>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</c>,
+<c>=======</c>, and
+<c>&gt;&gt;&gt;&gt;&gt;&gt;&gt; branch-a</c> lines.
+    </p>
+    <p>
+However, sometimes the merge conflict is too involved to be
+corrected using the web interface. In that situation, you will
+need to use a Codespace and follow the instructions at either
+<url href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-using-the-command-line">Resolving a merge conflict using the command line</url>
+or
+<url href="https://code.visualstudio.com/docs/sourcecontrol/overview#_merge-conflicts">Using Git source control in VS Code | Merge conflicts</url>.
     </p>
   </section>
 </chapter>
