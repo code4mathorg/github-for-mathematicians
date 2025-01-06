@@ -19,7 +19,7 @@ without using HTML.)
         </p>
         <p>
 Use <c>GitHub.dev</c> (<xref ref="opening-github-dev"/>)
-to create three files in the root of your project.
+to create three files in the root of a new or existing repository.
             <ul>
                 <li>
                     <p>
@@ -243,8 +243,8 @@ edits. After a while (<xref ref="actions-progress" />) you should
 be able to refresh your website and see your updated title, name, etc.
 (In <xref ref="sec-github-pages-codespace"/>, we will learn how to
 preview our edits more quickly, and without needing to push them to a
-live website, but at the expense of a more complicated
-editing environment.) You can repeat this process after each of the
+live website, provided we're comfortable using a Codespace as explored in
+<xref ref="ch-coding"/>.) You can repeat this process after each of the
 edits described below to see your results reflected on the live website.
             </p>
         </subsection>
@@ -338,4 +338,48 @@ tags:
             </listing>
         </subsection>
     </section>
+  <section xml:id="sec-github-pages-codespace">
+    <title>Previewing GitHub Pages</title>
+    <p>
+Another useful application of Codespaces is the ability
+to preview your GitHub Pages site created in
+<xref ref="sec-using-a-template"/>. Return to that repository
+on <c>GitHub.com</c> and create a new Codespace
+(<xref ref="note-create-codespace"/>).
+    </p>
+    <p>
+To spin up your live preview, open a terminal by using the
+shortcut noted in <xref ref="remark-terminal-shortcut"/>. To make
+sure the necessary software has been installed, type <c>bundle</c>
+and hit <kbd>Enter</kbd>. Then, you can enter <c>jekyll serve</c>
+to start the preview server.
+    </p>
+    <p>
+You'll see some output, and eventually
+<c>Server address: http://127.0.0.1:4000</c>. At that time an
+alert will appear that says <q>Your application on port 4000
+is available</q>. You can use its <q>Open in browser</q> button,
+or hover over the <c>http://127.0.0.1:4000</c> link to be given
+the same option.
+    </p>
+    <p>
+This should open a URL such as
+<c>random-words-123randomletters789-4000.app.github.dev</c>,
+which will show a live preview of your GitHub Pages site in a new
+tab. As soon as you make edits in your Codespace tab, you can
+return to this tab to (within a second or two) see how your edits
+will update your live site. Note that this URL is private to you,
+and your public site won't be updated until you Commit &amp; Sync
+your changes
+(<xref ref="note-commit-sync"/>).
+    </p>
+    <p>
+Personally, I use <c>GitHub.dev</c> (or even just the
+<c>GitHub.com</c> edit button) rather than a full
+Codespace when adding a quick post or making a quick edit on
+many of my GitHub Pages websites. But the Codespace option is very
+handy for when bigger changes are necessary, and you want to make
+sure everything looks just right before pushing it live to the public.
+    </p>
+  </section>
 </chapter>
