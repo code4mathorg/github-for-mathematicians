@@ -4,8 +4,9 @@
   <section xml:id="sec-codespaces">
     <title>Codespaces</title>
     <p>
-While the quick <c>GitHub.dev</c> interface is great
-for quick edits, many projects require the ability
+While the quick <c>GitHub.dev</c> interface we used
+to get started in <xref ref="ch-first-repo"/> is great
+for quick uploads or edits, many projects require the ability
 to run applications and execute code as you would on
 your personal computer. Fortunately, GitHub offers a
 service to run such programs on their servers.
@@ -240,50 +241,6 @@ Array.from({ length: 10 }, _ => {
       <caption>Sample Javascript code</caption>
     </listing>
   </section>
-  <section xml:id="sec-github-pages-codespace">
-    <title>Previewing GitHub Pages</title>
-    <p>
-Another useful application of Codespaces is the ability
-to preview your GitHub Pages site created in
-<xref ref="sec-using-a-template"/>. Return to that repository
-on <c>GitHub.com</c> and create a new Codespace
-(<xref ref="note-create-codespace"/>).
-    </p>
-    <p>
-To spin up your live preview, open a terminal by using the
-shortcut noted in <xref ref="remark-terminal-shortcut"/>. To make
-sure the necessary software has been installed, type <c>bundle</c>
-and hit <kbd>Enter</kbd>. Then, you can enter <c>jekyll serve</c>
-to start the preview server.
-    </p>
-    <p>
-You'll see some output, and eventually
-<c>Server address: http://127.0.0.1:4000</c>. At that time an
-alert will appear that says <q>Your application on port 4000
-is available</q>. You can use its <q>Open in browser</q> button,
-or hover over the <c>http://127.0.0.1:4000</c> link to be given
-the same option.
-    </p>
-    <p>
-This should open a URL such as
-<c>random-words-123randomletters789-4000.app.github.dev</c>,
-which will show a live preview of your GitHub Pages site in a new
-tab. As soon as you make edits in your Codespace tab, you can
-return to this tab to (within a second or two) see how your edits
-will update your live site. Note that this URL is private to you,
-and your public site won't be updated until you Commit &amp; Sync
-your changes
-(<xref ref="note-commit-sync"/>).
-    </p>
-    <p>
-Personally, I use <c>GitHub.dev</c> (or even just the
-<c>GitHub.com</c> edit button) rather than a full
-Codespace when adding a quick post or making a quick edit on
-many of my GitHub Pages websites. But the Codespace option is very
-handy for when bigger changes are necessary, and you want to make
-sure everything looks just right before pushing it live to the public.
-    </p>
-  </section>
   <section xml:id="sec-codespace-management">
     <title>Managing Your Codespaces</title>
     <p>
@@ -297,9 +254,9 @@ there is the option to pay for additional resources.
 As a mathematician
 who almost exclusively uses GitHub Codespaces for doing the kinds
 of work described in this handbook (and does so for much longer
-periods of time than a tpyical mathematician),
+periods of time than a typical mathematician),
 I've only surpassed GitHub's free quota on the rare occassion
-(and when I do, I've paid only \$2-\$6 per month).
+(and when I do, I've paid only <m>\$2</m>-<m>\$6</m> per month).
 I accomplish this by halting
 my Codespaces when I'm not actively working on them.
     </p>
@@ -343,9 +300,11 @@ Here is what these environments look like.
   <section xml:id="sec-powering-up-your-codespce">
     <title>Powering up your Codespce</title>
     <p>
-By default, your codespace will use a
-2-core processor, 8GB of RAM, and 32GB of storage, with a quota of
-40 usage hours per month. This is fine for many tasks,
+As of January 2025, a default codespace will use a
+2-core processor and 8GB of RAM, with a quota of
+60 usage hours and 15GB storage per month. (This is increased
+to 90 usage hours and 20GB storage for Pro/Education users.)
+This is fine for many tasks,
 but if you're doing data analysis (<xref ref="ch-jupyter"/>) or
 formalized mathematics (<xref ref="sec-lean"/>) you may want some
 more resources at your disposal.
@@ -374,5 +333,18 @@ the virtual machine that should be provisioned when creating a Codespace,
 allowing for the automatic installation of appropriate software/libraries/dependencies
 necessary for the use of a given repository.
     </p>
+    <remark>
+      <p>
+        Setting up a custom <c>.devcontainer</c> is a slick way to
+        ensure you and your collaborators/students are running exactly
+        the same software (including versions, dependencies, etc.)!
+        No more <q>It works on my machine</q> while <q>I can't get it
+        to work on my machine</q>!
+      </p>
+      <p>
+        See <url href="https://code.visualstudio.com/docs/devcontainers/create-dev-container#_create-a-devcontainerjson-file">VisualStudio.com/docs/devcontainers</url>
+        to learn more.
+      </p>
+    </remark>
   </section>
 </chapter>

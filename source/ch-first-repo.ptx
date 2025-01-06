@@ -227,4 +227,15 @@ on each commit to see exactly what has changed from the previous commit across
 all files.
         </p>
     </section>
+    <section>
+        <title>Next steps</title>
+        <p>
+Now that you've gotten the hang of the basics of
+committing and pushing changes to a repository,
+you can move on to using Codespaces to write
+and execute programs and code (<xref ref="ch-coding"/>)
+or setting up a webpage hosted by GitHub
+(<xref ref="ch-github-pages"/>).
+        </p>
+    </section>
 </chapter>
