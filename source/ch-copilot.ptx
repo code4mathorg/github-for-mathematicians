@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-copilot" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Copilot and Other AI Assistants</title>
+
+  <introduction>
+    <p>
+      In this chapter we will explore GitHub's <term>Copilot</term> features, as well as how other AI assistants can be used with GitHub and VS Code.
+    </p>
+
+    <p>
+      Note that almost everything in this chapter will likely be out of date almost immediately.
+      The current suggestions here are up to date as of <strong>2025-01-08</strong>.
+    </p>
+  </introduction>
+
+  <section xml:id="sec-options">
+    <title>AI Assistant Options</title>
+
+    <p>
+      <term>Copilot</term> is GitHub's AI assistant, tightly integrated with GitHub and VS Code through a pair of extensions.  There is currently a free tier that allows for a limited number of interactions each month, as well as a $10/month plan that provides unlimited interactions with Copilot (there is a free trial of the paid version as well).
+    </p>
+
+    <p>
+      Depending on what you want to do with your project, other AI assistants might be a better fit.
+      One notable alternative that might work even better for coding projects is <url href="https://codeium.com">Codeium</url>.
+      In particular, Codeium has a free tier that appears to offer unlimited interactions.
+      Like Copilot, Codeium also works with VS Code through an extension and the two use similar interfaces, so it should be relatively easy to switch between the two.
+    </p>
+
+    <p>
+      All of the specific commands described below will be those of Copilot, but often the same commands will work with Codeium.
+      In any event, we will focus on general principles of how to use these coding assistants.
+    </p>
+  </section>
+
+  <section xml:id="sec-setup">
+    <title>Setup</title>
+
+    <p>
+      We will assume you want to use Copilot from inside VS Code, either on your own machine or in a Github Codespace.
+      To get set up, follow the <url href="https://docs.github.com/en/copilot/quickstart?tool=vscode">Quick Start Guide</url> from the Copilot documentation.
+    </p>
+
+    <p>
+      In particular, make sure you have
+      <ul>
+        <li>
+          <p>
+            Enabled Copilot in your Github account.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Installed the Copilot extension in VS Code.
+          </p>
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      That should be it.
+    </p>
+  </section>
+
+  <section xml:id="sec-copilot-features">
+    <title>Features</title>
+
+    <p>
+      There are three main ways you can interact with Copilot from inside VS Code:
+      <ol>
+        <li>
+          <p>
+            By accepting <q>ghost text</q> suggestions as you type.
+            Copilot will will show you the most likely words to appear next to your cursor in light gray text.
+            Hitting <c>TAB</c> will accept the current suggestion in full; <c>CTRL+RightArrow</c> will accept one word at a time.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Use Copilot Chat by clicking the Copilot icon at the top of the VS Code window, right of the search bar (see <xref ref="copilot-icon"/>).
+            Select <q>Open chat</q> to open a panel on the right side of the window.
+            This panel allows you to <q>Ask Copilot</q> questions, similar to using ChatGPT or another AI chatbot.
+            The key difference is that Copilot uses your current file or workspace (or another selected source) as its context.
+            You can also use voice commands to ask questions and have Copilot read its answers aloud.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            By using Copilot's <term>inline chat</term>.
+            While typing in the editor, or with a selection highlighted, you can use <c>CTRL+I</c> to get a floating chat window that can provide suggestions based on your cursor position or the current selection.
+            You can accept or discard edits suggested by copilot easily from this interface.
+          </p>
+        </li>
+      </ol>
+    </p>
+
+    <figure xml:id="copilot-icon">
+      <caption>The copilot icon at the top of VS Code.</caption>
+      <image source="screenshots/copilot-icon.png">
+        <shortdescription>
+          screenshot of vs code with the copilot icon clicked.
+        </shortdescription>
+      </image>
+    </figure>
+  </section>
+
+  <section xml:id="sec-things-to-try">
+    <title>Things to Try</title>
+
+    <p>
+      Here are a few features of Copilot you might want to try out.
+      <ul>
+        <li>
+          <p>
+            Suppose you are trying to write some code in a language you are not that familiar with.  Copilot will suggest the next bit of code for you as you type.  To get better suggestions, put in a comment describing what you want to do.  (Hint: if you don't know the syntax for comments, hit <c>CTRL+/</c> to start a comment in most languages.)
+          </p>
+        </li>
+        <li>
+          <p>
+            Does the code do what you want it to?  Is it confusing?  Ask Copilot to <em>explain</em> the code to you.  You can select the code, hit <c>CTRL+I</c>, and then type <c>/explain</c> (note the forward slash).
+          </p>
+        </li>
+        <li>
+          <p>
+            Along these lines, try asking Copilot to document your code for you.  Select the code, hit <c>CTRL+I</c>, and then type <c>/doc</c>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Here is something I just did while writing this.  I realized that I wanted all the keyboard shortcuts to be displayed as code, which in <pretext /> is done by enclosing them in <tag>c</tag> tags.  So I selected the entire document, hit <c>CTRL+I</c> and typed <q>wrap all keyboard shortcuts here with <tag>c</tag> tags.</q>  Copilot then let me see where it made changes (line by line) and let me accept them or not.
+          </p>
+          <p>
+            A very new Copilot feature is <term>Copilot Edits</term>, which allow you to do such things for multiple files at the same time.  I suspect this could also be useful for finding typos.
+          </p>
+        </li>
+        <li>
+            <p>
+              If you are working on a mathematical proof or a complex equation, you can ask Copilot to help you format it correctly in LaTeX. Simply type your equation or proof in plain text, select it, hit <c>CTRL+I</c>, and ask Copilot to convert it to LaTeX. This can save you a lot of time and ensure that your mathematical notation is accurate.
+            </p>
+            <p>
+              NOTE: I don't know if that's true, the above paragraph was generated by Copilot from the prompt <q>Write a suggestion of something Copilot can do for a mathematician.</q>
+            </p>
+        </li>
+      </ul>
+    </p>
+  </section>
+</chapter>
