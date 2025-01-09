@@ -169,6 +169,5 @@
       It can be distracting to see what Copilot thinks you should type next; I have found that it often interrupts the idea I have in my head.
       You can turn off completions by clicking the Copilot icon at the bottom of the VS Code window and selecting <q>Disable completions.</q>  You can also disable completions for particular types of files.
     </p>
-  </p>
 </section>
 </chapter>
