@@ -3,6 +3,8 @@
 <chapter xml:id="ch-copilot" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Copilot and Other AI Assistants</title>
 
+  <author>Oscar Levin</author>
+  
   <introduction>
     <p>
       In this chapter we will explore GitHub's <term>Copilot</term> features, as well as how other AI assistants can be used with GitHub and VS Code.

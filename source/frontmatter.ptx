@@ -13,6 +13,11 @@
           <department>Natural Science and Mathematics</department>
           <institution>Emory College at Oxford University</institution>
         </author>
+        <author>
+          <personname>Oscar Levin</personname>
+            <department>Mathematical Sciences</department>
+            <institution>University of Northern Colorado</institution>
+        </author>
       </credit>
       <date>
         <today />
