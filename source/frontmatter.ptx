@@ -2,7 +2,7 @@
 <frontmatter xml:id="frontmatter" xmlns:xi="http://www.w3.org/2001/XInclude">
     <titlepage>
       <author>
-        <personname>Steven Clontz</personname>
+        <personname>Steven Craig Clontz, Jr.</personname>
         <department>Department of Mathematics and Statistics</department>
         <institution>Univeristy of South Alabama</institution>
       </author>
@@ -12,6 +12,11 @@
           <personname>Tien Chih</personname>
           <department>Natural Science and Mathematics</department>
           <institution>Emory College at Oxford University</institution>
+        </author>
+        <author>
+          <personname>Oscar Levin</personname>
+            <department>Mathematical Sciences</department>
+            <institution>University of Northern Colorado</institution>
         </author>
       </credit>
       <date>
