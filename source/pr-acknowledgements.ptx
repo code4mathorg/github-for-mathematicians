@@ -8,7 +8,8 @@ handbook.
       <li>
         <p>
 The <url href="https://aimath.org">American Institute of Mathematics</url>,
-for funding my travel to JMM 2024 to run a professional enhancement program
+for funding my travel to JMM 2024 and JMM 2025 to run
+professional enhancement programs
 based upon this handbook.
         </p>
       </li>
@@ -20,8 +21,15 @@ Jeremy Avigad, for adding Codespaces support to his book
       </li>
       <li>
         <p>
-Francesca Gandini, for co-organizing the JMM 2024 professional
+Francesca Gandini and Brandon Sisler, for co-organizing the
+JMM 2024 professional
 enrichment program that this book was written for originally. 
+        </p>
+      </li>
+      <li>
+        <p>
+Oscar Levin and Tien Chih for contributing chapters on
+AI and Manim, repsectively.
         </p>
       </li>
     </ul>
