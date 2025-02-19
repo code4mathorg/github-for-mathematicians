@@ -287,16 +287,19 @@ recent commit.
     <remark xml:id="remark-adjusting-defaults">
       <p>
 <xref ref="figure-codespace-timeout-retention"/> shows a screenshot of
-the settings available on
+some settings available on
 <url href="https://github.com/settings/codespaces">github.com/settings/codespaces</url>
 to adjust the default time your Codespace can idle before it times out
-(turns itself off to save your compute time resources), and to adjust the default time
-your Codespace will be retained before it is deleted (to save your storage resources).
+(to save your compute time resources), and to adjust the default time
+your Codespace will be retained before it is deleted
+(to save your storage resources).
       </p>
     </remark>
     <figure xml:id="figure-codespace-timeout-retention">
+      <caption>Screenshot of Codespace management settings</caption>
       <image source="screenshots/codespace-timeout-retention.png">
         <description>
+          <p>Screenshot of a web browser. Its text follows:</p>
           <p>Default idle timeout</p>
           <p>A codespace will suspend after a period of inactivity. You can specify a default idle timeout value, which will apply to all codespaces created after the default is changed. You will be charged for the entire time your codespace is running, even if it is idle. The maximum value is 240 minutes (4 hours).</p>
           <p>Default retention period</p>
