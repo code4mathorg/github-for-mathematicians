@@ -40,12 +40,11 @@ This chapter is co-authored by Francesca Gandini, ADD
         
         <p>
             A turn-key repository for creating a Codespace 
-            (<xref ref="sec-codespaces"/>) for Manim is available at
-            <url href="https://github.com/StevenClontz/manim-workshop">
-                StevenClontz/manim-workshop
-            </url>. Follow the instructions there to obtain an interface
-            for authoring Manim content using just your web browser
-            (Chrome/Edge/Firefox recommended).
+            (<xref ref="sec-codespaces"/>) for LaTeX is available at
+            <url href="https://github.com/fragandi/latex-codespace">
+                fragandi/latex-codespace
+            </url>. Below we provide detailed instructions. If you have some experience with codespaces, 
+you might be able to follow directly the README in the repo. Otherwise, keep reading!
         </p>
     </section>
 
