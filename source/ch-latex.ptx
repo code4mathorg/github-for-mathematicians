@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='utf-8'?>
+<chapter xml:id="ch-latex">
+    <title>LaTeX</title>
+    <introduction>
+        <p>
+This chapter is co-authored by Francesca Gandini, ADD
+        </p>
+    </introduction>
+    <section xml:id="sec-what-is">
+        <title>What Is </title>
+        <p>
+            <pubtitle>XXX</pubtitle> stands for <q>YYY</q>.
+ more commonly known as
+            <em>ZZZZ</em>. A sample list and links
+            <ul>
+                <li>
+                    <p>
+                        <url href="https://www.3blue1brown.com/">https://www.3blue1brown.com/</url>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <url href="https://www.youtube.com/c/3blue1brown">https://www.youtube.com/c/3blue1brown</url>
+                    </p>
+                </li>
+            </ul>
+        </p>
+        <p>
+            Soething
+            <url href="http://tbil.org">TBIL.org</url> Calculus I video series
+            <url href="https://www.youtube.com/playlist?list=PLwXCBkIf7xBODPeQxULagMeWSK4YtLYog">
+                at this YouTube playlist
+            </url>
+            was animated entirely by Tien Chih using Manim.
+        </p>
+    </section>
+
+    <section xml:id="sec-latex-codespace">
+        <title>Creating a LaTeX Codespace</title>
+        
+        <p>
+            A turn-key repository for creating a Codespace 
+            (<xref ref="sec-codespaces"/>) for Manim is available at
+            <url href="https://github.com/StevenClontz/manim-workshop">
+                StevenClontz/manim-workshop
+            </url>. Follow the instructions there to obtain an interface
+            for authoring Manim content using just your web browser
+            (Chrome/Edge/Firefox recommended).
+        </p>
+    </section>
+
+    <section xml:id="sec-hello-world">
+        <title>Hello World!</title>
+        <introduction>
+            <p>
+                Let's run our very first Manim animation.
+            </p>
+        </introduction>
+        <activity>
+            <introduction>
+                <p>
+                    Open <c>main.py</c> and look for the line
+                    <c>class HelloWorld(Scene):</c>.
+                </p>
+            </introduction>
+            <task>
+                <statement>
+                    <p>
+                        Open a Terminal and execute the command
+                        <c>manim render -ql main.py HelloWorld</c>.
+                        (See the README file for other options
+                        to render Manim scenes.)
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Open the file
+                        <c>media/videos/main/480p15/HelloWorld.mp4</c>
+                        to view your newly rendered video.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        See if you can add these lines to the code so
+                        the video ends by saying <q>My name is YOUR NAME HERE</q>.
+                        <ul>
+                            <li>
+                                <p>
+                                    <c>name = MathTex(r"\text{My name is YOUR NAME HERE.}")</c>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <c>self.play(Transform(hello, name))</c>
+                                </p>
+                            </li>
+                        </ul>
+                        Don't forget to re-run
+                        <c>manim render -ql main.py HelloWorld</c>
+                        to update your rendered video.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        See if you can make the circle <c>GREEN</c> instead
+                        of <c>PINK</c>.
+                    </p>
+                </statement>
+            </task>
+        </activity>
+    </section>
+
+    
+
+    
+</chapter>

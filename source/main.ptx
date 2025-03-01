@@ -26,6 +26,7 @@
     <xi:include href="ch-jupyter.ptx"/>
     <xi:include href="ch-projects.ptx"/>
     <xi:include href="ch-manim.ptx"/>
+    <xi:include href="ch-latex.ptx"/>
 
     <backmatter xml:id="backmatter">
       <title>Backmatter</title>
