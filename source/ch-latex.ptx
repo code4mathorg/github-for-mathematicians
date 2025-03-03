@@ -11,7 +11,9 @@ This chapter is co-authored by Francesca Gandini, ADD
         <p>
             <pubtitle>XXX</pubtitle> stands for <q>YYY</q>.
  more commonly known as
-            <em>ZZZZ</em>. Math? <m> \mathbb{Z} </m>. A sample list and links
+
+            <em>ZZZZ</em>. For math <m>\sqrt{5}</m>. A sample list and links
+
             <ul>
                 <li>
                     <p>
@@ -48,7 +50,7 @@ you might be able to follow directly the README in the repo. Otherwise, keep rea
         </p>
     </section>
 
-    <section xml:id="sec-hello-world">
+    <section xml:id="sec-hello-world2">
         <title>Hello World!</title>
         <introduction>
             <p>
