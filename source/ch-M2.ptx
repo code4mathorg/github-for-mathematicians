@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='utf-8'?>
+<chapter xml:id="ch-M2">
+    <title>Macaulay 2</title>
+    <introduction>
+        <p>
+This chapter is co-authored by Francesca Gandini, Sumner Strom,
+        </p>
+    </introduction>
+    <section xml:id="sec-template">
+        <title>Template </title>
+        <p>
+            This is the introduction to the template.
+        </p>
+        <subsection xml:id="subsec-template">
+            <title>Template Subsection</title>
+            <p>
+                This is the template subsection.
+            </p>
+            
+        </subsection>
+    <subsection xml:id="subsec-notes">
+            <title>Notes Subsection</title>
+            <p>
+                To build in pretext use the template subsection and pretext environment features.
+                Make sure that you are building and compiling from main using preview code chat.
+                Additionally, when running if the compilation fails run the command "pretext build web" in terminal.
+                Make sure that all of the xml have unique ids so that you dont run into compilation errors. 
+                Follow the other chapters to find out how things are used.
+                Make sure that the sections are properly linked within the main.ptx. Additionally, use the subsections and sections for organization.
+                If something doesnt display there is a paragraph line missing.
+
+            </p>
+            
+        </subsection>
+    </section>
+<section xml:id="sec-m2-codespace">
+        <title>Creating a M2 Codespace</title>
+        
+        <p>
+            A turn-key repository for creating a Codespace 
+            (<xref ref="sec-codespaces"/>) for Macaulay 2 is available at
+            <url href="https://github.com/fragandi/M2-codespace">
+                fragandi/M2-codespace
+            </url>. Below we provide detailed instructions. If you have some experience with codespaces, 
+you might be able to follow directly the README in the repo. Otherwise, keep reading!
+        
+        </p>
+        <p>
+            (WRITE DOWN NOTES HOW TO START A CODESPACE AND USE THE M2 CODESPACE IN THE ABOVE PARAGRAPH.)
+        </p>
+    </section>
+<section xml:id="sec-m2-commands">
+        <title>Basic M2 commands </title>
+    </section>
+<section xml:id="sec-invariantrings-package">
+        <title>InvariantRings package </title>
+    </section>
+<section xml:id="sec-theory-invariant-rings">
+        <title>Theory for invariant rings </title>
+        <p>
+            hello <m>4 \in \mathbb{Z}</m> this is true.
+            <theorem> <p>Nöether:  
+            <me>
+                R^G = \mathbb{K} [ R_G(\bar x^{\bar \beta}) | \; |\bar \beta| \leq |G|]
+            </me>
+            NDB: The ring of invariants is generated in degrees <m>\leq |G|</m> </p>
+            </theorem>
+        </p>
+    </section>
+</chapter>
