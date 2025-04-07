@@ -54,11 +54,50 @@ you might be able to follow directly the README in the repo. Otherwise, keep rea
     </section>
 <section xml:id="sec-invariantrings-package">
         <title>InvariantRings package </title>
+        <p>
+            
+        </p>
     </section>
 <section xml:id="sec-theory-invariant-rings">
         <title>Theory for invariant rings </title>
+        <subsection xml:id="subsec-finite-matrix-groups">
+            <title>Finite Matrix Groups</title>
+            
+        </subsection>
+        <subsection xml:id="subsec-invariant-rings">
+            <title>Invariant Rings</title>
+            
+        </subsection>
+        <subsection xml:id="subsec-reynolds-operator">
+            <title>Reynolds Operator</title>
+            
+        </subsection>
+        <subsection xml:id="subsec-noether-degree-bound">
+            <title>Nöether Degree Bound(NDB)</title>
+            
+        </subsection>
+        <subsection xml:id="subsec-hilbert-ideal">
+            <title>Hildbert Ideal</title>
+            
+        </subsection>
+        <subsection xml:id="subsec-presentations">
+            <title>Presentations</title>
+            
+        </subsection>
+        <subsection xml:id="subsec-graph-of-linear-actions">
+            <title>Graph of Linear Actions</title>
+            
+        </subsection>
+        <subsection xml:id="subsec-subspace-arrangement-approach">
+            <title>Subspace Arrangement Approach</title>
+            
+        </subsection>
+        <subsection xml:id="subsec-AGWM">
+            <title>Abelian GPS and Weight Matrices</title>
+            
+        </subsection>
         <p>
-            hello <m>4 \in \mathbb{Z}</m> this is true.
+            
             <theorem> <p>Nöether:  
             <me>
                 R^G = \mathbb{K} [ R_G(\bar x^{\bar \beta}) | \; |\bar \beta| \leq |G|]
