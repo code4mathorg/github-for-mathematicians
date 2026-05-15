@@ -1,0 +1,488 @@
+<?xml version='1.0' encoding='utf-8'?>
+<chapter xml:id="ch-M2">
+    <title>Macaulay 2</title>
+    <introduction>
+        <p>
+This chapter is co-authored by Francesca Gandini, Sumner Strom, Al Ashir Intisar
+        </p>
+  </introduction>
+   
+    
+    <section xml:id="sec-m2-codespace">
+      <title>Creating a M2 Codespace</title>
+    
+      <p>
+        A turn-key repository for creating a Codespace (<xref ref="sec-codespaces"/>) for Macaulay2 is available at
+        <url href="https://github.com/fragandi/M2-codespace">fragandi/M2-codespace</url>. Below we provide detailed instructions. 
+        If you are familiar with GitHub Codespaces, you may be able to follow the instructions in the README directly. Otherwise, follow the steps below for a smoother setup.
+      </p>
+    
+      <p>
+        <em>Step 1:</em> <strong>Fork the Repository: </strong><br/>
+        Navigate to <url href="https://github.com/fragandi/M2-codespace">fragandi/M2-codespace</url> and click the <code>Fork</code> button in the top-right corner of the page.
+      </p>
+      <figure xml:id="fork-repo-icon">
+        <caption>Select "Create a new fork" next to the plus icon.</caption>
+        <image source="screenshots/fork_repo.png">
+          <shortdescription>
+            screenshot of M2-codespace with forking instructions.
+          </shortdescription>
+        </image>
+      </figure>
+    
+      <p>
+        <em>Step 2:</em> <strong>Create a Codespace: </strong><br/>
+        Open your forked repository, click the green <code>Code</code> button, and select <code>Create codespace on main</code>.
+      </p>
+    
+      <figure xml:id="create-codespace-icon">
+        <caption>Creating codespace on forked GitHub repository.</caption>
+        <image source="screenshots/create_codespace.png">
+          <shortdescription>
+            screenshot of creating codespace on forked GitHub repository.
+          </shortdescription>
+        </image>
+      </figure>
+    
+      <p>
+        <em>Step 3:</em> <strong>Reload VS Code: </strong><br/>
+        Once the Codespace starts, open the Command Palette (<code>Ctrl+Shift+P</code> or <code>Cmd+Shift+P</code>), then type:
+      </p>
+    
+      <pre>
+      Reload Window
+      </pre>
+    
+      <p>
+        <em>Step 4:</em> <strong>Check Macaulay2 Executable Path: </strong><br/>
+        If you receive an error like “Cannot find Macaulay2 executable,” open the extension settings for Macaulay2 for Codespace and verify the executable path.
+      </p>
+    
+      <figure xml:id="extension-settings-icon">
+        <caption>Go to the Macaulay2 for Codespace extension settings as shown in the image above.</caption>
+        <image source="screenshots/extension_settings.png">
+          <shortdescription>
+            screenshot of Macaulay2 for Codespace extension settings.
+          </shortdescription>
+        </image>
+      </figure>
+      <figure xml:id="executable-path-icon">
+        <caption>If your path is different than what it shows in the image above try the steps below:</caption>
+        <image source="screenshots/extension_executable_path.png">
+          <shortdescription>
+            screenshot of Macaulay2 for Codespace extension settings correct executable path.
+          </shortdescription>
+        </image>
+      </figure>
+    
+      <p>
+        <strong>Fix:</strong> Open the Command Palette and disable VS Code Settings Sync:
+      </p>
+    
+      <pre>
+      Settings Sync: Turn Off
+      </pre>
+    
+      <p>
+        Then reload the window again as in Step 3. If problems persist, you may delete and recreate the Codespace.
+      </p>
+    
+      <p>
+        <em>Step 5:</em> <strong>Verify Installation: </strong><br/>
+        To confirm Macaulay2 installed correctly, open the Command Palette again and run:
+      </p>
+    
+      <pre>
+      Codespaces: View Creation Log
+      </pre>
+    
+      <p>
+        Look for confirmation lines like:
+      </p>
+    
+      <pre>
+      ✅ Macaulay2 installed successfully!
+      </pre>
+    
+      <p>
+        ✅ Following all these steps ensures that Macaulay2 is ready to use inside your Codespace and only the correct environment settings are applied.
+      </p>
+    
+      <p>
+        <strong>Alternative:</strong> If you want to create your own repository with Macaulay2 support from scratch, copy the <code>.devcontainer/</code> directory and optionally the <code>M2codes/</code>, <code>image_files/</code>, and <code>README.md</code> from the original repo. Push to GitHub and launch your own Codespace.
+      </p>
+    
+      <p>
+        For more information on using Macaulay2, visit the <url href="https://macaulay2.com/doc/Macaulay2/share/doc/Macaulay2/Macaulay2Doc/html/___The_sp__Macaulay2_splanguage.html">official documentation</url>.
+      </p>
+    </section>         
+    <section xml:id="sec-m2-commands">
+      <title>Basic M2 Commands</title>
+    
+      <section>
+        <title>Arithmetic, Strings, and Lists</title>
+        <p>
+          Make sure you run the code cells sequentially since some functions defined in earlier cells are used in later cells. You can also chnage the code in the block to evaluate any valid Macaulay2 code.
+        </p>
+        <p>This block introduces basic arithmetic operations in Macaulay2, including exponentiation.</p>
+        <sage language="macaulay2">
+          <input>
+            restart
+            2+2
+            3/5 + 7/11
+            1*2*3*4
+            2^200
+          </input>
+          <output>...</output>
+        </sage>
+    
+        <p>Here we compute large factorials, demonstrate how multiple expressions are separated by semicolons, and how to access the previous output using `oo`.</p>
+        <sage language="macaulay2">
+          <input>
+            40!
+            100!
+            1;2;3*4
+            4*5;
+            oo
+          </input>
+          <output>...</output>
+        </sage>
+    
+        <p>Strings are created using double quotes, assigned to variables, and concatenated horizontally with `|` or vertically with `||`.</p>
+        <sage language="macaulay2">
+          <input>
+            "hi there"
+            s = "hi there"
+            s | " - " | s
+            s || "-- -----" || s
+          </input>
+          <output>...</output>
+        </sage>
+    
+        <p>Lists are constructed with curly braces. Indexing starts at 0, and element-wise arithmetic works like vector math.</p>
+        <sage language="macaulay2">
+          <input>
+            s = "hi there"
+            L = {1, 2, s}
+            L_0
+            L_1
+            10*{1,2,3} + {1,1,1}
+          </input>
+          <output>...</output>
+        </sage>
+      </section>
+    
+      <section>
+        <title>Functions, Apply, and Loops</title>
+    
+        <p>Functions are created using the arrow operator `->`. This block defines a cube function `f` and a two-variable multiplication function `g`.</p>
+        <sage language="macaulay2">
+          <input>
+            f = i -> i^3
+            f 5
+            g = (x,y) -> x * y
+            g(6,9)
+          </input>
+          <output>...</output>
+        </sage>
+    
+        <p>The `apply` function maps a function over a list or range. We also demonstrate a `for` loop to print values and their cubes.</p>
+        <sage language="macaulay2">
+          <input>
+            apply({1,2,3,4}, i -> i^2)
+            apply({1,2,3,4}, f)
+            apply(1 .. 4, f)
+            apply(5, f)
+            for i from 1 to 5 do print(i, i^3)
+          </input>
+          <output>...</output>
+        </sage>
+      </section>
+    
+      <section>
+        <title>Rings, Matrices, Ideals</title>
+    
+        <p>This block defines a quotient ring and a free module over it. It also explores indexing of basis vectors and ring metadata using `describe`.</p>
+        <sage language="macaulay2">
+          <input>
+            R = ZZ/5[x,y,z];
+            (x + y)^5
+            R
+            describe R
+            F = R^3
+            F_1
+            F_{1,2}
+            F_{2,1,1}
+          </input>
+          <output>...</output>
+        </sage>
+    
+        <p>We define a homomorphism using a matrix and investigate its image, ideal, kernel, and related algebraic information like rank and Poincaré polynomial.</p>
+        <sage language="macaulay2">
+          <input>
+            f = matrix {{x, y, z}}
+            image f
+            ideal (x, y, z)
+            kernel f
+            generators oo
+            poincare kernel f
+            rank kernel f
+            presentation kernel f
+          </input>
+          <output>...</output>
+        </sage>
+    
+        <p>This segment combines kernel and cokernel into a subquotient module, and explores its generators, relations, and a simplified (pruned) form.</p>
+        <sage language="macaulay2">
+          <input>
+            cokernel f
+            N = kernel f ++ cokernel f
+            generators N
+            relations N
+            prune N
+          </input>
+          <output>...</output>
+        </sage>
+      </section>
+    
+      <section>
+        <title>Homological Algebra and Gröbner Bases</title>
+    
+        <p>We compute a projective resolution of a module, verify that it is a complex, and examine its Betti table for structure.</p>
+        <sage language="macaulay2">
+          <input>
+            C = resolution cokernel f
+            C.dd
+            C.dd^2 == 0
+            betti C
+          </input>
+          <output>...</output>
+        </sage>
+    
+        <p>We construct a generic matrix, compute its resolution, and build polynomial rings with indexed variables. We generate and analyze a Gröbner basis.</p>
+        <sage language="macaulay2">
+          <input>
+            R = ZZ/101[a .. r];
+            g = genericMatrix(R, a, 3, 6)
+            M = cokernel g
+            time C = resolution M
+            betti C
+            S = ZZ/101[t_1 .. t_9, u_1 .. u_9];
+            m = genericMatrix(S, t_1, 3, 3)
+            n = genericMatrix(S, u_1, 3, 3)
+            m * n
+            j = ideal(m*n - n*m)
+            gbj = groebnerBasis j;
+            betti gbj
+          </input>
+          <output>...</output>
+        </sage>
+      </section>
+    
+    </section>    
+<!-- <section xml:id="sec-invariantrings-package">
+        <title>InvariantRings package </title>
+        <section xml:id="sec-invariantring-demos">
+          <title>InvariantRing Library Demos</title>
+        
+          <p>
+            The <code>InvariantRing</code> package in Macaulay2 provides tools to study and compute invariant rings of group actions.
+            To get started, install the package:
+          </p>
+        
+          <sage language="macaulay2">
+            <input>
+              installPackage "InvariantRing"
+            </input>
+          </sage>
+        
+          <section>
+            <title>SL₂ Actions on C² and Variants</title>
+        
+            <p>
+              A classical example: the standard action of SL₂ on ℂ². The ring <code>R</code> carries a linearly reductive action from SL₂ defined via the matrix <code>SL2std</code>. The invariants and Hilbert ideal are then computed:
+            </p>
+        
+            <sage language="macaulay2">
+              <input>
+                restart
+                needsPackage "InvariantRing"
+                B = QQ[a,b,c,d]
+                A = ideal(a*d - b*c - 1)
+                SL2std = matrix{{a,b},{c,d}}
+                R = QQ[x_1..x_2]
+                V = linearlyReductiveAction(A,SL2std,R) 
+                invariants V
+                elapsedTime hilbertIdeal V
+              </input>
+            </sage>
+          </section>
+        
+          <section>
+            <title>Diagonal Actions of Abelian Groups</title>
+        
+            <p>
+              This example demonstrates a diagonal action of the abelian group ℂ₃ × ℂ₃ on a polynomial ring. After defining the diagonal weights, we compute the invariant ring and its Hilbert series:
+            </p>
+        
+            <sage language="macaulay2">
+              <input>
+                restart
+                needsPackage "InvariantRing"
+                R = QQ[x_1..x_3]
+                W = matrix{{1,0,1},{0,1,1}}
+                L = {3,3}
+                T = diagonalAction(W,L,R)
+                S = R^T
+                invariantRing T
+                I = definingIdeal S
+                Q = ring I
+                F = res I
+                hilbertSeries S
+                equivariantHilbertSeries T
+              </input>
+            </sage>
+          </section>
+        
+          <section>
+            <title>Linearly Reductive Actions: Permutations and Binary Forms</title>
+        
+            <p>
+              Here's how the symmetric group S₂ acts via a matrix of projection operators. We identify which polynomials are invariant under the group action:
+            </p>
+        
+            <sage language="macaulay2">
+              <input>
+                restart
+                needsPackage "InvariantRing"
+                S = QQ[z]
+                A = ideal(z^2 - 1)
+                M = matrix{{(1+z)/2, (1-z)/2},{(1-z)/2,(1+z)/2}}
+                R = QQ[a,b]
+                X = linearlyReductiveAction(A,M,R)
+                isInvariant(a,X)
+                invariants X
+              </input>
+            </sage>
+        
+            <p>
+              Now we compute the invariants of binary quadratics and quartics using SL₂ actions. These involve basis substitutions in a ring of forms and are more computationally demanding:
+            </p>
+        
+            <sage language="macaulay2">
+              <input>
+                restart
+                needsPackage "InvariantRing"
+                S = QQ[a,b,c,d]
+                I = ideal(a*d - b*c - 1)
+                A = S[u,v]
+                M = transpose (map(S,A)) last coefficients sub(basis(2,A),{u=>a*u+b*v,v=>c*u+d*v})
+                R = QQ[x_1..x_3]
+                L = linearlyReductiveAction(I,M,R)
+                hilbertIdeal L
+                invariants L
+                invariants(L,4)
+                invariants(L,5)
+              </input>
+            </sage>
+        
+            <sage language="macaulay2">
+              <input>
+                restart
+                needsPackage "InvariantRing"
+                S = QQ[a,b,c,d]
+                I = ideal(a*d - b*c - 1)
+                A = S[u,v]
+                M4 = transpose (map(S,A)) last coefficients sub(basis(4,A),{u=>a*u+b*v,v=>c*u+d*v})
+                R4 = QQ[x_1..x_5]
+                L4 = linearlyReductiveAction(I,M4,R4)
+                elapsedTime hilbertIdeal L4
+                elapsedTime X = invariants L4
+                g2 = X_0/12
+                g3 = -X_1/216
+                256*(g2^3 - 27*g3^2)
+                1728*(g2^3)/(g2^3 - 27*g3^2)
+              </input>
+            </sage>
+          </section>
+        
+          <section>
+            <title>Matrix Invariants and Conjugation Actions</title>
+        
+            <p>
+              We define SL₂ actions on 2×2 and 3×3 matrices of binary or ternary forms. The conjugation action creates sophisticated invariants under change of basis:
+            </p>
+        
+            <sage language="macaulay2">
+              <input>
+                restart
+                needsPackage "InvariantRing"
+                S = QQ[g_(1,1)..g_(2,2),t]
+                I = ideal((det genericMatrix(S,2,2))*t-1)
+                Q = S/I
+                A = Q[y_(1,1)..y_(2,2)]
+                Y = transpose genericMatrix(A,2,2)
+                g = promote(genericMatrix(S,2,2),A)
+                G = reshape(A^1,A^4,g*Y*inverse(g)) // (vars A)
+                G = lift(map(A^4,A^4,G),S)
+                R = QQ[x_(1,1)..x_(2,2)]
+                L = linearlyReductiveAction(I,G,R)
+                elapsedTime H=hilbertIdeal(L)
+                elapsedTime invariants L
+              </input>
+            </sage>
+        
+            <p>
+              The same process is repeated for 3×3 matrices. This involves 9-dimensional vector spaces and is more computationally demanding:
+            </p>
+        
+            <sage language="macaulay2">
+              <input>
+                restart
+                needsPackage "InvariantRing"
+                S = QQ[g_(1,1)..g_(3,3),t]
+                I = ideal((det genericMatrix(S,3,3))*t-1)
+                Q = S/I
+                A = Q[y_(1,1)..y_(3,3)]
+                Y = transpose genericMatrix(A,3,3)
+                g = promote(genericMatrix(S,3,3),A)
+                G = reshape(A^1,A^9,g*Y*inverse(g)) // (vars A)
+                G = lift(map(A^9,A^9,G),S)
+                R = QQ[x_(1,1)..x_(3,3)]
+                L = linearlyReductiveAction(I,G,R)
+                elapsedTime H=hilbertIdeal(L)
+                elapsedTime invariants(L,1)
+                elapsedTime invariants(L,2)
+                elapsedTime invariants(L,3)
+              </input>
+            </sage>
+          </section>
+        
+          <section>
+            <title>Finite Group Actions: S₄ Example</title>
+        
+            <p>
+              Finally, we examine the symmetric group S₄ acting on 4 variables. We use both King’s algorithm and a slower linear algebra method to compute primary and secondary invariants:
+            </p>
+        
+            <sage language="macaulay2">
+              <input>
+                restart
+                needsPackage "InvariantRing"
+                R = QQ[x_1..x_4]
+                L = apply({[2,1,3,4],[2,3,4,1]},permutationMatrix);
+                S4 = finiteAction(L,R)
+                elapsedTime invariants S4
+                elapsedTime invariants(S4,Strategy=>"LinearAlgebra")
+                elapsedTime p=primaryInvariants S4
+                elapsedTime secondaryInvariants(p,S4)
+                elapsedTime hironakaDecomposition(S4)
+              </input>
+            </sage>
+          </section>
+        
+        </section>
+        
+    </section> -->
+
+</chapter>
