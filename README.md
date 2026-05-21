@@ -5,7 +5,7 @@ maintain open and collaborative digital products.
 
 ## Contributing
 
-Contributions are very welcome! Please feel free to open an Issue or
+Contributions are super welcome! Please feel free to open an Issue or
 make a Pull Request to the main repository at
 <https://github.com/StevenClontz/github-for-mathematicians>. By making a
 contribution, you are agreeing to transfer ownership of any contributed intellectual
