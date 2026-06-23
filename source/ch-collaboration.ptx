@@ -28,7 +28,7 @@ need their own GitHub account, and must accept the invitation to
 collaborate before gaining access.
     </p>
     <p>
-Once they have access, a collaborator can either use <c>GitHub.dev</c>
+Once they have access, a collaborator can either use <c>VSCode.dev/GitHub</c>
 (<xref ref="opening-github-dev"/>) or create their own
 Codespace (<xref ref="def-codespaces"/>).
     </p>
@@ -53,7 +53,7 @@ repository is to <em>never directly commit to the <c>main</c> branch</em>,
 even if you're the owner.
       </p>
       <p>
-To commit to an alternative branch in <c>GitHub.dev</c> or Codespaces, select
+To commit to an alternative branch in <c>VSCode.dev/GitHub</c> or Codespaces, select
 <c>main</c> in the bottom toolbar, then type the name of your new branch,
 and select <q>Create new branch</q>. It's a good idea to name your
 branch in the form <c>UserName/short-description-of-topic</c>,
@@ -90,7 +90,7 @@ or <term>ready to review</term>.
     </definition>
     <note>
       <p>
-Depending on whether the collaborator is using <c>GitHub.dev</c> or
+Depending on whether the collaborator is using <c>VSCode.dev/GitHub</c> or
 Codespaces, they may be prompted to create a pull request when first
 pushing/syncing changes. If not, a pull request can be created by
 navigating to the repository page on <c>GitHub.com</c>.
@@ -176,7 +176,7 @@ is a quick-enough fix nonetheless.
     <warning>
       <p>
         This fix must be done in a Codespace,
-        not GitHub.dev.
+        not VSCode.dev/GitHub.
       </p>
     </warning>
     <note>
