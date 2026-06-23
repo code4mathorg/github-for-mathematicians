@@ -4,7 +4,7 @@
   <section xml:id="sec-codespaces">
     <title>Codespaces</title>
     <p>
-While the quick <c>GitHub.dev</c> interface we used
+While the quick <c>VSCode.dev/GitHub</c> interface we used
 to get started in <xref ref="ch-first-repo"/> is great
 for quick uploads or edits, many projects require the ability
 to run applications and execute code as you would on
@@ -34,29 +34,29 @@ the green <q>Create codespace on [branchname]</q> button.
     </note>
     <p>
 After the Codespace boots up, you'll have an interface similar
-to the <c>GitHub.dev</c> environment you learned about in
+to the <c>VSCode.dev/GitHub</c> environment you learned about in
 <xref ref="sec-using-github-dev"/>.
     </p>
     <note xml:id="dev-codespace-contrast">
       <p>
 Here are a few key differences between
-<c>GitHub.dev</c> and Codespaces.
+<c>VSCode.dev/GitHub</c> and Codespaces.
         <ol>
           <li>
             <p>
-A <c>GitHub.dev</c> URL looks like <c>github.dev/username/reponame</c>,
+A <c>VSCode.dev/GitHub</c> URL looks like <c>VSCode.dev/GitHub/username/reponame</c>,
 while a Codespace URL looks like
 <c>random-word-123randomcharacters789.github.dev</c>.
             </p>
           </li>
           <li>
             <p>
-<c>GitHub.dev</c> is quicker to load than a Codespace.
+<c>VSCode.dev/GitHub</c> is quicker to load than a Codespace.
             </p>
           </li>
           <li>
             <p>
-<c>GitHub.dev</c> has a much more limited selection of VS Code
+<c>VSCode.dev/GitHub</c> has a much more limited selection of VS Code
 extensions to use.
             </p>
           </li>
@@ -69,7 +69,7 @@ You can only install applications and execute code on a Codespace.
       </p>
     </note>
     <p>
-One similarity between <c>GitHub.dev</c> and Codespaces
+One similarity between <c>VSCode.dev/GitHub</c> and Codespaces
 (besides the obviously similar VS Code user interfaces),
 is that your work is still private to you and can only be
 shared with the public (and retained in the long term) by
@@ -310,7 +310,7 @@ your Codespace will be retained before it is deleted
     <p>
 Putting it all together, we have seen three ways to access files on your repo.
 Going from the least easy to edit to the most editable we have: <c>GitHub.com</c>,
-<c>GitHub.dev</c>, <c>random-codespace-string.github.dev</c>.
+<c>VSCode.dev/GitHub</c>, <c>random-codespace-string.github.dev</c>.
 Here is what these environments look like.
     </p>
     <figure xml:id="fig-faces-of-github">
