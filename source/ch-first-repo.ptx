@@ -126,7 +126,7 @@ down the line.
         </p>
     </section>
     <section xml:id="sec-using-github-dev">
-        <title>Using <c>GitHub.dev</c></title>
+        <title>Using <c>VSCode.dev/GitHub</c></title>
         <p>
 Using the <c>GitHub.com</c> interface to author or edit just one file
 can be useful (I do this all the time to make quick typo fixes on
@@ -137,7 +137,7 @@ that you need to include in your work as well.
         </p>
         <p>
 One way to quickly be able to manage several files at once is
-to use the <url href="https://github.dev">GitHub.dev</url> service
+to use the <url href="https://VSCode.dev/GitHub">VSCode.dev/GitHub</url> service
 offered by GitHub. Try clicking that link - you should have a
 fully-functional VS Code text editor right inside your web browser.
         </p>
@@ -146,23 +146,24 @@ fully-functional VS Code text editor right inside your web browser.
 It's best to use an updated version
 of Chrome, Edge, or Firefox when using GitHub. In particular, Safari tends
 to show off its rough edges when using advanced web applications like
-<c>GitHub.dev</c>, so it's best to choose an alternative.
+<c>VSCode.dev/GitHub</c>, so it's best to choose an alternative.
             </p>
         </note>
         <p>
 You can create files, edit them, upload images, and do whatever you
-like at <c>GitHub.dev</c>. But this isn't your repository - it's just an
-example. So, we'll need a way to tell <c>GitHub.dev</c> we want to work on
+like at <c>VSCode.dev/GitHub</c>. But this isn't your repository - it's just an
+example. So, we'll need a way to tell <c>VSCode.dev/GitHub</c> we want to work on
 the repository we just made instead.
         </p>
         <note xml:id="opening-github-dev">
             <p>
-There are two very easy ways to access the <c>GitHub.dev</c> service.
+There are two very easy ways to access the <c>VSCode.dev/GitHub</c> service.
 The first is to just
 change the address of your repository from <c>GitHub.com</c> to
-<c>GitHub.dev</c> in your browser. For example, if your repository lives at
+<c>VSCode.dev/GitHub</c> in your browser. For example, if your repository lives at
 <c>https://github.com/YourUserName/YourGreatRepo</c>, you should visit
-<c>https://github.dev/YourUserName/YourGreatRepo</c>.
+<c>https://VSCode.dev/GitHub/YourUserName/YourGreatRepo</c> (or just
+<c>https://github.dev/YourUserName/YourGreatRepo</c> for short).
             </p>
             <p>
 The other trick is even fancier. When you are visiting
@@ -171,12 +172,12 @@ and not writing in a text box, press the period (<kbd>.</kbd>) key.
             </p>
         </note>
         <p>
-Either way, you should now have a <c>GitHub.dev</c> window where you can manage
+Either way, you should now have a <c>VSCode.dev/GitHub</c> window where you can manage
 all the files of your project. Using the <term>Explorer</term> sidebar
 (<xref ref="fig-explorer"/>), you can create
 new files, rename files, move files, upload files, and more. Selecting
 a file opens it, and lets you edit it as needed. Your changes are saved
-automatically in <c>GitHub.dev</c>, but they won't show up at <c>GitHub.com</c> just yet.
+automatically in <c>VSCode.dev/GitHub</c>, but they won't show up at <c>GitHub.com</c> just yet.
         </p>
         <figure xml:id="fig-explorer">
                 <image width="60%" source="screenshots/codespace-explorer-newfile.png"/>
@@ -204,13 +205,13 @@ you can easily see where exactly a change is made between each commit.)
         </p>
         <p>
 The idea is this: edit as you see fit, knowing that your files are being
-saved at <c>GitHub.dev</c> and won't be lost if you accidentally refresh your
+saved at <c>VSCode.dev/GitHub</c> and won't be lost if you accidentally refresh your
 web browser. However, you'll need to eventually commit those changes to
 the repository in order to share your work with anyone else, and to ensure
 that the work is preserved in the long term. The Source Control panel
 provides a place to write a <term>commit message</term>, a short
 phrase or sentence that summarizes the work you've done. (Writer's block?
-For now just type <q>learning GitHub.dev</q>.) Then once you click
+For now just type <q>learning VSCode.dev/GitHub</q>.) Then once you click
 the <q>Commit and Push</q> button, your work will be logged as a permanent
 commit to the repository.
         </p>
@@ -218,7 +219,7 @@ commit to the repository.
 This is a good point to review your commit history again. You probably
 have three commits: the initial commit made when you created the repository,
 the <c>README.md</c> update you made using <c>GitHub.com</c>'s editing interface,
-and this more elaborate <c>GitHub.dev</c> commit involving possibly several files.
+and this more elaborate <c>VSCode.dev/GitHub</c> commit involving possibly several files.
 To visualize this history, you can go to the Insights/Network page
 described earlier, or click on the <q>3 commits</q> link
 from your <c>GitHub.com</c> repository
